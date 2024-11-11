@@ -16,22 +16,81 @@
 			증감 연산자의 위치가 변수의 앞에 위치하면 전위 방식, 뒤에 위치하면 후위 방식
 
 	3. 관계 연산자(>, <, >=, <=, ==, !=)
-			A > B : A는 B 보다 크다
-			A < B : A는 B 보다 작다
-			A >= B : A는 B 보다 크거나 같다
-			A =< B : A는 B 보다 작거나 같다
-			A == B : A와 B는 같다
-			A != B : A와 B는 다르다
+		A > B : A는 B 보다 크다
+		A < B : A는 B 보다 작다
+		A >= B : A는 B 보다 크거나 같다
+		A =< B : A는 B 보다 작거나 같다
+		A == B : A와 B는 같다
+		A != B : A와 B는 다르다
 
-	4. 논리 연산자 (||, &&)
+	4. 논리 연산자 (||, &&, !)
+		&&	: AND 연산, 피 연산자가 모두 참일 경우 참이다 
+			(true && ture) == ture
+			(true && false) == false
+			(false && ture) == false
+			(false && false) == false
 
-	5. 비트 연산자 
+		||	: OR 연산, 피 연산자 중 하나가 참이면 참이다
+			(true || ture) == true
+			(true || false) == true
+			(false || ture) == true
+			(false || false) == false
 
-	6. 복합 대입 연산자 (+=, -=, *=, /=, %=)
-		+= : A += B, A에 B를 더해서 넣는다
-		-= : A -= B, A에 B를 빼서 넣는다
-		*= : A *= B, A에 B를 곱하고 넣는다
-		/= : A /= B, 
+		!	: NOT 연산, 피연산자가 참이면 거짓, 거짓이면 참이다
+			!(true) == false
+			!(false) == true
+
+	5. 비트 연산자 (&, |, ^, ~, <<, >>)
+		비트 연산자는 데이터를 비트 단위로 처리하는 연산자
+			하드웨어랑 밀접하게 관련된 각종 처리를 한다
+			메모리 공간을 줄여서 성능을 높여준다
+			컴퓨터는 0과 1로 처리한다
+		
+		비트는 2진수 값 하나 (0 또는 1)를 저장할 수 있는 최소 메모리 공간을 의미
+		1bit로 표현할 수 있는 데이터 수 : 1,0
+		2bit : 00,01,10,11 4가지, 3bit : 8개 *2씩 늘어난다
+		1byte : 2^^8 (C++에서 제곱은 뭐냐?)만큼 저장용량을 가진다
+
+		2진수, 10진수, 16진수, 8진수
+			2진수 : 0, 1 사용
+			10진수 : 0 ~ 9 사용
+			16진수 : 0 ~ 9, A, B, C, D, E, F 사용
+				A : 10 ~ F : 15
+				색 코드가 255까지 있는 이유 16**2
+			8진수 : 0 ~ 7 까지의 숫자 사용
+
+		& : 비트단위 AND 연산
+			a & b : a와 b의 비트가 모두 1일때 1을 반환
+		| : 비트단위 OR 연산
+			a | b : a와 b 둘 중 하나의 비트가 1이면 1반환
+		^ : 비트단위 XOR 연산
+			a ^ b : a와 b 두 비트가 서로 같지 않을 경우 1을 반환
+		~ : 비트단위 NOT 연산
+			!a : a를 반전시킨다 (0101001 -> 1010110)
+		<< : 왼쪽으로 쉬프트 시킨다 - 2배씩 증가한다
+			a<<3 : 왼쪽으로 비트를 3칸 이동시킨다 (0000 0111 << 3 == 0011 1000)
+		>> : 오른쪽으로 쉬프트 시킨다 - 2배씩 감소한다
+			a>>3 : 오른쪽으로 비트를 3칸 이동시킨다 (0111 >> 3 == 0000)
+		
+		128 64 32 16 8 4 2 0
+		
+
+	6. 복합 대입 연산자 (+=, -=, *=, /=, %=, &=, |=, ^=, <<=, >>=)
+		+= : A += B, A에 B를 더해서 A에 대입한다
+		-= : A -= B, A에 B를 빼서 A에 대입한다
+		*= : A *= B, A에 B를 곱하고 A에 대입한다
+		/= : A /= B, A에 B를 나누고 A에 대입한다
+		&= : A &= B, A에 B를 AND 비트 연산을 하고 A에 대입한다
+		|= : A |= B, A에 B를 OR 비트 연산을 A에 대입한다
+		^= : A ^= B, A에 B를 XOR 비트 연산을 하고 A에 대입한다
+		<<= : A <<= B, A에 B만큼 왼쪽으로 쉬프트 하고 A에 대입한다
+		>>= : A >>= B, A에 B만큼 오른쪽으로 쉬프트 하고 A에 대입한다
+
+	7. 삼항연산자
+		연산자가 2개(?, :)와 피연산자 3개로 이루어지는 삼항연산자
+			bool a = testNum1 > 0 ? 0 : 1;
+			testNum1이 0보다 크면 0, 아니면 1을 a에 대입한다
+		
 
 */
 
@@ -110,8 +169,67 @@ int main(void)
 	std::cout << "result6에 저장된 값 : " << result6 << std::endl << std::endl;
 
 	std::cout << "------논리 연산자------" << std::endl;
+	int num5 = 3;
+	int num6 = 5;
+	bool result7;
+	bool result8;
+	bool result9;
 
+	result7 = (num5 > 0 && num6 < 10);
+	std::cout << "result7의 값 : " << result7 << std::endl;
 
+	result8 = (num5 <= 2 || num6 > 5);
+	std::cout << "result8의 값 : " << result8 << std::endl;
+
+	result9 = !num6;
+	std::cout << "result9의 값 : " << result9 << std::endl << std::endl;
+
+	std::cout << "------비트 연산자------" << std::endl;
+	int bitNum1 = 20;
+	int bitNum2 = 16;
+	
+	int bitRes1 = bitNum1 & bitNum2;
+	std::cout << "bitRes == " << bitRes1 << std::endl;
+	
+	int bitRes2 = bitNum1 | bitNum2;
+	std::cout << "bitRes == " << bitRes2 << std::endl;
+
+	int shiftNum = 10;
+	int shiftRes1 = shiftNum << 2;	
+	std::cout << "shiftRes1 == " << shiftRes1 << std::endl;
+	
+	int shiftRes2 = shiftRes1 >> 1;
+	std::cout << "shiftRes2 == " << shiftRes2 << std::endl << std::endl;
+
+	// 강의에서 편의상 1byte로 나타내었지 int는 4byte 숫자다 00000000 00000000 00000000 00001010이다
+	// 0으로 계속 채워진다. 에초에 없더라도 0으로 채워질것
+	// 128 64 32 16 8 4 2 1  
+
+	std::cout << "------복합 대입 연산자------" << std::endl;
+
+	int x = 5;
+	int y = 4;
+	x += y;
+	std::cout << x << std::endl << std::endl;
+
+	std::cout << "------삼항 연산자------" << std::endl;
+
+	int num7 = 2;
+	int num8 = 3;
+	int numberResult;
+
+	numberResult = num7 > num8 ? num7 : num8;
+
+	/* 위의 삼항연산자는 아래의 if else문과 같다
+	if (num7 > num8) {
+		numberResult = num7;
+	}
+	else {
+		numberResult = num8;
+	}
+	*/
+
+	std::cout << "numberResult : " << numberResult << std::endl;
 
 	return 0;
 }
