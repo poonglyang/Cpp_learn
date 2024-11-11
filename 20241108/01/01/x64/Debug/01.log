@@ -1,3 +1,0 @@
-﻿  DataType.cpp
-C:\Users\user\Desktop\CppFIle\20241108\01\DataType.cpp(70,15): warning C4244: '초기화 중': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  01.vcxproj -> C:\Users\user\Desktop\CppFIle\20241108\01\x64\Debug\01.exe
