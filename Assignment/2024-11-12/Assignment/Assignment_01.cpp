@@ -13,8 +13,7 @@ int main() {
 		std::cout << std::endl;
 	}
 
-	std::cout << std::endl;
-	std::cout << std::endl;
+	std::cout << "------------------- " << std::endl;
 
 	// 위에거 x축 반전
 	for (int i = 5; i >= 1; i--)
@@ -26,8 +25,7 @@ int main() {
 		std::cout << std::endl;
 	}
 
-	std::cout << std::endl;
-	std::cout << std::endl;
+	std::cout << "------------------- " << std::endl;
 
 	// y축 반전
 	for (int i = 1; i <= 5; i++) {
@@ -40,8 +38,7 @@ int main() {
 		std::cout << std::endl;
 	}
 
-	std::cout << std::endl;
-	std::cout << std::endl;
+	std::cout << "------------------- " << std::endl;
 
 	// x, y 축 반전
 	for (int i = 0; i <= 5; i++) {
@@ -55,4 +52,6 @@ int main() {
 		}
 		std::cout << std::endl;
 	}
+
+
 }
