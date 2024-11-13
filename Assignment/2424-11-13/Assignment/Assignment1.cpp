@@ -29,7 +29,7 @@ int Attack(int type, int targetHp) {
 	return targetHp;
 }
 
-
+/*
 int main() {
 	int playerHp = 100;
 	int goblineHp = 50;
@@ -52,9 +52,8 @@ int main() {
 
 	}
 }
+*/
 
-
-/*
 int main() {
 
 	node player = { "플레이어", 100, 100, 10 };
@@ -78,4 +77,4 @@ int main() {
 		}
 	}
 }
-*/
+

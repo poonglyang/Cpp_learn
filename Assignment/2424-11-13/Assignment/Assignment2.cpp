@@ -56,7 +56,4 @@ int main() {
 	for (int i = 0; i < sizeof(primeArr) / sizeof(int); i++) {
 		std::cout << primeArr[i] << "은(는) 소수인가? : " << IsPrime(primeArr[i]) << std::endl;
 	}
-
-
-	
 }

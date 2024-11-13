@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Assignment\\2424-11-13\\Assignment\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E9322238-B2A8-482B-B764-ADBB8BFBA635}|Assignment.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Assignment\\2424-11-13\\Assignment\\Assignment2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E9322238-B2A8-482B-B764-ADBB8BFBA635}|Assignment.vcxproj|solutionrelative:Assignment2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9322238-B2A8-482B-B764-ADBB8BFBA635}|Assignment.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Assignment\\2424-11-13\\Assignment\\Assignment1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E9322238-B2A8-482B-B764-ADBB8BFBA635}|Assignment.vcxproj|solutionrelative:Assignment1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Assignment2.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Assignment\\2424-11-13\\Assignment\\Assignment2.cpp",
+              "RelativeDocumentMoniker": "Assignment2.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Assignment\\2424-11-13\\Assignment\\Assignment2.cpp",
+              "RelativeToolTip": "Assignment2.cpp",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-13T06:55:47.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Assignment1.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Assignment\\2424-11-13\\Assignment\\Assignment1.cpp",
+              "RelativeDocumentMoniker": "Assignment1.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Assignment\\2424-11-13\\Assignment\\Assignment1.cpp",
+              "RelativeToolTip": "Assignment1.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-13T06:55:46.646Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
