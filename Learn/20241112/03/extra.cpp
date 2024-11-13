@@ -104,8 +104,8 @@ int main() {
 */
 
 // น้มุ 2445
-
-int main() {
+/*
+in main() {
     int n;
     std::cin >> n;
 
@@ -128,4 +128,13 @@ int main() {
         }
         std::cout << std::endl;
     }
+}
+
+*/
+
+int main() {
+    int num1 = 28;
+    int num2 = 11;
+
+    std::cout << (num1 | num2) << std::endl;
 }
