@@ -59,6 +59,12 @@ int Bet(int currentMoney);
 /// <returns>섞인 배열</returns>
 int* Shuffle(int arr[10]);
 
+/// <summary>
+/// 배열을 섞어주는 함수 2
+/// </summary>
+/// <param name="arr">섞을 배열</param>
+void Shuffle2(int arr[10]);
+
 int main() {
 
     srand(time(0));
@@ -67,18 +73,26 @@ int main() {
 
     std::cout << "숫자 야구 게임입니다" << std::endl << std::endl;
     for (int i = 0; i < 10; i++) {
-        std::cout << std::endl << i << "번째 게임입니다" << std::endl;
+        std::cout << std::endl << i+1 << "번째 게임입니다" << std::endl;
         int numArr[10] = {0,1,2,3,4,5,6,7,8,9};
         int Choices[2][3];
         int bet = Bet(money);
         money -= bet;
+        
+        Shuffle2(numArr);
 
-        int* shuffleArr = Shuffle(numArr);
+        //int* shuffleArr = Shuffle(numArr);
+
+        std::cout << "섞인 배열 : ";
+        for (int i = 0; i < 10; i++) {
+            std::cout << numArr[i];
+        }
+        std::cout << std::endl;
 
         // 플레이어와 컴퓨터의 선택
         for (int j = 0; j < sizeof(Choices[0]) / sizeof(int); j++) {
             Choices[0][j] = Choice(j);      // 플레이어 선택  
-            Choices[1][j] = shuffleArr[j];    // 컴퓨터 선택
+            Choices[1][j] = numArr[j];    // 컴퓨터 선택
             //Choices[1][j] = j;    // 컴퓨터 선택
         }
 
@@ -134,6 +148,17 @@ int* Shuffle(int arr[10]) {
     return arr;
 }
 
+void Shuffle2(int arr[10]) {
+    int temp, index1, index2;
+    for (int i = 0; i < 50; i++) {
+        index1 = rand() % 10;
+        index2 = rand() % 10;
+        temp = arr[index1];
+        arr[index1] = arr[index2];
+        arr[index2] = temp;
+    }
+}
+
 int Bet(int currentMoney) {
     int bet;
     std::cout << "배팅할 금액을 입력해 주세요(보유 금액 : " << currentMoney << " 최소 금액 500) : ";
@@ -155,7 +180,7 @@ int Choice(int arrN) {
 
     int choice;
 
-    std::cout << arrN << "번째 숫자를 입력하세요 (범위 : 0~9) : ";
+    std::cout << arrN + 1<< "번째 숫자를 입력하세요 (범위 : 0~9) : ";
     while (true) {
         std::cin >> choice;
         if (0 <= choice && choice <= 9) {
