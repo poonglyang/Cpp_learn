@@ -34,7 +34,8 @@
               "RelativeToolTip": "Statement.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-12T06:41:20.771Z"
+              "WhenOpened": "2024-11-12T06:41:20.771Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -44,7 +45,7 @@
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241111\\02\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAMAAAAAAAAAAAAAAAMsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAMsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-12T06:21:44.086Z",
               "EditorCaption": ""
