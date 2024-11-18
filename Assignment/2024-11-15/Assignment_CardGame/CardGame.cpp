@@ -47,7 +47,11 @@ int main() {
 		}
 	}
 
+	PrintAllCards(cardArr);
+
 	Shuffle(cardArr);	// Ä«µå ¼¯±â
+
+	PrintAllCards(cardArr);
 
 	for (int i = 0; i < sizeof(cardArr[1]) / sizeof(int) / 3; i++) {
 

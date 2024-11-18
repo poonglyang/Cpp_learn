@@ -1,3 +1,4 @@
 ﻿  CardGame.cpp
 C:\Users\user\Desktop\CppFIle\K_learn\Assignment\2024-11-15\Assignment_CardGame\CardGame.cpp(30,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  LINK : C:\Users\user\Desktop\CppFIle\K_learn\Assignment\2024-11-15\Assignment_CardGame\x64\Debug\Assignment_CardGame.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
   Assignment_CardGame.vcxproj -> C:\Users\user\Desktop\CppFIle\K_learn\Assignment\2024-11-15\Assignment_CardGame\x64\Debug\Assignment_CardGame.exe
