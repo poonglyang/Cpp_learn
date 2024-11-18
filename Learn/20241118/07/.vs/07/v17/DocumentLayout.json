@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\UserDataypes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|solutionrelative:UserDataypes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\TypeCasting01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|solutionrelative:TypeCasting01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -19,12 +23,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UserDataypes.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\UserDataypes.cpp",
+              "RelativeDocumentMoniker": "UserDataypes.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\UserDataypes.cpp",
+              "RelativeToolTip": "UserDataypes.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-18T00:53:41.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "TypeCasting01.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\TypeCasting01.cpp",
               "RelativeDocumentMoniker": "TypeCasting01.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\TypeCasting01.cpp",
               "RelativeToolTip": "TypeCasting01.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAQwFwAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-18T00:29:28.746Z",
               "EditorCaption": ""
