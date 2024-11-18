@@ -7,24 +7,24 @@
       "RelativeMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|solutionrelative:Str.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\UserDatatype03.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|solutionrelative:UserDatatype03.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\Practice.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|solutionrelative:Practice.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\UserDatatype02.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|solutionrelative:UserDatatype02.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\TypeCasting01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|solutionrelative:TypeCasting01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\UserDataypes01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|solutionrelative:UserDataypes01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\TypeCasting01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|solutionrelative:TypeCasting01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\UserDatatype02.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|solutionrelative:UserDatatype02.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\Practice.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|solutionrelative:Practice.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\UserDatatype03.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|solutionrelative:UserDatatype03.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,16 +46,16 @@
               "Title": "Str.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\Str.cpp",
               "RelativeDocumentMoniker": "Str.cpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\Str.cpp*",
-              "RelativeToolTip": "Str.cpp*",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADkAAAALAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\Str.cpp",
+              "RelativeToolTip": "Str.cpp",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAD8AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-18T03:01:51.038Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "UserDatatype03.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\UserDatatype03.cpp",
               "RelativeDocumentMoniker": "UserDatatype03.cpp",
@@ -63,21 +63,19 @@
               "RelativeToolTip": "UserDatatype03.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-18T02:49:15.493Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T02:49:15.493Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Practice.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\Practice.cpp",
               "RelativeDocumentMoniker": "Practice.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\Practice.cpp",
               "RelativeToolTip": "Practice.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-18T01:58:22.461Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T01:58:22.461Z"
             },
             {
               "$type": "Document",
@@ -87,33 +85,34 @@
               "RelativeDocumentMoniker": "UserDatatype02.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\UserDatatype02.cpp",
               "RelativeToolTip": "UserDatatype02.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAG0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-18T01:36:42.318Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "UserDataypes01.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\UserDataypes01.cpp",
               "RelativeDocumentMoniker": "UserDataypes01.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\UserDataypes01.cpp",
               "RelativeToolTip": "UserDataypes01.cpp",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEwAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAEwAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-18T00:53:41.437Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "TypeCasting01.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\TypeCasting01.cpp",
               "RelativeDocumentMoniker": "TypeCasting01.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\TypeCasting01.cpp",
               "RelativeToolTip": "TypeCasting01.cpp",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAQwFwAAABJAAAAAAAAAA==",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAQwFYAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-18T00:29:28.746Z"
+              "WhenOpened": "2024-11-18T00:29:28.746Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Test\\BSP\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{479E0190-B981-48DB-8ED8-FF4FE8D60D10}|BSP.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Test\\BSP\\FileName.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{479E0190-B981-48DB-8ED8-FF4FE8D60D10}|BSP.vcxproj|solutionrelative:FileName.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{479E0190-B981-48DB-8ED8-FF4FE8D60D10}|BSP.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Test\\BSP\\BSP_Generator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{479E0190-B981-48DB-8ED8-FF4FE8D60D10}|BSP.vcxproj|solutionrelative:BSP_Generator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -23,6 +27,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "FileName.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Test\\BSP\\FileName.cpp",
+              "RelativeDocumentMoniker": "FileName.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Test\\BSP\\FileName.cpp",
+              "RelativeToolTip": "FileName.cpp",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-18T07:21:12.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "BSP_Generator.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Test\\BSP\\BSP_Generator.cpp",
               "RelativeDocumentMoniker": "BSP_Generator.cpp",

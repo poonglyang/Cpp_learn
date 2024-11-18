@@ -8,7 +8,7 @@ void ReverseEven(char str[]);
 int FindChar(char str[], char c);
 
 int main() {
-	char str1[] = "Hello, World";
+	char str1[] = "Hello, World!";
 	ReverseEven(str1);
 
 	cout << endl << endl;
@@ -33,6 +33,8 @@ void ReverseEven(char str[]) {
 		str[i] = str[len - i - 1];
 		str[len - i - 1] = temp;
 	}
+
+	cout << str << endl;
 
 	for (int i = 0; i < len; i++) {
 		if (i % 2 == 0) {
