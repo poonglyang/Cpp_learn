@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\UserDataypes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|solutionrelative:UserDataypes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\UserDataypes01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|solutionrelative:UserDataypes01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\UserDatatype02.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|solutionrelative:UserDatatype02.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\TypeCasting01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -18,24 +22,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserDatatype02.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\UserDatatype02.cpp",
+              "RelativeDocumentMoniker": "UserDatatype02.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\UserDatatype02.cpp",
+              "RelativeToolTip": "UserDatatype02.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-18T01:36:42.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UserDataypes.cpp",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\UserDataypes.cpp",
-              "RelativeDocumentMoniker": "UserDataypes.cpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\UserDataypes.cpp",
-              "RelativeToolTip": "UserDataypes.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAACAAAAAAAAAA==",
+              "Title": "UserDataypes01.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\UserDataypes01.cpp",
+              "RelativeDocumentMoniker": "UserDataypes01.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\UserDataypes01.cpp",
+              "RelativeToolTip": "UserDataypes01.cpp",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEwAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-18T00:53:41.437Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "TypeCasting01.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\TypeCasting01.cpp",
               "RelativeDocumentMoniker": "TypeCasting01.cpp",
@@ -43,8 +60,7 @@
               "RelativeToolTip": "TypeCasting01.cpp",
               "ViewState": "AgIAAEoAAAAAAAAAAAAQwFwAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-18T00:29:28.746Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T00:29:28.746Z"
             }
           ]
         }

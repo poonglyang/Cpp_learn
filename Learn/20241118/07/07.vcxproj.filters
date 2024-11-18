@@ -18,7 +18,10 @@
     <ClCompile Include="TypeCasting01.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="UserDataypes.cpp">
+    <ClCompile Include="UserDataypes01.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="UserDatatype02.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
