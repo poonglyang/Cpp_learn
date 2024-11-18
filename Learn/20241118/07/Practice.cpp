@@ -8,7 +8,6 @@
 
 #include <iostream>
 #include <math.h>
-#include "Mathf.h";
 
 
 struct Point {

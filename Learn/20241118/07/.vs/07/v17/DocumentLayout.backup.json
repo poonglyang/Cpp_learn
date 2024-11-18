@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\Str.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|solutionrelative:Str.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\UserDatatype03.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|solutionrelative:UserDatatype03.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\Practice.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|solutionrelative:Practice.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\Mathf.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|solutionrelative:Mathf.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\Mathf.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|solutionrelative:Mathf.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CE147E2-279C-43DC-8349-41A3EDD5DD33}|07.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\UserDatatype02.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,39 +42,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Mathf.h",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\Mathf.h",
-              "RelativeDocumentMoniker": "Mathf.h",
-              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\Mathf.h",
-              "RelativeToolTip": "Mathf.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-18T02:44:15.555Z",
+              "DocumentIndex": 0,
+              "Title": "Str.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\Str.cpp",
+              "RelativeDocumentMoniker": "Str.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\Str.cpp*",
+              "RelativeToolTip": "Str.cpp*",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-18T03:01:51.038Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Mathf.cpp",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\Mathf.cpp",
-              "RelativeDocumentMoniker": "Mathf.cpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\Mathf.cpp",
-              "RelativeToolTip": "Mathf.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAKAAAAAAAAAA==",
+              "Title": "UserDatatype03.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\UserDatatype03.cpp",
+              "RelativeDocumentMoniker": "UserDatatype03.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\UserDatatype03.cpp",
+              "RelativeToolTip": "UserDatatype03.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-18T02:39:41.515Z",
+              "WhenOpened": "2024-11-18T02:49:15.493Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Practice.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\Practice.cpp",
               "RelativeDocumentMoniker": "Practice.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\Practice.cpp",
               "RelativeToolTip": "Practice.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-18T01:58:22.461Z",
               "EditorCaption": ""
@@ -87,10 +87,9 @@
               "RelativeDocumentMoniker": "UserDatatype02.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241118\\07\\UserDatatype02.cpp",
               "RelativeToolTip": "UserDatatype02.cpp",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAAAG0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-18T01:36:42.318Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T01:36:42.318Z"
             },
             {
               "$type": "Document",
@@ -102,8 +101,7 @@
               "RelativeToolTip": "UserDataypes01.cpp",
               "ViewState": "AgIAAD8AAAAAAAAAAAAAAEwAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-18T00:53:41.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T00:53:41.437Z"
             },
             {
               "$type": "Document",
