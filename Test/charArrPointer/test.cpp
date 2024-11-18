@@ -3,7 +3,7 @@
 using namespace std;
 void ReverseStrEven(char str[]) {
 	int len = strlen(str);
-	char str1[100] = {};
+	char str1[11] = {};
 	char temp;
 	for (int i = 0; i < len / 2; i++)
 	{
@@ -23,19 +23,19 @@ void ReverseStrEven(char str[]) {
 		}
 	}
 
-	cout << "str1[30]의 값 : " << str1[30] << endl;
+	cout << "str1[11]의 값 : " << str1[10] << endl;
 
 	for (int i = 0; i < len; i++) {
 
 		str[i] = str1[i];
 	}
 
-	cout << str1 << endl;
+	cout << "배열 값 : " << str1 << ", 이 배열의 크기 " << sizeof(str1) << endl;
 }
 
 int main() {
 	char str[] = "Hello, World";
-	cout << str << endl;
+	cout << "str의 값 : " << str << "str의 크기 : " << sizeof(str) << endl;
 	ReverseStrEven(str);
-	cout << str << endl;
+	cout << "str의 값 : " << str << "str의 크기 : " << sizeof(str) << endl;
 }
