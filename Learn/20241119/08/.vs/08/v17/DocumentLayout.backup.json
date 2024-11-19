@@ -1,0 +1,143 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DB05EE7B-14C2-4650-8D96-FF2E82C2AD6B}|08.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\FileName.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DB05EE7B-14C2-4650-8D96-FF2E82C2AD6B}|08.vcxproj|solutionrelative:FileName.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB05EE7B-14C2-4650-8D96-FF2E82C2AD6B}|08.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\Desurctor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DB05EE7B-14C2-4650-8D96-FF2E82C2AD6B}|08.vcxproj|solutionrelative:Desurctor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB05EE7B-14C2-4650-8D96-FF2E82C2AD6B}|08.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\constructor02.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DB05EE7B-14C2-4650-8D96-FF2E82C2AD6B}|08.vcxproj|solutionrelative:constructor02.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB05EE7B-14C2-4650-8D96-FF2E82C2AD6B}|08.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\practice02.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DB05EE7B-14C2-4650-8D96-FF2E82C2AD6B}|08.vcxproj|solutionrelative:practice02.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB05EE7B-14C2-4650-8D96-FF2E82C2AD6B}|08.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\practice.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DB05EE7B-14C2-4650-8D96-FF2E82C2AD6B}|08.vcxproj|solutionrelative:practice.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB05EE7B-14C2-4650-8D96-FF2E82C2AD6B}|08.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\constructor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DB05EE7B-14C2-4650-8D96-FF2E82C2AD6B}|08.vcxproj|solutionrelative:constructor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB05EE7B-14C2-4650-8D96-FF2E82C2AD6B}|08.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\Class01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DB05EE7B-14C2-4650-8D96-FF2E82C2AD6B}|08.vcxproj|solutionrelative:Class01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FileName.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\FileName.cpp",
+              "RelativeDocumentMoniker": "FileName.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\FileName.cpp*",
+              "RelativeToolTip": "FileName.cpp*",
+              "ViewState": "AgIAABEAAAAAAAAAAAAkwCYAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-19T05:53:05.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Desurctor.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\Desurctor.cpp",
+              "RelativeDocumentMoniker": "Desurctor.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\Desurctor.cpp",
+              "RelativeToolTip": "Desurctor.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-19T04:11:08.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "constructor02.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\constructor02.cpp",
+              "RelativeDocumentMoniker": "constructor02.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\constructor02.cpp",
+              "RelativeToolTip": "constructor02.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-19T02:25:24.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "practice02.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\practice02.cpp",
+              "RelativeDocumentMoniker": "practice02.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\practice02.cpp",
+              "RelativeToolTip": "practice02.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-19T02:24:48.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "practice.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\practice.cpp",
+              "RelativeDocumentMoniker": "practice.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\practice.cpp",
+              "RelativeToolTip": "practice.cpp",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-19T01:48:14.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "constructor.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\constructor.cpp",
+              "RelativeDocumentMoniker": "constructor.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\constructor.cpp",
+              "RelativeToolTip": "constructor.cpp",
+              "ViewState": "AgIAADoAAAAAAAAAAAAcwFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-19T01:08:51.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Class01.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\Class01.cpp",
+              "RelativeDocumentMoniker": "Class01.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\Class01.cpp",
+              "RelativeToolTip": "Class01.cpp",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAowGkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-19T00:26:11.681Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

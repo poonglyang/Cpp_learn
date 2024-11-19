@@ -9,6 +9,38 @@ struct Vecort2 {
 	float y;
 };
 
+class Node
+{
+private:
+	list<Node> childNode;
+	vector<Node> parentNode;
+
+	int treeLevel;
+
+
+
+public:
+	bool isVisit;
+
+	Node() {
+
+	}
+
+	void AddChild() {
+
+	}
+
+	void RemoveChild() {
+
+	}
+	
+
+
+
+};
+
+
+
 struct Node {
 	/// <summary>
 	/// 부모 노드 주소
