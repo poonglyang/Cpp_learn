@@ -1,0 +1,29 @@
+﻿cl : 명령줄  warning D9014: '2248' 값이 '/wd'에 대해 잘못되었습니다. '5999'(으)로 가정합니다.
+cl : 명령줄  warning D9014: '2247' 값이 '/wd'에 대해 잘못되었습니다. '5999'(으)로 가정합니다.
+  Assignment02.cpp
+C:\Users\user\Desktop\CppFIle\K_learn\Assignment\2024-11-20\Assignmant\Assignment02.cpp(72,11): error C2248: 'base::privateNum': private 멤버('base' 클래스에서 선언)에 액세스할 수 없습니다.
+      C:\Users\user\Desktop\CppFIle\K_learn\Assignment\2024-11-20\Assignmant\Assignment02.cpp(16,6):
+      'base::privateNum' 선언을 참조하십시오.
+      C:\Users\user\Desktop\CppFIle\K_learn\Assignment\2024-11-20\Assignmant\Assignment02.cpp(14,7):
+      'base' 선언을 참조하십시오.
+  
+C:\Users\user\Desktop\CppFIle\K_learn\Assignment\2024-11-20\Assignmant\Assignment02.cpp(79,11): error C2248: 'base::protectedNum': protected 멤버('base' 클래스에서 선언)에 액세스할 수 없습니다.
+      C:\Users\user\Desktop\CppFIle\K_learn\Assignment\2024-11-20\Assignmant\Assignment02.cpp(22,6):
+      'base::protectedNum' 선언을 참조하십시오.
+      C:\Users\user\Desktop\CppFIle\K_learn\Assignment\2024-11-20\Assignmant\Assignment02.cpp(14,7):
+      'base' 선언을 참조하십시오.
+  
+C:\Users\user\Desktop\CppFIle\K_learn\Assignment\2024-11-20\Assignmant\Assignment02.cpp(86,11): error C2247: 'base::publicNum'에 액세스할 수 없습니다. 이는 'InheritancePrivate'이(가) 'private'을(를) 사용하여 'base'에서 상속하기 때문입니다.
+      C:\Users\user\Desktop\CppFIle\K_learn\Assignment\2024-11-20\Assignmant\Assignment02.cpp(28,6):
+      'base::publicNum' 선언을 참조하십시오.
+      C:\Users\user\Desktop\CppFIle\K_learn\Assignment\2024-11-20\Assignmant\Assignment02.cpp(45,7):
+      'InheritancePrivate' 선언을 참조하십시오.
+      C:\Users\user\Desktop\CppFIle\K_learn\Assignment\2024-11-20\Assignmant\Assignment02.cpp(14,7):
+      'base' 선언을 참조하십시오.
+  
+C:\Users\user\Desktop\CppFIle\K_learn\Assignment\2024-11-20\Assignmant\Assignment02.cpp(86,11): error C2248: 'base::publicNum': private 멤버('InheritancePrivate' 클래스에서 선언)에 액세스할 수 없습니다.
+      C:\Users\user\Desktop\CppFIle\K_learn\Assignment\2024-11-20\Assignmant\Assignment02.cpp(28,6):
+      'base::publicNum' 선언을 참조하십시오.
+      C:\Users\user\Desktop\CppFIle\K_learn\Assignment\2024-11-20\Assignmant\Assignment02.cpp(45,7):
+      'InheritancePrivate' 선언을 참조하십시오.
+  

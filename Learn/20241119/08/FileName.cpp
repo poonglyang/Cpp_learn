@@ -5,7 +5,8 @@ public:
 	int x;
 	int y;
 
-	int Calc() {
+	virtual int Calc() {
+		std::cout << "ParentClass의 Calc" << std::endl;
 		return x + y;
 	}
 
@@ -21,7 +22,8 @@ public:
 
 class ChildClass : public ParentClass {
 public:
-	int Calc() {
+	int Calc() override {
+		std::cout << "ChildClass의 Calc" << std::endl;
 		return x - y;
 	}
 
@@ -34,6 +36,12 @@ public:
 int main() {
 	ChildClass cs;
 	cs.SetXY(10, 5);
+
+	ParentClass ps;
+	ps.SetXY(10, 5);
+
+	std::cout << "부모의 Calc : " << ps.Calc() << std::endl;
+	std::cout << "자식의 : " << cs.Calc() << std::endl;
 
 	// cs에는 x가 없지만 
 	std::cout << "cs에는 없는 x값 : " << cs.GetX() << std::endl

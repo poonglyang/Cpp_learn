@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DB05EE7B-14C2-4650-8D96-FF2E82C2AD6B}|08.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\FileName.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DB05EE7B-14C2-4650-8D96-FF2E82C2AD6B}|08.vcxproj|solutionrelative:FileName.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DB05EE7B-14C2-4650-8D96-FF2E82C2AD6B}|08.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\Desurctor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DB05EE7B-14C2-4650-8D96-FF2E82C2AD6B}|08.vcxproj|solutionrelative:Desurctor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DB05EE7B-14C2-4650-8D96-FF2E82C2AD6B}|08.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\constructor02.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DB05EE7B-14C2-4650-8D96-FF2E82C2AD6B}|08.vcxproj|solutionrelative:constructor02.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB05EE7B-14C2-4650-8D96-FF2E82C2AD6B}|08.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\FileName.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DB05EE7B-14C2-4650-8D96-FF2E82C2AD6B}|08.vcxproj|solutionrelative:FileName.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DB05EE7B-14C2-4650-8D96-FF2E82C2AD6B}|08.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\practice02.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,33 +46,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "FileName.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\FileName.cpp",
               "RelativeDocumentMoniker": "FileName.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\FileName.cpp",
               "RelativeToolTip": "FileName.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-19T05:53:05.555Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Desurctor.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\Desurctor.cpp",
               "RelativeDocumentMoniker": "Desurctor.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\Desurctor.cpp",
               "RelativeToolTip": "Desurctor.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-19T04:11:08.361Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "constructor02.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241119\\08\\constructor02.cpp",
               "RelativeDocumentMoniker": "constructor02.cpp",
@@ -80,8 +80,7 @@
               "RelativeToolTip": "constructor02.cpp",
               "ViewState": "AgIAABIAAAAAAAAAAAAAAEcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-19T02:25:24.515Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T02:25:24.515Z"
             },
             {
               "$type": "Document",
@@ -93,8 +92,7 @@
               "RelativeToolTip": "practice02.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-19T02:24:48.309Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T02:24:48.309Z"
             },
             {
               "$type": "Document",
@@ -106,8 +104,7 @@
               "RelativeToolTip": "practice.cpp",
               "ViewState": "AgIAABgAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-19T01:48:14.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T01:48:14.524Z"
             },
             {
               "$type": "Document",
@@ -119,8 +116,7 @@
               "RelativeToolTip": "constructor.cpp",
               "ViewState": "AgIAADoAAAAAAAAAAAAcwFAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-19T01:08:51.527Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T01:08:51.527Z"
             },
             {
               "$type": "Document",
@@ -132,8 +128,7 @@
               "RelativeToolTip": "Class01.cpp",
               "ViewState": "AgIAAE8AAAAAAAAAAAAowGkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-19T00:26:11.681Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T00:26:11.681Z"
             }
           ]
         }

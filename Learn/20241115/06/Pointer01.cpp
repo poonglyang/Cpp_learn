@@ -41,11 +41,15 @@ int main() {
 	int** pp;
 	pp = &p;	// 포인터 변수 p의 주소를 저장한다
 
-	std::cout << pp << std::endl;
-	std::cout << p << std::endl;
+	//std::cout << pp << std::endl;
+	//std::cout << p << std::endl;
 
 	**pp = 1234;
-	std::cout << num << std::endl;
+	std::cout << "num의 주소 값" << &num << std::endl;
+	std::cout << "pp의 값 : " << pp << std::endl;
+	std::cout << "**pp의 주소 값 : " << &**pp << std::endl;
+	std::cout << "**pp의 값 : " << **pp << std::endl;
+	std::cout << "num의 값 : " << num << std::endl;
 
 	int* ptr = nullptr;		// nummptr 널포인터(아무것도 가르키지 않는다)로 초기화 한다.
 	delete ptr;
@@ -59,7 +63,4 @@ int main() {
 
 	ptr2 = nullptr;
 	std::cout << "nullptr후 prt2의 메모리 주소 " << ptr2 << std::endl;
-
-
-
 }
