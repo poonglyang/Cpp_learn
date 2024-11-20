@@ -1,0 +1,4 @@
+﻿cl : 명령줄 warning D9014: '2248' 값이 '/wd'에 대해 잘못되었습니다. '5999'(으)로 가정합니다.
+cl : 명령줄 warning D9014: '2247' 값이 '/wd'에 대해 잘못되었습니다. '5999'(으)로 가정합니다.
+  Assignment02.cpp
+  Assignmant.vcxproj -> C:\Users\MH\Desktop\UnrealLearn\K_learn\Assignment\2024-11-20\Assignmant\x64\Debug\Assignmant.exe

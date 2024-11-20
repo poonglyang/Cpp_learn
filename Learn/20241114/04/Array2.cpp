@@ -42,32 +42,35 @@ int main() {
 	// 로또 번호 만들기
 	std::cout << std::endl;
 
-	int lottoNumberArr[45];
-	int lottoArr[6];
+	for (int k = 0; k < 5; k++) {
+		int lottoNumberArr[45];
+		int lottoArr[6];
 
-	for (int i = 0; i < 45; i++) {
-		lottoNumberArr[i] = i + 1;
+		for (int i = 0; i < 45; i++) {
+			lottoNumberArr[i] = i + 1;
+		}
+
+		for (int i = 0; i < 777; i++) {
+			dest = rand() % 45;
+			sour = rand() % 45;
+
+			temp = lottoNumberArr[dest];
+			lottoNumberArr[dest] = lottoNumberArr[sour];
+			lottoNumberArr[sour] = temp;
+		}
+
+		std::cout << "이번주 로또 번호는 ";
+
+		for (int i = 0; i < 6; i++) {
+			lottoArr[i] = lottoNumberArr[i];
+		}
+		std::sort(lottoArr, lottoArr + 6);
+
+		for (int i = 0; i < 6; i++) {
+			std::cout << lottoArr[i] << ", ";
+		}
 	}
-
-	for (int i = 0; i < 777; i++) {
-		dest = rand() % 45;
-		sour = rand() % 45;
-
-		temp = lottoNumberArr[dest];
-		lottoNumberArr[dest] = lottoNumberArr[sour];
-		lottoNumberArr[sour] = temp;
-	}
-
-	std::cout << "이번주 로또 번호는 ";
-
-	for (int i = 0; i < 6; i++) {
-		lottoArr[i] = lottoNumberArr[i];
-	}
-	std::sort(lottoArr, lottoArr + 6);
-
-	for (int i = 0; i < 6; i++) {
-		std::cout << lottoArr[i] << ", ";
-	}
+ 	
 
 	std::cout << "입니다!" << std::endl;
 
