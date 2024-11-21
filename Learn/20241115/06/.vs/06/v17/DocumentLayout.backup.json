@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241115\\06\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DEC5774A-7FA5-4C29-A56B-C548093AA53A}|06.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241115\\06\\Pointer01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DEC5774A-7FA5-4C29-A56B-C548093AA53A}|06.vcxproj|solutionrelative:Pointer01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DEC5774A-7FA5-4C29-A56B-C548093AA53A}|06.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241115\\06\\Pointer03.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DEC5774A-7FA5-4C29-A56B-C548093AA53A}|06.vcxproj|solutionrelative:Pointer03.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -17,6 +13,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{DEC5774A-7FA5-4C29-A56B-C548093AA53A}|06.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241115\\06\\CallbyVScallbyRef.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DEC5774A-7FA5-4C29-A56B-C548093AA53A}|06.vcxproj|solutionrelative:CallbyVScallbyRef.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEC5774A-7FA5-4C29-A56B-C548093AA53A}|06.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241115\\06\\Pointer01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DEC5774A-7FA5-4C29-A56B-C548093AA53A}|06.vcxproj|solutionrelative:Pointer01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,51 +34,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Pointer03.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241115\\06\\Pointer03.cpp",
               "RelativeDocumentMoniker": "Pointer03.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241115\\06\\Pointer03.cpp",
               "RelativeToolTip": "Pointer03.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAADcAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-15T04:15:38.001Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Pointer02.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241115\\06\\Pointer02.cpp",
               "RelativeDocumentMoniker": "Pointer02.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241115\\06\\Pointer02.cpp",
               "RelativeToolTip": "Pointer02.cpp",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-15T03:00:29.292Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "CallbyVScallbyRef.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241115\\06\\CallbyVScallbyRef.cpp",
               "RelativeDocumentMoniker": "CallbyVScallbyRef.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241115\\06\\CallbyVScallbyRef.cpp",
               "RelativeToolTip": "CallbyVScallbyRef.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-15T02:01:47.763Z"
+              "WhenOpened": "2024-11-15T02:01:47.763Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Pointer01.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241115\\06\\Pointer01.cpp",
               "RelativeDocumentMoniker": "Pointer01.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241115\\06\\Pointer01.cpp",
               "RelativeToolTip": "Pointer01.cpp",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADwAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-15T01:21:58.238Z",
               "EditorCaption": ""
