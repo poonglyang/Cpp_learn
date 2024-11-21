@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241120\\09\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FF49225D-DF9D-4A40-8ECE-121F5414D79C}|09.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241120\\09\\Inheritance.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FF49225D-DF9D-4A40-8ECE-121F5414D79C}|09.vcxproj|solutionrelative:Inheritance.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FF49225D-DF9D-4A40-8ECE-121F5414D79C}|09.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241120\\09\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{FF49225D-DF9D-4A40-8ECE-121F5414D79C}|09.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF49225D-DF9D-4A40-8ECE-121F5414D79C}|09.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241120\\09\\Inheritance.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FF49225D-DF9D-4A40-8ECE-121F5414D79C}|09.vcxproj|solutionrelative:Inheritance.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,26 +26,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Inheritance.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241120\\09\\Inheritance.cpp",
               "RelativeDocumentMoniker": "Inheritance.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241120\\09\\Inheritance.cpp",
               "RelativeToolTip": "Inheritance.cpp",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAEsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-20T05:26:17.433Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241120\\09\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241120\\09\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAJ0AAAAAAAAAAAAAAMAAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAAAI4AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-20T04:17:53.913Z",
               "EditorCaption": ""
