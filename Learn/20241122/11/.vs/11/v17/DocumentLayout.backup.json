@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241122\\11\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B85E1EB5-2933-404A-8721-3B481049470D}|11.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241122\\11\\operatorOverloading.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B85E1EB5-2933-404A-8721-3B481049470D}|11.vcxproj|solutionrelative:operatorOverloading.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B85E1EB5-2933-404A-8721-3B481049470D}|11.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241122\\11\\string.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{B85E1EB5-2933-404A-8721-3B481049470D}|11.vcxproj|solutionrelative:string.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B85E1EB5-2933-404A-8721-3B481049470D}|11.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241122\\11\\operatorOverloading.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B85E1EB5-2933-404A-8721-3B481049470D}|11.vcxproj|solutionrelative:operatorOverloading.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,26 +26,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "operatorOverloading.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241122\\11\\operatorOverloading.cpp",
               "RelativeDocumentMoniker": "operatorOverloading.cpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241122\\11\\operatorOverloading.cpp*",
-              "RelativeToolTip": "operatorOverloading.cpp*",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAADAAAAA7AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241122\\11\\operatorOverloading.cpp",
+              "RelativeToolTip": "operatorOverloading.cpp",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-22T00:44:17.73Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "string.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241122\\11\\string.cpp",
               "RelativeDocumentMoniker": "string.cpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241122\\11\\string.cpp",
-              "RelativeToolTip": "string.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAcAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241122\\11\\string.cpp*",
+              "RelativeToolTip": "string.cpp*",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAwwDIAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-22T00:34:20.129Z",
               "EditorCaption": ""
