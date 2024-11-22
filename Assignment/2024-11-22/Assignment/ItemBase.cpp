@@ -2,10 +2,10 @@
 using namespace itemDatas;
 using namespace std;
 
-ItemBase::ItemBase(int id, const string& name, int count, int maxCount, int itemType)
-	: id(id), name(name), count(count), maxCount(maxCount), itemType(itemType)
+ItemBase::ItemBase(int id, const string& name, int count, int maxCount, int price, int itemType, const string& explain)
+	: id(id), name(name), count(count), maxCount(maxCount), price(price), itemType(itemType), explain(explain)
 {
-	explain = "테스트";
+
 }
 
 ItemBase::~ItemBase()
@@ -27,8 +27,11 @@ int ItemBase::GetItemCount()
 	return count;
 }
 
+
+
 int ItemBase::SetItemCount(int delta)
 {
+	// 만약 카운트 + delta가 -이거나 0인 경우도 만들어야 한다
 	if (this->count + delta < this->maxCount) {
 		// 현재 아이템 갯수 + 아이템 증감값이 아이템 중첩 최대 갯수보다 크다면
 		this->count = this->maxCount;					// 현재 아이템 갯수를 최대 갯수로 바꾸고
@@ -40,6 +43,11 @@ int ItemBase::SetItemCount(int delta)
 int ItemBase::GetItemMaxCount()
 {
 	return maxCount;
+}
+
+int ItemBase::GetPrice()
+{
+	return price;
 }
 
 int ItemBase::GetItemType()

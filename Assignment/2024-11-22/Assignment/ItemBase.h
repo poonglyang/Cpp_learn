@@ -31,6 +31,11 @@ private:
 	int maxCount;
 
 	/// <summary>
+	/// 아이템 가격
+	/// </summary>
+	int price;
+
+	/// <summary>
 	/// 아이템 타입
 	/// </summary>
 	int itemType;
@@ -52,7 +57,7 @@ public:
 	/// <param name="name">이 아이템의 이름</param>
 	/// <param name="count">이 아이템의 갯수, 기본값 1</param>
 	/// <param name="maxCount">이 아이템의 최대 크기</param>
-	ItemBase(int id, const string& name, int count, int maxCount, int itemType);
+	ItemBase(int id, const string& name, int count, int maxCount, int price, int itemType, const string& explain);
 
 	virtual ~ItemBase();
 
@@ -89,6 +94,14 @@ public:
 	int GetItemMaxCount();
 
 	/// <summary>
+	/// 아이템의 가격을 반환하는 함수
+	/// 만약 0 이외의 수가 반환 된 경우
+	/// 같은 아이템인데 반환된 수 만큼 count가 있는 아이템을 만들어야한다
+	/// </summary>
+	/// <returns>가격</returns>
+	int GetPrice();
+
+	/// <summary>
 	/// 아이템의 타입을 반환하는 함수
 	/// </summary>
 	/// <returns>아이템 타입</returns>
@@ -100,6 +113,9 @@ public:
 	/// <returns>아이템 설명 string</returns>
 	string GetItemExplain();
 
+	/// <summary>
+	/// 아이템 정보를 출력하는 함수
+	/// </summary>
 	virtual void PrintItemInfo();
 };
 

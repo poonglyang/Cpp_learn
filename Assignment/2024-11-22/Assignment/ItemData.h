@@ -29,9 +29,10 @@ namespace itemDatas {
     };
 
     enum class EquipSlot {
-        Weapon_Both,     // 양손 무기
-        Weapon_Right,    // 오른손 무기
-        Weapon_Left,     // 왼손 무기
+        Weapon_Both,     // 양손 장비
+        Weapon_Both_OneHand,   // 두 손 다 장비 가능한 장비
+        Weapon_Right,    // 오른손 장비
+        Weapon_Left,     // 왼손 장비
         Armor_Top,       // 상의 방어구
         Armor_Bottom,    // 하의 방어구
         Helmet,          // 헬멧

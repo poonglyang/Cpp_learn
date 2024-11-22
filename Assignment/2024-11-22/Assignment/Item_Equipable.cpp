@@ -1,10 +1,10 @@
 #include "Item_Equipable.h"
 
-Item_Equipable::Item_Equipable(int id, const string& name, int itemType, 
+Item_Equipable::Item_Equipable(int id, const string& name, int price, int itemType, const string& explain,
 	int equipSlot, float hp, float mp, float atk, float critialProbability,
 	float critialDamage, float defIgnore, float def, float hit, float avoid,
 	float defenseProbability, float behaviorSpeed)
-	: ItemBase(id, name, 1, 1, itemType),
+	: ItemBase(id, name, 1, 1, price, itemType, explain), equipSlot(equipSlot),
 	itemState_Hp(hp), itemState_Mp(mp), itemState_Atk(atk),
 	itemState_CriticalProbability(critialProbability),
 	itemState_CriticalDamage(critialDamage), itemState_DefIgnore(defIgnore),
@@ -36,17 +36,14 @@ void Item_Equipable::PrintItemInfo()
 	cout << "\t" << this->GetItemName() << endl << endl;
 
 	vector<string> itemEquipSlot = {
-		"양손",
-		"오른손",
-		"왼손",
-		"머리",
-		"상의",
-		"하의",
-		"장갑",
-		"신발"
+		"양손", "한 손 장비(양손 장착 가능)", "오른손 장비", "왼손 장비",
+		"머리", "상의", "하의", "장갑", "신발",
+		"반지", "목걸이", "벨트", "팔찌"
 	};
 
-	cout << "\t" << "장비 아이템" << endl << endl;
+	cout << "\t" << itemEquipSlot[equipSlot] << endl;
+
+	cout << endl << endl;
 	cout << "\t" << "아이템 스탯" << endl;
 
 	vector<float> itemStateV = GetItemState();
@@ -73,7 +70,9 @@ void Item_Equipable::PrintItemInfo()
 		index++;
 	}
 
+	cout << endl << "\t" << GetItemExplain() << endl;
 
+	cout << endl << "\t가격 : " << GetPrice() << "골드" << endl;
 
 	cout << "■■■■■■■■■■■■■■■■■■■■■■" << endl;
 

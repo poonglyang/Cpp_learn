@@ -77,6 +77,7 @@ public:
 	/// </summary>
 	/// <param name="id">장비 아이템 id</param>
 	/// <param name="name">장비 아이템 이름</param>
+	/// <param name="price">장비 아이템 가격</param>
 	/// <param name="itemType">장비 아이템 타입</param>
 	/// <param name="hp">장착시 올라가는 hp</param>
 	/// <param name="mp">장착시 올라가는 mp</param>
@@ -90,7 +91,7 @@ public:
 	/// <param name="defenseProbability">장착시 올라가는 방패 막기 확률</param>
 	/// <param name="behaviorSpeed">장착시 올라가는 스피드</param>
 	Item_Equipable(
-		int id, const string& name, int itemType, int equipSlot,
+		int id, const string& name, int price, int itemType, const string& explain, int equipSlot,
 		float hp, float mp, float atk, float critialProbability,
 		float critialDamage, float defIgnore, float def, float hit,
 		float avoid, float defenseProbability, float behaviorSpeed);
@@ -102,6 +103,10 @@ public:
 	/// <returns>아이템 스텟이 들어있는 vector</returns>
 	vector<float> GetItemState();
 
+	/// <summary>
+	/// 장착 슬롯을 반환하는 함수
+	/// </summary>
+	/// <returns>장착 슬롯</returns>
 	int GetEquipSlot();
 
 	/// <summary>
