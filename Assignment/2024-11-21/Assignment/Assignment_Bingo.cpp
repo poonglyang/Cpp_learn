@@ -48,7 +48,6 @@ int main() {
 		
 		playerBingo->SelectNum(comSelect);
 
-
 		PrintBingo(*playerBingo, *comBingo);
 	}
 

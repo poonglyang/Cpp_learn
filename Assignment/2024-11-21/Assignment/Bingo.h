@@ -12,6 +12,8 @@ protected :
 
 	void shuffle(int* arr);
 
+	int arr3[][];
+
 public:
 	Bingo(int size);
 
