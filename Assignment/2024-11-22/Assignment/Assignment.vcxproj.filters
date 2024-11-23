@@ -33,6 +33,12 @@
     <ClInclude Include="Item_Material.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="IState.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventory.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ItemBase.cpp">
@@ -51,6 +57,12 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Item_Material.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="IState.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventory.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

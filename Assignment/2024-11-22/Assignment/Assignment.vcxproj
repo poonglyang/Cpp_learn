@@ -127,6 +127,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Inventory.h" />
+    <ClInclude Include="IState.h" />
     <ClInclude Include="ItemBase.h" />
     <ClInclude Include="ItemData.h" />
     <ClInclude Include="Item_Consumables.h" />
@@ -135,6 +137,8 @@
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Inventory.cpp" />
+    <ClCompile Include="IState.cpp" />
     <ClCompile Include="ItemBase.cpp" />
     <ClCompile Include="ItemData.cpp" />
     <ClCompile Include="Item_Consumables.cpp" />

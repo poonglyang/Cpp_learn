@@ -8,10 +8,14 @@ Item_Material::Item_Material(int id, const string& name, int count, int maxCount
 
 void Item_Material::PrintItemInfo()
 {
+	cout << "■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■" << endl;
+
 	cout << "\t" << GetItemName() << endl << endl;
 
 	cout << "\t" << GetItemExplain() << endl << endl;
 
 	cout << "\t" << "수량 : " << GetItemCount() << endl;
 	cout << "\t" << "가격 : " << GetPrice() << "골드" << endl;
+	cout << "■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■" << endl;
+
 }

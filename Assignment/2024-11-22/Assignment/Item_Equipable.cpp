@@ -32,7 +32,7 @@ int Item_Equipable::GetEquipSlot()
 
 void Item_Equipable::PrintItemInfo()
 {
-	cout << "¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á" << endl;
+	cout << "¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á" << endl;
 	cout << "\t" << this->GetItemName() << endl << endl;
 
 	vector<string> itemEquipSlot = {
@@ -74,7 +74,7 @@ void Item_Equipable::PrintItemInfo()
 
 	cout << endl << "\t°¡°Ý : " << GetPrice() << "°ñµå" << endl;
 
-	cout << "¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á" << endl;
+	cout << "¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á" << endl;
 
 
 }

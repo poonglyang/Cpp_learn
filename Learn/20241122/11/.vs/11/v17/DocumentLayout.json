@@ -1,24 +1,24 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241122\\11\\",
+  "WorkspaceRootPath": "C:\\Users\\MH\\Desktop\\UnrealLearn\\K_learn\\Learn\\20241122\\11\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B85E1EB5-2933-404A-8721-3B481049470D}|11.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241122\\11\\STL.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{B85E1EB5-2933-404A-8721-3B481049470D}|11.vcxproj|C:\\Users\\MH\\Desktop\\UnrealLearn\\K_learn\\Learn\\20241122\\11\\STL.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{B85E1EB5-2933-404A-8721-3B481049470D}|11.vcxproj|solutionrelative:STL.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B85E1EB5-2933-404A-8721-3B481049470D}|11.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241122\\11\\Template01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{B85E1EB5-2933-404A-8721-3B481049470D}|11.vcxproj|C:\\Users\\MH\\Desktop\\UnrealLearn\\K_learn\\Learn\\20241122\\11\\Template01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{B85E1EB5-2933-404A-8721-3B481049470D}|11.vcxproj|solutionrelative:Template01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector||{3B902123-F8A7-4915-9F01-361F908088D0}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B85E1EB5-2933-404A-8721-3B481049470D}|11.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241122\\11\\operatorOverloading.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{B85E1EB5-2933-404A-8721-3B481049470D}|11.vcxproj|C:\\Users\\MH\\Desktop\\UnrealLearn\\K_learn\\Learn\\20241122\\11\\operatorOverloading.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{B85E1EB5-2933-404A-8721-3B481049470D}|11.vcxproj|solutionrelative:operatorOverloading.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B85E1EB5-2933-404A-8721-3B481049470D}|11.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241122\\11\\string.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{B85E1EB5-2933-404A-8721-3B481049470D}|11.vcxproj|C:\\Users\\MH\\Desktop\\UnrealLearn\\K_learn\\Learn\\20241122\\11\\string.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{B85E1EB5-2933-404A-8721-3B481049470D}|11.vcxproj|solutionrelative:string.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -29,12 +29,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -45,18 +41,17 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector",
               "ViewState": "AgIAADgAAAAAAAAAAAAkwEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-11-22T04:42:01.739Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T04:42:01.739Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "STL.cpp",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241122\\11\\STL.cpp",
+              "DocumentMoniker": "C:\\Users\\MH\\Desktop\\UnrealLearn\\K_learn\\Learn\\20241122\\11\\STL.cpp",
               "RelativeDocumentMoniker": "STL.cpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241122\\11\\STL.cpp",
+              "ToolTip": "C:\\Users\\MH\\Desktop\\UnrealLearn\\K_learn\\Learn\\20241122\\11\\STL.cpp",
               "RelativeToolTip": "STL.cpp",
-              "ViewState": "AgIAAJAAAAAAAAAAAAAAAIkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAAAIkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-22T01:56:55.308Z",
               "EditorCaption": ""
@@ -65,35 +60,33 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Template01.cpp",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241122\\11\\Template01.cpp",
+              "DocumentMoniker": "C:\\Users\\MH\\Desktop\\UnrealLearn\\K_learn\\Learn\\20241122\\11\\Template01.cpp",
               "RelativeDocumentMoniker": "Template01.cpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241122\\11\\Template01.cpp",
+              "ToolTip": "C:\\Users\\MH\\Desktop\\UnrealLearn\\K_learn\\Learn\\20241122\\11\\Template01.cpp",
               "RelativeToolTip": "Template01.cpp",
               "ViewState": "AgIAAGoAAAAAAAAAAAAAAEwAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-22T01:24:08.925Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T01:24:08.925Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "operatorOverloading.cpp",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241122\\11\\operatorOverloading.cpp",
+              "DocumentMoniker": "C:\\Users\\MH\\Desktop\\UnrealLearn\\K_learn\\Learn\\20241122\\11\\operatorOverloading.cpp",
               "RelativeDocumentMoniker": "operatorOverloading.cpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241122\\11\\operatorOverloading.cpp",
+              "ToolTip": "C:\\Users\\MH\\Desktop\\UnrealLearn\\K_learn\\Learn\\20241122\\11\\operatorOverloading.cpp",
               "RelativeToolTip": "operatorOverloading.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-22T00:44:17.73Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T00:44:17.73Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "string.cpp",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241122\\11\\string.cpp",
+              "DocumentMoniker": "C:\\Users\\MH\\Desktop\\UnrealLearn\\K_learn\\Learn\\20241122\\11\\string.cpp",
               "RelativeDocumentMoniker": "string.cpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241122\\11\\string.cpp",
+              "ToolTip": "C:\\Users\\MH\\Desktop\\UnrealLearn\\K_learn\\Learn\\20241122\\11\\string.cpp",
               "RelativeToolTip": "string.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
