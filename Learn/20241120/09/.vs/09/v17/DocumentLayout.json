@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241120\\09\\",
+  "WorkspaceRootPath": "C:\\Users\\MH\\Desktop\\UnrealLearn\\K_learn\\Learn\\20241120\\09\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FF49225D-DF9D-4A40-8ECE-121F5414D79C}|09.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241120\\09\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{FF49225D-DF9D-4A40-8ECE-121F5414D79C}|09.vcxproj|C:\\Users\\MH\\Desktop\\UnrealLearn\\K_learn\\Learn\\20241120\\09\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{FF49225D-DF9D-4A40-8ECE-121F5414D79C}|09.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF49225D-DF9D-4A40-8ECE-121F5414D79C}|09.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241120\\09\\Inheritance.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{FF49225D-DF9D-4A40-8ECE-121F5414D79C}|09.vcxproj|C:\\Users\\MH\\Desktop\\UnrealLearn\\K_learn\\Learn\\20241120\\09\\Inheritance.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{FF49225D-DF9D-4A40-8ECE-121F5414D79C}|09.vcxproj|solutionrelative:Inheritance.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -18,19 +18,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Inheritance.cpp",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241120\\09\\Inheritance.cpp",
+              "DocumentMoniker": "C:\\Users\\MH\\Desktop\\UnrealLearn\\K_learn\\Learn\\20241120\\09\\Inheritance.cpp",
               "RelativeDocumentMoniker": "Inheritance.cpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241120\\09\\Inheritance.cpp",
+              "ToolTip": "C:\\Users\\MH\\Desktop\\UnrealLearn\\K_learn\\Learn\\20241120\\09\\Inheritance.cpp",
               "RelativeToolTip": "Inheritance.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -41,11 +37,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241120\\09\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\MH\\Desktop\\UnrealLearn\\K_learn\\Learn\\20241120\\09\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241120\\09\\main.cpp",
+              "ToolTip": "C:\\Users\\MH\\Desktop\\UnrealLearn\\K_learn\\Learn\\20241120\\09\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAK4AAAAAAAAAAAAAAI4AAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-20T04:17:53.913Z",
               "EditorCaption": ""
