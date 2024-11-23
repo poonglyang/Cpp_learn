@@ -33,7 +33,7 @@ int Item_Equipable::GetEquipSlot()
 void Item_Equipable::PrintItemInfo()
 {
 	cout << "■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■" << endl;
-	cout << "\t" << this->GetItemName() << endl << endl;
+	cout << "\t" << name << endl << endl;
 
 	vector<string> itemEquipSlot = {
 		"양손", "한 손 장비(양손 장착 가능)", "오른손 장비", "왼손 장비",
@@ -70,9 +70,9 @@ void Item_Equipable::PrintItemInfo()
 		index++;
 	}
 
-	cout << endl << "\t" << GetItemExplain() << endl;
+	cout << endl << "\t" << explain << endl;
 
-	cout << endl << "\t가격 : " << GetPrice() << "골드" << endl;
+	cout << endl << "\t가격 : " << price << "골드" << endl;
 
 	cout << "■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■" << endl;
 

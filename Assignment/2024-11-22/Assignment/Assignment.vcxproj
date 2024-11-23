@@ -104,6 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -131,6 +132,7 @@
     <ClInclude Include="IState.h" />
     <ClInclude Include="ItemBase.h" />
     <ClInclude Include="ItemData.h" />
+    <ClInclude Include="ItemManager.h" />
     <ClInclude Include="Item_Consumables.h" />
     <ClInclude Include="Item_Equipable.h" />
     <ClInclude Include="Item_Material.h" />
@@ -141,6 +143,7 @@
     <ClCompile Include="IState.cpp" />
     <ClCompile Include="ItemBase.cpp" />
     <ClCompile Include="ItemData.cpp" />
+    <ClCompile Include="ItemManager.cpp" />
     <ClCompile Include="Item_Consumables.cpp" />
     <ClCompile Include="Item_Equipable.cpp" />
     <ClCompile Include="Item_Material.cpp" />

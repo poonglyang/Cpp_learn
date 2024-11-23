@@ -8,7 +8,7 @@ using namespace std;
 
 class ItemBase
 {
-private:
+protected:
 #pragma region 아이템 베이스 관련 변수
 	/// <summary>
 	/// 아이템의 id
@@ -59,6 +59,13 @@ public:
 	/// <param name="maxCount">이 아이템의 최대 크기</param>
 	ItemBase(int id, const string& name, int count, int maxCount, int price, int itemType, const string& explain);
 
+	/// <summary>
+	/// 깊은 복사
+	/// 아이템 자체를 복사하기 위한 것
+	/// </summary>
+	/// <param name="other"></param>
+	ItemBase(const ItemBase& other);
+
 	virtual ~ItemBase();
 
 	/// <summary>
@@ -83,9 +90,10 @@ public:
 	/// 아이템 갯수를 증감하는 함수
 	/// 아이템 증감 + 현재 아이템 < 아이템 최대 수량이면
 	/// 아이템 증감 + 현재 아이템 - 아이템 최대 수량 반환
+	/// 이게 오버로딩 해서 더하는거랑 바꿔야하나 고민이 씨게 됨
 	/// </summary>
 	/// <returns>아이템 초과분</returns>
-	virtual int SetItemCount(int delta);
+	virtual int SetItemCount(int delta, bool isAdd);
 
 	/// <summary>
 	/// 아이템의 최대 중첩 갯수를 반환하는 함수

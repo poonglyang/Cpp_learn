@@ -10,12 +10,12 @@ void Item_Material::PrintItemInfo()
 {
 	cout << "■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■" << endl;
 
-	cout << "\t" << GetItemName() << endl << endl;
+	cout << "\t" << name << endl << endl;
 
-	cout << "\t" << GetItemExplain() << endl << endl;
+	cout << "\t" << explain << endl << endl;
 
-	cout << "\t" << "수량 : " << GetItemCount() << endl;
-	cout << "\t" << "가격 : " << GetPrice() << "골드" << endl;
+	cout << "\t" << "수량 : " << count << endl;
+	cout << "\t" << "가격 : " << price << "골드" << endl;
 	cout << "■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■" << endl;
 
 }

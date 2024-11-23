@@ -3,6 +3,7 @@
 #include <vector>
 #include "ItemBase.h";
 #include "ItemData.h"
+#include "ItemManager.h"
 
 using namespace itemDatas;
 using namespace std;
@@ -54,17 +55,60 @@ protected:
 	/// 재료 아이템 인벤토리 최대 공간
 	/// </summary>
 	int materials_MaxInventoryCapacity;
+
+	ItemManager itemManager;
+
+	int GetItemTypeById(int id);
 public:
 	/// <summary>
-	/// 생성자
+	/// 인벤토리 생성자
 	/// </summary>
-	Inventory();
+	/// <param name="equipable_MaxInventoryCapacity"></param>
+	/// <param name="consumables_MaxInventoryCapacity"></param>
+	/// <param name="materials_MaxInventoryCapacity"></param>
+	Inventory(int equipable_MaxInventoryCapacity, 
+		int consumables_MaxInventoryCapacity, 
+		int materials_MaxInventoryCapacity,
+		ItemManager itemManager);
+
+	/// <summary>
+	/// 특정 아이템이 있는지 반환하는 함수
+	/// </summary>
+	/// <param name="id">아이템 id</param>
+	/// <returns>없으면 0, 있으면 아이템의 갯수를 반환한다</returns>
+	int CountItem(int id);
+
+
+	/// <summary>
+	/// 무기 아이템만 이걸로 받을 수 있음 제발
+	/// </summary>
+	/// <param name="weaponItme">무기 아이템 객체</param>
+	/// <returns>획득 성공일경우 true, 실패일 경우 false</returns>
+	bool PushItem(ItemBase& weaponItme);
+
+	/// <summary>
+	/// 인벤토리에서 같은 아이템이 있는지 확인하고 있을 경우 추가하고 
+	/// 남은 갯수를 반환한다 하는 함수
+	/// </summary>
+	/// <param name="id">아이템 id</param>
+	/// <param name="count">추가할 갯수</param>
+	/// <returns>남은 갯수</returns>
+	template<typename T>
+	int AddItemAndReturnRemaining(int id, int count, vector<T> inventory);
 
 	/// <summary>
 	/// 인벤토리에 아이템을 집어 넣는 함수
+	/// 장비, 잡탬 일경우만 가능하다
 	/// </summary>
 	/// <param name="item">넣을 아이템</param>
-	bool PushItem(ItemBase& item);
+	int PushItem(int id, int count);
+
+	/// <summary>
+	/// id에 해당하는 아이템을 꺼내는 함수
+	/// </summary>
+	/// <param name="id">꺼낼 아이템 id</param>
+	/// <returns>id에 해당하는 아이템</returns>
+	ItemBase PopItem(int id, int count);
 
 };
 
