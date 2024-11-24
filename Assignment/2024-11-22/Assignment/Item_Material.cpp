@@ -6,6 +6,12 @@ Item_Material::Item_Material(int id, const string& name, int count, int maxCount
 
 }
 
+Item_Material::Item_Material(const Item_Material& other)
+	:ItemBase(other.id, other.name, other.count, other.maxCount, other.price, other.itemType, other.explain)
+{
+
+}
+
 void Item_Material::PrintItemInfo()
 {
 	cout << "¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á" << endl;

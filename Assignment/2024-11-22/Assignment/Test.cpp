@@ -1,7 +1,8 @@
 #include <iostream>
-#include "ItemData.h"
+#include "ItemManager.h"
+#include "Inventory.h"
 #include "Item_Equipable.h"
-//#include "Item_Consumables.h"
+#include "Item_Consumables.h"
 #include "Item_Material.h"
 
 using namespace std;
@@ -9,41 +10,29 @@ using namespace itemDatas;
 
 
 int main() {
-	Item_Equipable* equipItem1 = new Item_Equipable(
-		1, "초보자용 나무검", 10, (int)itemDatas::ItemType::Equipable, 
-		"검에 막 입문한 초보자가 쓰기 좋은 나무검",
-		(int)itemDatas::EquipSlot::Weapon_Both_OneHand,
-		20, 0, 5, 1, 5, 0, 0, 5, 0, 0, 0);
+	ItemManager itemManager = ItemManager();
 
-	equipItem1->PrintItemInfo();
+	Inventory* playerInventory = new Inventory(30, 3, 3, itemManager);
 
-	Item_Equipable* equipItem2 = new Item_Equipable(
-		2, "정체 모를 아이템", 99999999,(int)itemDatas::ItemType::Equipable,
-		"신화시대 때 만들어졌을  추측되는 목걸이\n\t부조리하다고 생각될 정도로 많은 능력치를 올린다",
-		(int)itemDatas::EquipSlot::Necklace,
-		10000, 10000, 999, 999, 999, 999, 999, 999, 999, 999, 999);
+	Item_Equipable tempItem = itemManager.GetEquipableItem(1);
 
-	equipItem2->PrintItemInfo();
+	playerInventory->PushItem(&tempItem);
 
-	delete equipItem1;
-	equipItem1 = nullptr;
+	playerInventory->PrintEquipableInventory();
 
-	delete equipItem2;
-	equipItem2 = nullptr;
+	Item_Equipable* temp2 = dynamic_cast<Item_Equipable*>(playerInventory->PopItem(0));
+	cout << "꺼낸 장비 아이템 " << endl;
+	temp2->PrintItemInfo();
+	playerInventory->PrintEquipableInventory();
 
-	Item_Material* misc1 = new Item_Material(
-		3, "깃털", 1, 10, 3, (int)itemDatas::ItemType::Materials, "깃털(잡탬)");
-
-	misc1->PrintItemInfo();
-
-	delete misc1;
-	misc1 = nullptr;
+	int a = playerInventory->PushItem(100001, 100);
+	cout << "들어가고 남은 아이템 갯수 : " << a << endl;
+	playerInventory->PrintConsumableInventory();
 
 
+	playerInventory->PopItem(100001, 20);
+	playerInventory->PrintConsumableInventory();
 
-	/* 나중에 인벤토리 클래스에서 추가할 방식
-	vector<ItemBase> inventory;
-	ItemBase* equipItem = dynamic_cast<ItemBase*>(equipItem1);
-	inventory.push_back(*equipItem);
-	*/
+	delete playerInventory;
+	playerInventory = nullptr;
 }

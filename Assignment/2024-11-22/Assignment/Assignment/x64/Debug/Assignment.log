@@ -1,16 +1,2 @@
 ﻿  Inventory.cpp
-C:\Users\MH\Desktop\UnrealLearn\K_learn\Assignment\2024-11-22\Assignment\Inventory.h(4,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
-  (소스 파일 'Inventory.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\MH\Desktop\UnrealLearn\K_learn\Assignment\2024-11-22\Assignment\Inventory.cpp(105,26): error C2065: 'item': 선언되지 않은 식별자입니다.
-C:\Users\MH\Desktop\UnrealLearn\K_learn\Assignment\2024-11-22\Assignment\Inventory.cpp(115,24): error C2065: 'item': 선언되지 않은 식별자입니다.
-C:\Users\MH\Desktop\UnrealLearn\K_learn\Assignment\2024-11-22\Assignment\Inventory.cpp(149,17): error C2512: 'ItemBase': 사용할 수 있는 적절한 기본 생성자가 없습니다.
-      C:\Users\MH\Desktop\UnrealLearn\K_learn\Assignment\2024-11-22\Assignment\Inventory.cpp(149,17):
-      'ItemBase::ItemBase': 사용할 수 있는 적절한 기본 생성자가 없습니다.
-          C:\Users\MH\Desktop\UnrealLearn\K_learn\Assignment\2024-11-22\Assignment\Inventory.cpp(149,17):
-          인수 목록 '()'을(를) 일치시키는 동안
-  
-  ItemManager.cpp
-  Item_Consumables.cpp
-  Test.cpp
-  코드를 생성하고 있습니다...
+  Assignment.vcxproj -> C:\Users\MH\Desktop\UnrealLearn\K_learn\Assignment\2024-11-22\Assignment\x64\Debug\Assignment.exe

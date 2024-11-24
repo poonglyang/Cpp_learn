@@ -59,11 +59,6 @@ public:
 	/// <param name="maxCount">이 아이템의 최대 크기</param>
 	ItemBase(int id, const string& name, int count, int maxCount, int price, int itemType, const string& explain);
 
-	/// <summary>
-	/// 깊은 복사
-	/// 아이템 자체를 복사하기 위한 것
-	/// </summary>
-	/// <param name="other"></param>
 	ItemBase(const ItemBase& other);
 
 	virtual ~ItemBase();

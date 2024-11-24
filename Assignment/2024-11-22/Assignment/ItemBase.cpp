@@ -11,11 +11,12 @@ ItemBase::ItemBase(int id, const string& name, int count, int maxCount, int pric
 ItemBase::ItemBase(const ItemBase& other)
 {
 	this->id = other.id;
-	this->name = other.id;
-	this->count = 1;
-	this->maxCount = other.id;
+	this->name = other.name;
+	this->count = other.count;
+	this->maxCount = other.maxCount;
 	this->price = other.price;
-
+	this->itemType = other.itemType;
+	this->explain = other.explain;
 }
 
 ItemBase::~ItemBase()
@@ -43,7 +44,7 @@ int ItemBase::SetItemCount(int delta, bool isAdd)
 {
 	if (isAdd) {
 		// 만약 카운트 + delta가 -이거나 0인 경우도 만들어야 한다
-		if (this->count + delta < this->maxCount) {
+		if (this->count + delta > this->maxCount) {
 			// 현재 아이템 갯수 + 아이템 증감값이 아이템 중첩 최대 갯수보다 크다면
 			this->count = this->maxCount;					// 현재 아이템 갯수를 최대 갯수로 바꾸고
 			return this->count + delta - this->maxCount;	// 남은 아이템 갯수 반환

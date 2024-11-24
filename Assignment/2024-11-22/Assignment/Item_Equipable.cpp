@@ -14,6 +14,23 @@ Item_Equipable::Item_Equipable(int id, const string& name, int price, int itemTy
 	// »ý¼ºÀÚ ¿°º´...
 }
 
+Item_Equipable::Item_Equipable(const Item_Equipable& other)
+	: ItemBase(other.id, other.name, other.count, other.maxCount, other.price, other.itemType, other.explain)
+{
+	this->equipSlot = other.equipSlot;
+	this->itemState_Hp = other.itemState_Hp;
+	this->itemState_Mp = other.itemState_Mp;
+	this->itemState_Atk = other.itemState_Atk;
+	this->itemState_CriticalProbability = other.itemState_CriticalProbability;
+	this->itemState_CriticalDamage = other.itemState_CriticalDamage;
+	this->itemState_DefIgnore = other.itemState_DefIgnore;
+	this->itemState_Def = other.itemState_Def;
+	this->itemState_Hit = other.itemState_Hit;
+	this->itemState_Avoid = other.itemState_Avoid;
+	this->itemState_Defense_Probability = other.itemState_Defense_Probability;
+	this->itemState_BehaviorSpeed = other.itemState_BehaviorSpeed;
+}
+
 vector<float> Item_Equipable::GetItemState()
 {
 	vector<float> itemStateV = {

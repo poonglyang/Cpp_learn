@@ -96,6 +96,8 @@ public:
 		float critialDamage, float defIgnore, float def, float hit,
 		float avoid, float defenseProbability, float behaviorSpeed);
 
+	Item_Equipable(const Item_Equipable& other);
+
 public:
 	/// <summary>
 	/// 아이템 스탯을 vector 형태로 반환하는 함수
