@@ -59,6 +59,14 @@ protected:
 	/// </summary>
 	int materials_MaxInventoryCapacity;
 
+	/// <summary>
+	/// 돈
+	/// </summary>
+	int money;
+
+	/// <summary>
+	/// 아이템 메니저
+	/// </summary>
 	ItemManager itemManager;
 
 	int GetItemTypeById(int id);
@@ -147,6 +155,77 @@ public:
 	/// </summary>
 	/// <returns>가득 차있으면 true 아니면 false</returns>
 	bool isMaterialFull();
+
+	/// <summary>
+	/// 소지금을 반환하는 함수
+	/// </summary>
+	/// <returns>소지금</returns>
+	int GetMoney();
+
+	/// <summary>
+	/// 소지금을 설정하는 함수
+	/// </summary>
+	/// <param name="delta"></param>
+	/// <param name="isAdd"></param>
+	void SetMoney(int delta, bool isAdd);
+
+	/// <summary>
+	/// 인벤토리 사이즈 구하기
+	/// </summary>
+	/// <returns></returns>
+	int GetEquipableInventorySize();
+
+	/// <summary>
+	/// 인벤토리 사이즈 구하기
+	/// </summary>
+	/// <returns></returns>
+	int GetConsumableInventorySize();
+
+	/// <summary>
+	/// 인벤토리 사이즈 구하기
+	/// </summary>
+	/// <returns></returns>
+	int GetMaterialInventorySize();
+
+	/// <summary>
+	/// 인덱스를 기반으로 장비 인벤토리의 아이템의 id를 받는 함수
+	/// </summary>
+	/// <returns></returns>
+	int GetEquipableInventoryItemIdByIndex(int index);
+
+	/// <summary>
+	/// 인덱스로 장비 아이템 가격 알아내기
+	/// </summary>
+	/// <param name="index">인덱스</param>
+	/// <returns>인덱스에 해당하는 가격</returns>
+	int GetEquipableInventoryItemPriceByIndex(int index);
+
+	/// <summary>
+	/// 인덱스를 기반으로 소비 인벤토리의 아이템의 id를 받는 함수
+	/// </summary>
+	/// <returns></returns>
+	int GetConsumableInventoryItemIdByIndex(int index);
+
+	/// <summary>
+	/// 인덱스로 가격 알아내기
+	/// </summary>
+	/// <param name="index">인덱스</param>
+	/// <returns>인덱스에 해당하는 가격</returns>
+	int GetConsumableInventoryItemPriceByIndex(int index);
+
+	/// <summary>
+	/// 인덱스를 기반으로 소비 인벤토리의 아이템의 id를 받는 함수
+	/// </summary>
+	/// <returns></returns>
+	int GetMaterialsInventoryItemIdByIndex(int index);
+
+
+	/// <summary>
+	/// 인덱스로 가격 알아내기
+	/// </summary>
+	/// <param name="index">인덱스</param>
+	/// <returns>인덱스에 해당하는 가격</returns>
+	int GetMaterialsInventoryItemPriceByIndex(int index);
 
 	/// <summary>
 	/// 장비칸 출력

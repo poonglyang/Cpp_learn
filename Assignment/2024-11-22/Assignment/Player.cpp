@@ -24,7 +24,7 @@ void Player::Dequip(Item_Equipable*& slot)
 	if (slot == nullptr) {
 		cout << "장착된 장비가 없습니다" << endl;
 	}
-	else if (inventory->isCanDequip()) {
+	else if (!inventory->isCanDequip()) {
 		cout << "장비칸이 꽉 차 장비를 벗을 수 없습니다" << endl;
 	}
 	else {

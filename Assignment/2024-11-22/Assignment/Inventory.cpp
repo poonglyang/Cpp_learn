@@ -26,6 +26,7 @@ Inventory::Inventory(int equipable_MaxInventoryCapacity, int consumables_MaxInve
 	equipable_CurrentInventoryCount = 0;
 	consumables_CurrentInventoryCount = 0;
 	materials_CurrentInventoryCount = 0;
+	money = 0;
 }
 
 int Inventory::CountItem(int id)
@@ -123,7 +124,7 @@ int Inventory::PushItem(int id, int count)
 					Item_Consumables* tempItme = itemManager.GetConsumableItem(id, count);
 
 					consumables.push_back(tempItme);	// 그냥 넣고 끝
-
+					count = 0;
 				}
 			}
 			return count;
@@ -147,13 +148,13 @@ int Inventory::PushItem(int id, int count)
 				if (count > idItemMaxCount) {
 					// 넣을 것이 아이템의 최대 중첩 갯수보다 많다면
 					count -= idItemMaxCount;
-					ItemBase* a = itemManager.GetMaterialItem(id, idItemMaxCount);
+					Item_Material* a = itemManager.GetMaterialItem(id, idItemMaxCount);
 					materials.push_back(a);	// 최대 중첩 갯수만큼 넣고
 					count = PushItem(id, count);	// PushItem 다시하기
 				}
 				else {
 					// 넣을 것이 최대 중첩 갯수보다 적다면
-					ItemBase* a = itemManager.GetMaterialItem(id, count);
+					Item_Material* a = itemManager.GetMaterialItem(id, count);
 					materials.push_back(a);	// 그냥 넣고 끝내는거지~
 				}
 
@@ -253,18 +254,81 @@ bool Inventory::isMaterialFull()
 	return materials.size() < materials_MaxInventoryCapacity ? false : true;
 }
 
+int Inventory::GetMoney()
+{
+	return money;
+}
+
+void Inventory::SetMoney(int delta, bool isAdd)
+{
+	if (isAdd) {
+		money += delta;
+	}
+	else {
+		money = delta;
+	}
+}
+
+int Inventory::GetEquipableInventorySize()
+{
+	return equipable.size();
+}
+
+int Inventory::GetConsumableInventorySize()
+{
+	return consumables.size();
+}
+
+int Inventory::GetMaterialInventorySize()
+{
+	return materials.size();
+}
+
+int Inventory::GetEquipableInventoryItemIdByIndex(int index)
+{
+	return equipable[index]->GetItemId();
+}
+
+int Inventory::GetEquipableInventoryItemPriceByIndex(int index)
+{
+	return equipable[index]->GetPrice();
+}
+
+int Inventory::GetConsumableInventoryItemIdByIndex(int index)
+{
+
+	return consumables[index]->GetItemId();
+}
+
+int Inventory::GetConsumableInventoryItemPriceByIndex(int index)
+{
+	return consumables[index]->GetPrice();
+}
+
+int Inventory::GetMaterialsInventoryItemIdByIndex(int index)
+{
+	return materials[index]->GetItemId();
+}
+
+int Inventory::GetMaterialsInventoryItemPriceByIndex(int index)
+{
+	return materials[index]->GetPrice();
+}
+
 void Inventory::PrintEquipableInventory()
 {
 	cout << "장비 인벤토리" << endl;
+	int count = 0;
 	for (ItemBase* item : equipable) {
 		Item_Equipable* tempItem = dynamic_cast<Item_Equipable*>(item);
 		if (tempItem == nullptr) {
 			cout << "[Error : 장비 인벤토리에 장비가 아닌 아이템이 들어가있음]" << endl;
 		}
 		else {
+			cout << count << ".\t";
 			tempItem->PrintItemInfo();
 		}
-
+		count ++;
 		/*Item_Equipable* temp = (Item_Equipable*)item;
 		temp->PrintItemInfo();*/
 	}
@@ -272,31 +336,34 @@ void Inventory::PrintEquipableInventory()
 
 void Inventory::PrintConsumableInventory()
 {
-	cout << "소비 인벤토리" << endl;
+	int count = 0;
 	for (ItemBase* item : consumables) {
 		Item_Consumables* tempItem = dynamic_cast<Item_Consumables*>(item);
 		if (tempItem == nullptr) {
 			cout << "[Error : 장비 인벤토리에 소비 아이템이 아닌 아이템이 들어가있음]" << endl;
 		}
 		else {
+			cout << "["<<count << "]" << endl;
 			tempItem->PrintItemInfo();
 		}
-
+		count ++;
 	}
 }
 
 void Inventory::PrintMaterialInventory()
 {
 	cout << "장비 인벤토리" << endl;
+	int count = 0;
 	for (ItemBase* item : materials) {
-		Item_Consumables* tempItem = dynamic_cast<Item_Consumables*>(item);
+		Item_Material* tempItem = dynamic_cast<Item_Material*>(item);
 		if (tempItem == nullptr) {
 			cout << "[Error : 장비 인벤토리에 장비가 아닌 아이템이 들어가있음]" << endl;
 		}
 		else {
+			cout << "[" << count << "]" << endl;
 			tempItem->PrintItemInfo();
 		}
-
+		count++;
 		/*Item_Equipable* temp = (Item_Equipable*)item;
 		temp->PrintItemInfo();*/
 	}

@@ -5,6 +5,7 @@
 #include "Item_Equipable.h"
 #include "Item_Consumables.h"
 #include "Item_Material.h"
+#include "ShopBase.h"
 
 using namespace std;
 using namespace itemDatas;
@@ -39,7 +40,14 @@ int main() {
 	playerInventory = nullptr;*/
 
 	Player player = Player(100, 100, 50, 50, 10, 20, 1.2f, 0, 10, 0.8f, 0.2f, 0.3f, 5, itemManager);
+	player.inventory->SetMoney(1000000, false);
+	
+	player.inventory->PushItem(100001, 30);
+	Item_Equipable tempItem = itemManager.GetEquipableItem(1);
 
+	player.inventory->PushItem(&tempItem);
+	
+	/*
 	player.PrintPlayerInfo();
 
 	Item_Equipable tempItem = itemManager.GetEquipableItem(1);
@@ -50,4 +58,23 @@ int main() {
 	player.EquipSelect(0);
 	player.PrintPlayerInfo();
 	player.PrintEquip();
+	player.Dequip((int)itemDatas::EquipSlot::Weapon_Right);
+	player.Dequip((int)itemDatas::EquipSlot::Weapon_Left);
+	player.inventory->PrintEquipableInventory();
+	player.PrintPlayerInfo();
+	player.PrintEquip();
+	*/
+
+	/*ShopBase consumableShop = ShopBase("소모품 상점", (int)itemDatas::ItemType::Consumables, itemManager);
+	consumableShop.PrintSellItem(player.inventory);
+	consumableShop.Buy(player.inventory);
+	player.inventory->PrintConsumableInventory();
+	consumableShop.PrintSellItem(player.inventory);*/
+
+	ShopBase materialShop = ShopBase("재료 상점", (int)itemDatas::ItemType::Materials, itemManager);
+	materialShop.PrintSellItem(player.inventory);
+	materialShop.Sell(player.inventory);
+	player.inventory->PrintConsumableInventory();
+	cout << player.inventory->GetMoney() << endl;
+
 }
