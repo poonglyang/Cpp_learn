@@ -1,4 +1,9 @@
 #pragma once
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
 class IState
 {
 protected:
@@ -269,10 +274,14 @@ public:
 	/// <param name="isAdd">true면 증감, false면 대입</param>
 	virtual void SetBehaviorSpeed(float delta, bool isAdd);
 
+	void SetAllState(vector<float> state, bool isEquip);
+
 	/// <summary>
 	/// 살아있는지 여부를 반환하는 함수
 	/// </summary>
 	/// <returns></returns>
 	bool GetIsAlive() const;
+
+	void PrintState();
 };
 

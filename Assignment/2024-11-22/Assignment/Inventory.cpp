@@ -189,11 +189,15 @@ void Inventory::PopItem(int id, int count)
 				if (item->GetItemCount() <= count) {
 					// 아이템의 갯수가 count보다 적을 때
 					count -= item->GetItemCount();	// count에서 아이템의 갯수를 빼고
+					delete consumables[index];
+					consumables[index] = nullptr;
 					consumables.erase(consumables.begin() + index);	// 없엠
+					--index;
 				}
 				else {
 					// 아이템 갯수가 없엘 것보다 더 많다는 의미이므로
 					item->SetItemCount(-count, true);	// count로 바꿔줌
+					count -= count;
 				}
 			}
 
@@ -208,11 +212,15 @@ void Inventory::PopItem(int id, int count)
 				if (item->GetItemCount() < count) {
 					// 아이템의 갯수가 count보다 적을 때
 					count -= item->GetItemMaxCount();	// count에서 아이템의 갯수를 빼고
+					delete materials[index];
+					materials[index] = nullptr;
 					materials.erase(materials.begin() + index);	// 없엠
+					--index;
 				}
 				else {
 					// 아이템 갯수가 없엘 것보다 더 많다는 의미이므로
 					item->SetItemCount(-count, true);	// count로 바꿔줌
+					count -= count;
 				}
 			}
 
@@ -223,6 +231,26 @@ void Inventory::PopItem(int id, int count)
 		cout << "존재 자체가 안된다고 려차" << endl;
 		break;
 	}
+}
+
+bool Inventory::isEquipableFull()
+{
+	return equipable.size() < equipable_MaxInventoryCapacity ? false : true;
+}
+
+bool Inventory::isCanDequip()
+{
+	return equipable.size() + 1 <= equipable_MaxInventoryCapacity ? true : false;;
+}
+
+bool Inventory::isConsumablesFull()
+{
+	return consumables.size() < consumables_MaxInventoryCapacity ? false : true;
+}
+
+bool Inventory::isMaterialFull()
+{
+	return materials.size() < materials_MaxInventoryCapacity ? false : true;
 }
 
 void Inventory::PrintEquipableInventory()

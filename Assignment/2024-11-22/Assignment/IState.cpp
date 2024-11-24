@@ -231,9 +231,53 @@ void IState::SetBehaviorSpeed(float delta, bool isAdd)
 	}
 }
 
+void IState::SetAllState(vector<float> state, bool isEquip)
+{
+	/*vector<float> itemStateV = {
+		itemState_Hp, itemState_Mp, itemState_Atk, itemState_CriticalProbability,
+		itemState_CriticalDamage, itemState_DefIgnore, itemState_Def, itemState_Hit,
+		itemState_Avoid, itemState_Defense_Probability, itemState_BehaviorSpeed
+	};*/
+	int equip = 1;
+	if (isEquip) {
+		equip = 1;
+	}
+	else {
+		equip = -1;
+	}
+
+	maxHp += state[0] * equip;
+	maxMp += state[1] * equip;
+	atk += state[2] * equip;
+	critialProbability += state[3] * equip;
+	critialDamage += state[4] * equip;
+	defIgnore += state[5] * equip;;
+	def += state[6] * equip;
+	hit += state[7] * equip;
+	avoid += state[8] * equip;
+	defenseProbability += state[9] * equip;
+	behaviorSpeed += state[10] * equip;
+
+}
+
 bool IState::GetIsAlive() const
 {
 	return isAlive;
+}
+
+void IState::PrintState()
+{
+	cout << "HP\t\t\t" << hp << "/" << maxHp << endl;
+	cout << "MP\t\t\t" << mp << "/" << maxMp << endl;
+	cout << "공격력\t\t\t" << atk << endl;
+	cout << "방어력\t\t\t" << def << endl;
+	cout << "크리티컬 확률\t\t" << critialProbability << "%" << endl;
+	cout << "크리티컬 데미지 배율\t" << critialDamage << "%" << endl;
+	cout << "방어력 무시(%)\t\t" << defIgnore << endl;
+	cout << "명중률\t\t\t" << hit << "%" << endl;
+	cout << "회피율\t\t\t" << avoid << "%" << endl;
+	cout << "방패 막기 확률\t\t" << defenseProbability << "%" << endl;
+	cout << "행동력\t\t\t" << behaviorSpeed << endl;
 }
 
 

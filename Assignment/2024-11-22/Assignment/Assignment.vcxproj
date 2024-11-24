@@ -136,6 +136,7 @@
     <ClInclude Include="Item_Consumables.h" />
     <ClInclude Include="Item_Equipable.h" />
     <ClInclude Include="Item_Material.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
@@ -147,6 +148,7 @@
     <ClCompile Include="Item_Consumables.cpp" />
     <ClCompile Include="Item_Equipable.cpp" />
     <ClCompile Include="Item_Material.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="Test.cpp" />
   </ItemGroup>
   <ItemGroup>

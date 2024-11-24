@@ -49,6 +49,9 @@ int ItemBase::SetItemCount(int delta, bool isAdd)
 			this->count = this->maxCount;					// 현재 아이템 갯수를 최대 갯수로 바꾸고
 			return this->count + delta - this->maxCount;	// 남은 아이템 갯수 반환
 		}
+		else {
+			this->count += delta;
+		}
 		return 0;	// 초과된게 없거나 추가된게 없다고
 	}
 	else {

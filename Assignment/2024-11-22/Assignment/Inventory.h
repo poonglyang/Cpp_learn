@@ -114,7 +114,6 @@ public:
 	/// <returns>id에 해당하는 아이템</returns>
 	ItemBase* PopItem(int index);
 
-
 	/// <summary>
 	/// id에 해당하는 아이템을 꺼내는 함수
 	/// 솔직히 꺼낸다기보다는 없에고 소모품과 재료탬은 존재 자체가 정해져 있으니
@@ -125,10 +124,43 @@ public:
 	/// <returns>id에 해당하는 아이템</returns>
 	void PopItem(int id, int count);
 
+	/// <summary>
+	/// 장비칸이 가득 찼는지 확인하는 함수
+	/// </summary>
+	/// <returns>가득 차있으면 true 아니면 false</returns>
+	bool isEquipableFull();
+
+	/// <summary>
+	/// 장비를 벗을 수 있는지 확인하는 함수
+	/// </summary>
+	/// <returns>true면 벗을 수 있음, false면 벗을 수 없음</returns>
+	bool isCanDequip();
+
+	/// <summary>
+	/// 소비칸이 가득 찼는지 확인하는 함수
+	/// </summary>
+	/// <returns>가득 차있으면 true 아니면 false</returns>
+	bool isConsumablesFull();
+
+	/// <summary>
+	/// 재료칸이 가득 차있는지 확인하는 함수
+	/// </summary>
+	/// <returns>가득 차있으면 true 아니면 false</returns>
+	bool isMaterialFull();
+
+	/// <summary>
+	/// 장비칸 출력
+	/// </summary>
 	void PrintEquipableInventory();
 
+	/// <summary>
+	/// 소비칸 출력
+	/// </summary>
 	void PrintConsumableInventory();
 
+	/// <summary>
+	/// 재료칸 출력
+	/// </summary>
 	void PrintMaterialInventory();
 };
 
