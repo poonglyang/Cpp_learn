@@ -163,7 +163,7 @@ int Inventory::PushItem(int id, int count)
 		}
 		break;
 	default:
-		cout << "존재 자체가 안된다고 려차" << endl;
+		cout << "존재 자체가 안된다고" << endl;
 		return 0;
 		break;
 	}
@@ -181,55 +181,98 @@ ItemBase* Inventory::PopItem(int index)
 void Inventory::PopItem(int id, int count)
 {
 	int index = 0;
+	int k = 0;
 	switch (GetItemTypeById(id))
 	{
 	case (int)itemDatas::ItemType::Consumables:
-		for (auto& item : consumables) {
-			if (item->GetItemId() == id) {
+		
+		for (int i = 0; i < consumables.size() - k; i++) {
+			if (consumables[i]->GetItemId() == id) {
 				// id가 같고
-				if (item->GetItemCount() <= count) {
+				if (consumables[i]->GetItemCount() <= count) {
 					// 아이템의 갯수가 count보다 적을 때
-					count -= item->GetItemCount();	// count에서 아이템의 갯수를 빼고
-					delete consumables[index];
-					consumables[index] = nullptr;
-					consumables.erase(consumables.begin() + index);	// 없엠
-					--index;
+					count -= consumables[i]->GetItemCount();	// count에서 아이템의 갯수를 빼고
+					delete consumables[i];
+					consumables[i] = nullptr;
+					consumables.erase(consumables.begin() + i);	// 없엠
+					++k;
+					--i;
 				}
 				else {
 					// 아이템 갯수가 없엘 것보다 더 많다는 의미이므로
-					item->SetItemCount(-count, true);	// count로 바꿔줌
+					consumables[i]->SetItemCount(-count, true);	// count로 바꿔줌
 					count -= count;
 				}
 			}
-
-			index++;
 		}
+
+		//for (auto& item : consumables) {
+		//	if (item->GetItemId() == id) {
+		//		// id가 같고
+		//		if (item->GetItemCount() <= count) {
+		//			// 아이템의 갯수가 count보다 적을 때
+		//			count -= item->GetItemCount();	// count에서 아이템의 갯수를 빼고
+		//			delete consumables[index];
+		//			consumables[index] = nullptr;
+		//			consumables.erase(consumables.begin() + index);	// 없엠
+		//			--index;
+		//		}
+		//		else {
+		//			// 아이템 갯수가 없엘 것보다 더 많다는 의미이므로
+		//			item->SetItemCount(-count, true);	// count로 바꿔줌
+		//			count -= count;
+		//		}
+		//	}
+
+		//	index++;
+		//}
 		break;
 
 	case (int)itemDatas::ItemType::Materials:
-		for (auto& item : materials) {
-			if (item->GetItemId() == id) {
+
+		for (int i = 0; i < materials.size() - k; i++) {
+			if (materials[i]->GetItemId() == id) {
 				// id가 같고
-				if (item->GetItemCount() < count) {
+				if (materials[i]->GetItemCount() <= count) {
 					// 아이템의 갯수가 count보다 적을 때
-					count -= item->GetItemMaxCount();	// count에서 아이템의 갯수를 빼고
-					delete materials[index];
-					materials[index] = nullptr;
-					materials.erase(materials.begin() + index);	// 없엠
-					--index;
+					count -= materials[i]->GetItemCount();		
+					delete materials[i];
+					materials[i] = nullptr;
+					materials.erase(materials.begin() + i);	// 없엠
+					++k;
+					--i;
 				}
 				else {
 					// 아이템 갯수가 없엘 것보다 더 많다는 의미이므로
-					item->SetItemCount(-count, true);	// count로 바꿔줌
+					materials[i]->SetItemCount(-count, true);	
 					count -= count;
 				}
 			}
-
-			index++;
 		}
+
+		//for (auto& item : materials) {
+		//	if (item->GetItemId() == id) {
+		//		// id가 같고
+		//		if (item->GetItemCount() < count) {
+		//			// 아이템의 갯수가 count보다 적을 때
+		//			count -= item->GetItemMaxCount();	// count에서 아이템의 갯수를 빼고
+		//			delete materials[index];
+		//			materials[index] = nullptr;
+		//			materials.erase(materials.begin() + index);	// 없엠
+		//			--index;
+		//		}
+		//		else {
+		//			// 아이템 갯수가 없엘 것보다 더 많다는 의미이므로
+		//			item->SetItemCount(-count, true);	// count로 바꿔줌
+		//			count -= count;
+		//		}
+		//	}
+
+		//	index++;
+		//}
 		break;
 	default:
-		cout << "존재 자체가 안된다고 려차" << endl;
+		cout << "존재 자체가 안된다고" << endl;
 		break;
 	}
 }
@@ -364,8 +407,6 @@ void Inventory::PrintMaterialInventory()
 			tempItem->PrintItemInfo();
 		}
 		count++;
-		/*Item_Equipable* temp = (Item_Equipable*)item;
-		temp->PrintItemInfo();*/
 	}
 }
 

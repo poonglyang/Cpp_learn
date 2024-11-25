@@ -65,16 +65,17 @@ int main() {
 	player.PrintEquip();
 	*/
 
-	/*ShopBase consumableShop = ShopBase("소모품 상점", (int)itemDatas::ItemType::Consumables, itemManager);
+	ShopBase consumableShop = ShopBase("소모품 상점", (int)itemDatas::ItemType::Consumables, itemManager);
 	consumableShop.PrintSellItem(player.inventory);
 	consumableShop.Buy(player.inventory);
 	player.inventory->PrintConsumableInventory();
-	consumableShop.PrintSellItem(player.inventory);*/
+	consumableShop.PrintSellItem(player.inventory);
 
-	ShopBase materialShop = ShopBase("재료 상점", (int)itemDatas::ItemType::Materials, itemManager);
+	/*ShopBase materialShop = ShopBase("재료 상점", (int)itemDatas::ItemType::Materials, itemManager);
 	materialShop.PrintSellItem(player.inventory);
 	materialShop.Sell(player.inventory);
 	player.inventory->PrintConsumableInventory();
-	cout << player.inventory->GetMoney() << endl;
+	player.inventory->PrintEquipableInventory();
+	cout << player.inventory->GetMoney() << endl;*/
 
 }
