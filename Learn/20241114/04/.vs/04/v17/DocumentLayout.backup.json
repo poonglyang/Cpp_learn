@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241114\\04\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9FFAF850-FDEF-4221-98B1-7C469A8D229B}|04.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241114\\04\\Array2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9FFAF850-FDEF-4221-98B1-7C469A8D229B}|04.vcxproj|solutionrelative:Array2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{9FFAF850-FDEF-4221-98B1-7C469A8D229B}|04.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241114\\04\\namespace.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9FFAF850-FDEF-4221-98B1-7C469A8D229B}|04.vcxproj|solutionrelative:namespace.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9FFAF850-FDEF-4221-98B1-7C469A8D229B}|04.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241114\\04\\Array3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9FFAF850-FDEF-4221-98B1-7C469A8D229B}|04.vcxproj|solutionrelative:Array3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FFAF850-FDEF-4221-98B1-7C469A8D229B}|04.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241114\\04\\namespace.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9FFAF850-FDEF-4221-98B1-7C469A8D229B}|04.vcxproj|solutionrelative:namespace.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{9FFAF850-FDEF-4221-98B1-7C469A8D229B}|04.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241114\\04\\Array2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9FFAF850-FDEF-4221-98B1-7C469A8D229B}|04.vcxproj|solutionrelative:Array2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9FFAF850-FDEF-4221-98B1-7C469A8D229B}|04.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241114\\04\\Array.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,13 +34,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "namespace.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241114\\04\\namespace.cpp",
               "RelativeDocumentMoniker": "namespace.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241114\\04\\namespace.cpp",
               "RelativeToolTip": "namespace.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-14T02:49:45.172Z",
               "EditorCaption": ""
@@ -53,20 +53,20 @@
               "RelativeDocumentMoniker": "Array3.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241114\\04\\Array3.cpp",
               "RelativeToolTip": "Array3.cpp",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAlwHIAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAHkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-14T02:02:34.56Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Array2.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241114\\04\\Array2.cpp",
               "RelativeDocumentMoniker": "Array2.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241114\\04\\Array2.cpp",
               "RelativeToolTip": "Array2.cpp",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAEIAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAEIAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-14T01:23:11.226Z",
               "EditorCaption": ""
@@ -79,7 +79,7 @@
               "RelativeDocumentMoniker": "Array.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241114\\04\\Array.cpp",
               "RelativeToolTip": "Array.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-14T00:16:42.238Z",
               "EditorCaption": ""

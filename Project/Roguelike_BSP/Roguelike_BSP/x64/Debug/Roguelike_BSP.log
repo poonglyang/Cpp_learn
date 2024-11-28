@@ -1,0 +1,4 @@
+﻿  Node.cpp
+C:\Users\user\Desktop\CppFIle\K_learn\Project\Roguelike_BSP\Node.h(4,10): error C1083: 포함 파일을 열 수 없습니다. 'namespace.cpp': No such file or directory
+  (소스 파일 'Node.cpp'을(를) 컴파일하는 중)
+  

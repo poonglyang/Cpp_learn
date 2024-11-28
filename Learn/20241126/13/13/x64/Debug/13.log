@@ -1,0 +1,7 @@
+﻿  main.cpp
+C:\Users\user\Desktop\CppFIle\K_learn\Learn\20241126\13\main.cpp(68,2): warning C4091: 'extern ': 변수를 선언하지 않으면 'CountClass' 왼쪽은 무시됩니다.
+  test.cpp
+  test2.cpp
+  코드를 생성하고 있습니다...
+test.obj : error LNK2005: main이(가) main.obj에 이미 정의되어 있습니다.
+C:\Users\user\Desktop\CppFIle\K_learn\Learn\20241126\13\x64\Debug\13.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.

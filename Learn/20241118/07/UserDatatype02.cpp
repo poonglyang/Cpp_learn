@@ -30,7 +30,7 @@ enum Direction {
 	Up = 4,		// 4
 	Down,		// 5
 	Front,		// 6
-	Back		// 7
+	Back,		// 7
 };
 
 /// <summary>
@@ -63,6 +63,7 @@ Character GetCharacter(int n) {
 
 int main() {
 	ColorEnum a = Red;
+	ColorEnum b = 2;
 
 	/*std::cout << ColorEnum::Red << std::endl;
 	std::cout << ColorEnum::Green << std::endl;
