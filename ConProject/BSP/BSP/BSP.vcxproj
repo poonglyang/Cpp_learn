@@ -128,13 +128,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BSP.cpp" />
+    <ClCompile Include="CooridorsGenerator.cpp" />
+    <ClCompile Include="CorridorNode.cpp" />
+    <ClCompile Include="DungeonGenerator.cpp" />
+    <ClCompile Include="Line.cpp" />
     <ClCompile Include="namespace.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="RoomGenerator.cpp" />
     <ClCompile Include="RoomNode.cpp" />
     <ClCompile Include="StructureHelper.cpp" />
+    <ClCompile Include="Test01.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BSP.h" />
+    <ClInclude Include="CooridorsGenerator.h" />
+    <ClInclude Include="CorridorNode.h" />
+    <ClInclude Include="DungeonGenerator.h" />
+    <ClInclude Include="Line.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="RoomGenerator.h" />
     <ClInclude Include="RoomNode.h" />

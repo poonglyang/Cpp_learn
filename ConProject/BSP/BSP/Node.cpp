@@ -1,5 +1,10 @@
 #include "Node.h"
 
+Node::Node()
+{
+    parent = nullptr;
+}
+
 Node::Node(Node* parentNode) //: parent(&parentNode)
 {
     if (parentNode != nullptr) {
@@ -40,7 +45,7 @@ void Node::SetParent(Node* parent)
     this->parent = parent;
 }
 
-bool Node::GetIsVisited()
+bool Node::GetIsVisited() const
 {
     return isVisited;
 }
@@ -50,7 +55,7 @@ void Node::SetIsVisited(bool set)
     isVisited = set;
 }
 
-Vector2Int Node::GetBottomLeftCorner()
+Vector2Int Node::GetBottomLeftCorner() const
 {
     return bottomLeftCorner;
 }
@@ -60,13 +65,13 @@ void Node::SetBottomLeftCorner(Vector2Int vector2)
     bottomLeftCorner = vector2;
 }
 
-void Node::SetBottomLeftCorner(int x, int y)
+void Node::SetBottomLeftCorner(int x, int y) 
 {
     bottomLeftCorner.x = x;
     bottomLeftCorner.y = y;
 }
 
-Vector2Int Node::GetBottomRightCorner()
+Vector2Int Node::GetBottomRightCorner() const
 {
     return bottomRightCorner;
 }
@@ -82,7 +87,7 @@ void Node::SetBottomRightCorner(int x, int y)
     bottomRightCorner.y = y;
 }
 
-Vector2Int Node::GetTopRightCorner()
+Vector2Int Node::GetTopRightCorner() const
 {
     return topRightCorner;
 }
@@ -98,7 +103,7 @@ void Node::SetTopRightCorner(int x, int y)
     topRightCorner.y = y;
 }
 
-Vector2Int Node::GetTopLeftCorner()
+Vector2Int Node::GetTopLeftCorner() const
 {
     return topLeftCorner;
 }
@@ -114,7 +119,7 @@ void Node::SetTopLeftCorner(int x, int y)
     topLeftCorner.y = y;
 }
 
-int Node::GetTreeIndex()
+int Node::GetTreeIndex() const
 {
     return treeIndex;
 }
@@ -123,3 +128,5 @@ void Node::SetTreeIndex(int index)
 {
     treeIndex = index;
 }
+
+

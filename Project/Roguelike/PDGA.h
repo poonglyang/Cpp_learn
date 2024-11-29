@@ -51,25 +51,6 @@ public:
 	/// <returns>Vector2Int로 이루어진 무작위 점</returns>
 	Vector2Int GetRandomPointInCircle(int width, int height);
 
-	/*
-	void SeparateRooms(){
-
-        foreach (Room room in rooms) {
-
-            //Debug.Log (room);
-            Vector3 oldPos = room.GetPosition ();
-            Vector3 separation = computeSeparation (room);
-            //Debug.Log (separation);
-            Vector3 newPos = new Vector3 
-                (oldPos.x += separation.x, oldPos.y, 
-                oldPos.z += separation.z);
-            room.SetPosition (newPos);
-            //Debug.Log (room);
-
-        }
-
-    }
-    */
     
 	/// <summary>
 	/// 생성된 방들을 겹치지 않게 넓게 흩뿌리는 함수
@@ -78,33 +59,6 @@ public:
 	void SeparateRooms(vector<Room>& rooms);
 
 
-    /*
-    Vector3 computeSeparation(Room agent) {
-
-        int neighbours = 0;
-        Vector3 v = new Vector3 ();
-
-        foreach (Room room in rooms) {
-            if (room != agent) {
-                if (agent.TooCloseTo (room)) {
-                    v.x += Difference(room, agent, "x");
-                    v.z += Difference(room, agent, "z");
-                    neighbours++;
-                }
-            }
-        }
-        if (neighbours == 0)
-            return v;
-
-        v.x /= neighbours;
-        v.z /= neighbours;
-        v.x *= -1;
-        v.z *= -1;
-        v.Normalize ();
-        return v;
-
-    }
-    */
 
     /// <summary>
     /// 방을 안겹치게 하는 함수
@@ -113,37 +67,6 @@ public:
     /// <param name="rooms">방들</param>
     /// <returns>안겹치는 중앙 점</returns>
     Vector2Int computeSeparation(Room& agent, vector<Room>& rooms);
-
-    /*
-    float Difference(Room room, Room agent, string type){
-
-        switch (type) {
-
-        case "x":
-            float xBottom = 
-                (room.GetPosition ().x + room.GetSize ().x / 2) 
-                - (agent.GetPosition ().x - agent.GetSize ().x / 2);
-
-            float xTop = 
-            (agent.GetPosition ().x + agent.GetSize ().x / 2) 
-            - (room.GetPosition ().x - room.GetSize ().x / 2);
-
-            return xBottom > 0 ? xBottom : xTop;
-            break;
-
-        case "z":
-            float xRight= (room.GetPosition ().z + room.GetSize ().z / 2) 
-            - (agent.GetPosition ().z - agent.GetSize ().z / 2);
-            float xLeft= (agent.GetPosition ().z + agent.GetSize ().z / 2) 
-            - (room.GetPosition ().z - room.GetSize ().z / 2);
-            return xRight > 0 ? xRight : xLeft;
-        default:
-            return 0;
-            break;
-
-        }
-    }
-	*/
 
     /// <summary>
     /// 방과 방이 방을 조정하도록 하는 좌표값을 반환하는 함수
@@ -154,6 +77,8 @@ public:
     /// <returns></returns>
     double Difference(Room room, Room agent, int type);
 
+	bool SeperateRooms2(std::vector<Room>& rooms) const;
+
 	/// <summary>
 	/// 맵 생성
 	/// </summary>
@@ -161,5 +86,7 @@ public:
 
 
     void PrintDungeon();
+
+	void PrintDungeon(vector<Room> rooms);
 };
 

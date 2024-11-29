@@ -1,0 +1,16 @@
+﻿  PDGA.cpp
+C:\Users\user\Desktop\CppFIle\K_learn\Project\Roguelike\PDGA.cpp(54,9): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\CppFIle\K_learn\Project\Roguelike\PDGA.cpp(49,9): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\CppFIle\K_learn\Project\Roguelike\PDGA.cpp(72,9): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\CppFIle\K_learn\Project\Roguelike\PDGA.cpp(67,9): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Room.cpp
+C:\Users\user\Desktop\CppFIle\K_learn\Project\Roguelike\Room.cpp(14,17): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\CppFIle\K_learn\Project\Roguelike\Room.cpp(13,17): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\CppFIle\K_learn\Project\Roguelike\Room.cpp(18,17): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\CppFIle\K_learn\Project\Roguelike\Room.cpp(17,17): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\CppFIle\K_learn\Project\Roguelike\Room.cpp(44,17): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\CppFIle\K_learn\Project\Roguelike\Room.cpp(43,17): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\CppFIle\K_learn\Project\Roguelike\Room.cpp(48,17): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\CppFIle\K_learn\Project\Roguelike\Room.cpp(47,17): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  코드를 생성하고 있습니다...
+  Roguelike.vcxproj -> C:\Users\user\Desktop\CppFIle\K_learn\Project\Roguelike\x64\Debug\Roguelike.exe

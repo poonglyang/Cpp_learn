@@ -27,6 +27,8 @@ protected:
 public:
 	vector<Node*> childrenNode;
 
+	Node();
+
 	Node(Node* parentNode);
 
 	bool operator==(const Node& other);
@@ -43,36 +45,38 @@ public:
 
 
 
-	bool GetIsVisited();
+	bool GetIsVisited() const;
 
 	void SetIsVisited(bool set);
 
-	Vector2Int GetBottomLeftCorner();
+	Vector2Int GetBottomLeftCorner() const;
 
 	void SetBottomLeftCorner(Vector2Int vector2);
 
 	void SetBottomLeftCorner(int x, int y);
 
-	Vector2Int GetBottomRightCorner();
+	Vector2Int GetBottomRightCorner() const;
 
 	void SetBottomRightCorner(Vector2Int vector2);
 
 	void SetBottomRightCorner(int x, int y);
 
-	Vector2Int GetTopRightCorner();
+	Vector2Int GetTopRightCorner() const;
 
 	void SetTopRightCorner(Vector2Int vector2);
 
 	void SetTopRightCorner(int x, int y);
 
-	Vector2Int GetTopLeftCorner();
+	Vector2Int GetTopLeftCorner() const;
 
 	void SetTopLeftCorner(Vector2Int vector2);
 
 	void SetTopLeftCorner(int x, int y);
 
-	int GetTreeIndex();
+	int GetTreeIndex() const;
 
 	void SetTreeIndex(int index);
+
+	
 };
 

@@ -20,10 +20,10 @@ Room::Room(Vector2Int middlePoint,
 
 bool Room::IsRoomOverlap(Room otherRoom)
 {
-	return !(rightDownPoint.x < otherRoom.leftUpPoint.x ||
-		leftUpPoint.x > otherRoom.rightDownPoint.x ||
-		rightDownPoint.y > otherRoom.leftUpPoint.y ||
-		leftUpPoint.y < otherRoom.rightDownPoint.y);
+	return !(rightDownPoint.x < otherRoom.leftUpPoint.x 
+		|| leftUpPoint.x > otherRoom.rightDownPoint.x 
+		|| rightDownPoint.y > otherRoom.leftUpPoint.y 
+		|| leftUpPoint.y < otherRoom.rightDownPoint.y);
 }
 
 bool Room::TooCloseTo(Room room)
