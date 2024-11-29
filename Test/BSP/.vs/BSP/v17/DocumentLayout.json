@@ -1,58 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Test\\BSP\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{479E0190-B981-48DB-8ED8-FF4FE8D60D10}|BSP.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Test\\BSP\\Node.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{479E0190-B981-48DB-8ED8-FF4FE8D60D10}|BSP.vcxproj|solutionrelative:Node.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{479E0190-B981-48DB-8ED8-FF4FE8D60D10}|BSP.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Test\\BSP\\BSP_Generator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{479E0190-B981-48DB-8ED8-FF4FE8D60D10}|BSP.vcxproj|solutionrelative:BSP_Generator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\MH\\Desktop\\UnrealLearn\\K_learn\\Test\\BSP\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Node.cpp",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Test\\BSP\\Node.cpp",
-              "RelativeDocumentMoniker": "Node.cpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Test\\BSP\\Node.cpp",
-              "RelativeToolTip": "Node.cpp",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-18T08:58:48.123Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BSP_Generator.cpp",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Test\\BSP\\BSP_Generator.cpp",
-              "RelativeDocumentMoniker": "BSP_Generator.cpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Test\\BSP\\BSP_Generator.cpp",
-              "RelativeToolTip": "BSP_Generator.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-13T07:27:24.667Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
