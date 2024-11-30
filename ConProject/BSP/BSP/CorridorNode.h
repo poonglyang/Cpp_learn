@@ -58,7 +58,9 @@ private:
 public:
     CorridorNode() {};
 
+
     CorridorNode(Node* node1, Node* node2, int corridorWidth);
 
+    ~CorridorNode();
 };
 

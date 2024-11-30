@@ -57,8 +57,10 @@ StructureHelper::RelativePosition CorridorNode::CheckPositionStructure2AgainstSt
 
 double CorridorNode::CalcuateAngle(Vector2 middlePointStructure1Temp, Vector2 middlePointStructure2Temp)
 {
-    return Mathf::Atan2(middlePointStructure2Temp.y - middlePointStructure1Temp.y,
-        middlePointStructure2Temp.x - middlePointStructure1Temp.x) * Mathf::Rad2Deg;
+    double deltaY = middlePointStructure2Temp.y - middlePointStructure1Temp.y;
+    double deltaX = middlePointStructure2Temp.x - middlePointStructure1Temp.x;
+
+    return atan2(deltaY, deltaX) * Mathf::Rad2Deg;
 }
 
 bool CorridorNode::CompareByTopRightCornerX(const Node* node1, const Node* node2)
@@ -172,6 +174,8 @@ void CorridorNode::ProcessRoomInRelationRightOrLeft(Node* structure1, Node* stru
 
     bottomLeftCorner = Vector2Int(leftStructure->GetBottomRightCorner().x, y);                            // 이 길의 좌하단 코너 좌표
     topRightCorner = Vector2Int(rightStructure->GetTopLeftCorner().x, y + corridorWidth);                 // 이 길의 우상단 코너 좌표
+    bottomRightCorner = Vector2Int(topRightCorner.x, bottomLeftCorner.y);
+    topLeftCorner = Vector2Int(bottomLeftCorner.x, topRightCorner.y);
 
 }
 
@@ -320,6 +324,8 @@ void CorridorNode::ProcessRoomInRelationUpOrDown(Node* structure1, Node* structu
     }
     bottomLeftCorner = Vector2Int(x, bottomStructure->GetTopLeftCorner().y);
     topRightCorner = Vector2Int(x + corridorWidth, topStructure->GetBottomRightCorner().y);
+    bottomRightCorner = Vector2Int(topRightCorner.x, bottomLeftCorner.y);
+    topLeftCorner = Vector2Int(bottomLeftCorner.x, topRightCorner.y);
 }
 
 int CorridorNode::GetValidYForNeighourUpDown(Vector2Int bottomNodeLeft, Vector2Int bottomNodeRight, Vector2Int topNodeLeft, Vector2Int topNodeRight)
@@ -363,4 +369,10 @@ CorridorNode::CorridorNode(Node* node1, Node* node2, int corridorWidth)
     this->structure2 = node2;
     this->corridorWidth = corridorWidth;
     GenerateCorridor();
+}
+
+CorridorNode::~CorridorNode()
+{
+    delete structure1;
+    delete structure2;
 }

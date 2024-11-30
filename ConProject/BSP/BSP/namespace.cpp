@@ -153,7 +153,7 @@ namespace myMath {
 		};
 
 		static double Atan2(double x, double y) {
-			return atan2(y, x);
+			return atan2(x, y);
 		}
 
 	};

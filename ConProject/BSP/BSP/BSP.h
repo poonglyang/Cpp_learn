@@ -36,6 +36,7 @@ private:
     /// <param name="roomLengthMin">방 세로 최소 크기</param>
     /// <returns></returns>
     Vector2Int GetCoordinatesFororientation(Orientation orientation, Vector2Int bottomLeftAreaCorner, Vector2Int topRightAreaCorner, int roomWidthMin, int roomLengthMin);
+
 public:
     /// <summary>
     /// BSP 생성자 
@@ -43,6 +44,9 @@ public:
     /// <param name="dungeonWidth">던전 가로 길이</param>
     /// <param name="dungeonLength">던전 세로 길이</param>
     BSP(int dungeonWidth, int dungeonLength);
+    
+    ~BSP();
+
 
     RoomNode* GetRootNode();
 

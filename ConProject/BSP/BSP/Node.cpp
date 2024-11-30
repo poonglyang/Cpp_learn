@@ -2,7 +2,13 @@
 
 Node::Node()
 {
+    delete parent;
     parent = nullptr;
+
+    for (Node* node : childrenNode) {
+        delete node;
+        node = nullptr;
+    }
 }
 
 Node::Node(Node* parentNode) //: parent(&parentNode)

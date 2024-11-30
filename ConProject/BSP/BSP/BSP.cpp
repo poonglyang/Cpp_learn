@@ -93,6 +93,11 @@ BSP::BSP(int dungeonWidth, int dungeonLength)
 	this->rootNode = new RoomNode(nullptr, Vector2Int(0, 0), Vector2Int(dungeonWidth, dungeonLength), 0);
 }
 
+BSP::~BSP()
+{
+    delete rootNode;
+}
+
 RoomNode* BSP::GetRootNode()
 {
 	return rootNode;
