@@ -1,8 +1,8 @@
-﻿  BSP.cpp
+﻿  Game.cpp
 C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(9,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
-  (소스 파일 'BSP.cpp'을(를) 컴파일하는 중)
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
   
 C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(14,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
-  (소스 파일 'BSP.cpp'을(를) 컴파일하는 중)
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
   
   BSP.vcxproj -> C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\x64\Debug\BSP.exe

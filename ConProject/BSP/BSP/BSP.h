@@ -60,5 +60,8 @@ public:
     vector<RoomNode*> PrepareNodesCollection(int maxIterations, int roomWidthMin, int roomLengthMin);
 
     void AddNewNodeToCollections(vector<RoomNode*>& listToReturn, queue<RoomNode*>& graph, RoomNode* node);
+
+
+
 };
 

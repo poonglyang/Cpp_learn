@@ -1,5 +1,12 @@
 #include "Node.h"
 
+Vector2Int Node::GetMiddlePoint()
+{
+
+
+    return Vector2Int();
+}
+
 Node::Node()
 {
     delete parent;

@@ -9,7 +9,6 @@ using namespace itemDatas;
 class Player : public IState
 {
 protected:
-	
 
 #pragma region Àåºñ ÀåÂø
 	/// <summary>

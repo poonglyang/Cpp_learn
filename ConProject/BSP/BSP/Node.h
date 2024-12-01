@@ -12,7 +12,6 @@ class Node
 protected:
 	Node* parent;
 
-
 	bool isVisited;
 	
 	Vector2Int bottomLeftCorner;
@@ -24,6 +23,8 @@ protected:
 	Vector2Int topLeftCorner;
 	
 	int treeIndex;
+
+	Vector2Int GetMiddlePoint();
 public:
 	vector<Node*> childrenNode;
 

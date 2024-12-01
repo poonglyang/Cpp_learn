@@ -41,7 +41,8 @@ vector<Node*> DungeonGenerator::CalculateDungeon(int maxIterations, int roomWidt
     vector<RoomNode*> roomList = roomGenerator.GenerateRoomInGivenSpaces(roomSpaces, roomBottomCornerModifier, roomTopCornerModifier, roomOffset);
 
     CooridorsGenerator cooridorsGenerator = CooridorsGenerator();
-    auto cooridorList = cooridorsGenerator.CreateCooridoer(allNodesCollection, corridorWidth);
+    cooridorVector = cooridorsGenerator.CreateCooridoer(allNodesCollection, corridorWidth);
+    //auto cooridorList = cooridorsGenerator.CreateCooridoer(allNodesCollection, corridorWidth);
 
     /*vector<Node> returnVector;
     for (auto& roomNode : roomList) {
@@ -54,29 +55,32 @@ vector<Node*> DungeonGenerator::CalculateDungeon(int maxIterations, int roomWidt
         returnVector.push_back(roomNode);
     }
 
-    for (Node* node : cooridorList) {
-        
-        // 안겹치는 방만 추출하니 문제가 생김
-        // 그럼 전부 안겹치는 방이 나올때까지 계속 돌리면 되지 않을까?
-        /*bool isOverlap = false;
+    //for (Node* node : cooridorList) {
+    //    
+    //    // 안겹치는 방만 추출하니 문제가 생김
+    //    // 그럼 전부 안겹치는 방이 나올때까지 계속 돌리면 되지 않을까?
+    //    /*bool isOverlap = false;
 
-        for (auto roomNode : roomList) {
-            if (IsInternalOverlap(node, roomNode)) {
-                isOverlap = true;
-                break;
-            }
-        }
+    //    for (auto roomNode : roomList) {
+    //        if (IsInternalOverlap(node, roomNode)) {
+    //            isOverlap = true;
+    //            break;
+    //        }
+    //    }
 
-        if (!isOverlap) {
-            returnVector.push_back(node);
-        }*/
+    //    if (!isOverlap) {
+    //        returnVector.push_back(node);
+    //    }*/
 
-        returnVector.push_back(node);
-    }
-
-
+    //    returnVector.push_back(node);
+    //}
 
     return returnVector;
 
     //return returnVector;
+}
+
+vector<Node*> DungeonGenerator::GetCooridorVector()
+{
+    return cooridorVector;
 }

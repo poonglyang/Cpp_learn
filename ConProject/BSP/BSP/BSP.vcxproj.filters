@@ -13,6 +13,21 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\Inventory">
+      <UniqueIdentifier>{63107262-f06c-4fb5-9c00-66c999c8c9b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Inventory">
+      <UniqueIdentifier>{fc323b15-b9dd-4a83-a576-641c0ba604d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MapTile">
+      <UniqueIdentifier>{ab0fa730-14ef-4c81-ac71-3eea6282c29c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MapTile\cppFile">
+      <UniqueIdentifier>{0bb0c770-69c5-4d93-8eec-e9d94ff9ad89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MapTile\headerFile">
+      <UniqueIdentifier>{b56606e7-9ad3-4887-a054-eeb72540c044}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="namespace.cpp">
@@ -48,6 +63,15 @@
     <ClCompile Include="CooridorsGenerator.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="TileBase.cpp">
+      <Filter>MapTile\cppFile</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Node.h">
@@ -75,6 +99,12 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="CooridorsGenerator.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="TileBase.h">
+      <Filter>MapTile\headerFile</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
