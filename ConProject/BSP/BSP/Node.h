@@ -78,6 +78,6 @@ public:
 
 	void SetTreeIndex(int index);
 
-	
+	Vector2Int GetNodeMiddlePoint();
 };
 

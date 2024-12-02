@@ -7,7 +7,7 @@ RoomNode::RoomNode(Node* parentNode, Vector2Int bottomLeftCorner, Vector2Int top
 	this->topRightCorner = topRightCorner;
 	this->bottomRightCorner = Vector2Int(topRightCorner.x, bottomLeftCorner.y);
 	this->topLeftCorner = Vector2Int(bottomLeftCorner.x, topRightCorner.y);
-	this->treeIndex = treeIndex;
+	this->treeIndex = index;
 }
 
 int RoomNode::GetWidth()

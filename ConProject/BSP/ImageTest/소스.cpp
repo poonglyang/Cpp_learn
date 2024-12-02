@@ -14,29 +14,35 @@ void SetConsoleColor(int color) {
 
 int main() {
 
-	for (int i = 0; i < 72 + 51; i++) {
+	/*for (int i = 0; i < 72 + 51; i++) {
 		cout << "¡á";
-	}
+	}*/
 	cout << endl << endl;
 
-	const int arrsize = 8;
+	const int arrsize = 3;
 
-	int arr[arrsize][arrsize] = {
-		{0,0,0,1,1,0,0,1},
-		{0,0,0,1,1,0,1,0},
-		{1,1,1,1,1,1,0,0},
-		{1,0,1,1,1,1,0,0},
-		{1,0,1,1,1,1,0,0},
-		{0,0,1,0,0,1,0,0},
-		{0,0,1,0,0,1,0,0},
-		{0,0,1,0,0,1,0,0},
+	/*int arr[arrsize][arrsize] = {
+		{0,110,0},
+		{111,115,112},
+		{113,116,114}
 	};
+	*/
+	int arr[arrsize][arrsize] = {
+		{14,11,15},
+		{0,16,0},
+		{0,16,0},
+	};
+	/*int arr[arrsize][arrsize] = {
+		{10,11,12},
+		{0,13,0},
+		{0,13,0},
+	};*/
 
 	cout << endl;
 
 	int visArr[123][123] = {};
 
-	for (int i = 0; i < 8; i++) {
+	/*for (int i = 0; i < 8; i++) {
 		for (int j = 0; j < 8; j++) {
 			visArr[i][j] = arr[i][j];
 		}
@@ -46,9 +52,9 @@ int main() {
 		for (int j = 0; j < 8; j++) {
 			visArr[i][9+j] = arr[i][j];
 		}
-	}
+	}*/
 
-	for (int i = 0; i < 123; i++) {
+	/*for (int i = 0; i < 123; i++) {
 		for (int j = 0; j < 123; j++) {
 			if (visArr[i][j] == 0) {
 				cout << "  ";
@@ -62,9 +68,9 @@ int main() {
 				cout << "¡á";
 			}
 		}
-	}
+	}*/
 
-	/*for (int i = 0; i < arrsize; i++) {
+	for (int i = 0; i < arrsize; i++) {
 		for (int j = 0; j < arrsize; j++) {
 			if (arr[i][j] == 0) {
 				cout << "  ";
@@ -77,9 +83,56 @@ int main() {
 				setcolor(7, 0);
 				cout << "¡á";
 			}
+			else if (arr[i][j] == 110) {
+				cout << "¡ã";
+			}
+			else if (arr[i][j] == 111) {
+				cout << "¢×";
+			}
+			else if (arr[i][j] == 112) {
+				cout << "¢Ù";
+			}
+			else if (arr[i][j] == 113)
+			{
+				cout << "| ";
+			}
+			else if (arr[i][j] == 114)
+			{
+				cout << " |";
+			}
+			else if (arr[i][j] == 115)
+			{
+				cout << "£¤";
+			}
+			else if (arr[i][j] == 116)
+			{
+				cout << "¦±";
+			}
+			else if (arr[i][j] == 10) {
+				cout << "¦Å¦¬";
+			}
+			else if (arr[i][j] == 11) {
+				cout << "¦¬";
+			}
+			else if (arr[i][j] == 12) {
+				cout << "¦¬¦Ã";
+			}
+			else if (arr[i][j] == 13) {
+				cout << "¡Þ";
+			}
+			else if (arr[i][j] == 14) {
+				cout << "¡ø";
+			}
+			else if (arr[i][j] == 15) {
+				cout << " ¡ù";
+			}
+			else if (arr[i][j] == 16) {
+				cout << "¡ß";
+			}
+
 		}
 		cout << endl;
-	}*/
+	}
 
 
 }

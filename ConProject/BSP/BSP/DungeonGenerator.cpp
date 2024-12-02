@@ -18,6 +18,7 @@ bool DungeonGenerator::IsInternalOverlap(Node* node1, Node* node2)
 
 DungeonGenerator::~DungeonGenerator()
 {
+    
 }
 
 vector<Node*> DungeonGenerator::CalculateDungeon(int maxIterations, int roomWidthMin, int roomLengthMin, float roomBottomCornerModifier, float roomTopCornerModifier, int roomOffset, int corridorWidth)
@@ -43,12 +44,6 @@ vector<Node*> DungeonGenerator::CalculateDungeon(int maxIterations, int roomWidt
     CooridorsGenerator cooridorsGenerator = CooridorsGenerator();
     cooridorVector = cooridorsGenerator.CreateCooridoer(allNodesCollection, corridorWidth);
     //auto cooridorList = cooridorsGenerator.CreateCooridoer(allNodesCollection, corridorWidth);
-
-    /*vector<Node> returnVector;
-    for (auto& roomNode : roomList) {
-        returnVector.push_back(static_cast<Node>(roomNode));
-    }*/
-
 
     vector<Node*> returnVector;
     for (auto roomNode : roomList) {
@@ -76,8 +71,6 @@ vector<Node*> DungeonGenerator::CalculateDungeon(int maxIterations, int roomWidt
     //}
 
     return returnVector;
-
-    //return returnVector;
 }
 
 vector<Node*> DungeonGenerator::GetCooridorVector()

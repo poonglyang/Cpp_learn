@@ -142,4 +142,11 @@ void Node::SetTreeIndex(int index)
     treeIndex = index;
 }
 
+Vector2Int Node::GetNodeMiddlePoint()
+{
+    Vector2Int sum = bottomLeftCorner + topRightCorner;
+    Vector2Int returnValue = Vector2Int(sum.x / 2, sum.y / 2);
+    return returnValue;
+}
+
 

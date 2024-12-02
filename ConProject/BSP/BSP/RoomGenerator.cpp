@@ -26,6 +26,7 @@ vector<RoomNode*> RoomGenerator::GenerateRoomInGivenSpaces(vector<Node*> roomSpa
         space->SetBottomRightCorner(Vector2Int(newTopRightPoint.x, newBottomLeftPoint.y));
         space->SetTopLeftCorner(Vector2Int(newBottomLeftPoint.x, newTopRightPoint.y));
 
+
         vectorToReturn.push_back(static_cast<RoomNode*>(space));  // 다 했으면 넣어
     }
 

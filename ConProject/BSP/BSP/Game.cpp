@@ -14,10 +14,208 @@ int Game::getCommand()
 	return -1;
 }
 
+void Game::deleteConsolCursor()
+{
+	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE); // 콘솔 핸들 가져오기
+	CONSOLE_CURSOR_INFO cursorInfo = { 0, };
+	cursorInfo.bVisible = FALSE;
+	cursorInfo.dwSize = 1; //커서 굵기 (1 ~ 100)
+	SetConsoleCursorInfo(hConsole, &cursorInfo);
+}
+
 void Game::SetConsoleColor(int color)
 {
 	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE); // 콘솔 핸들 가져오기
 	SetConsoleTextAttribute(hConsole, color);         // 색상 변경
+}
+
+void Game::SetMonster()
+{
+	// 몬스터 세팅
+	for (int i = 0; i < dungeon.size(); i++) {
+		int roomIndex = -1;
+		for (Node* room : dungeon[i].rooms) {
+			roomIndex++;
+			if (roomIndex == shopPosRoomIndex[i]) {
+				continue;
+			}
+			
+			int monsterCount = GetMonsterCount(room);	// 생성할 몬스터 갯수
+
+			int count = 0;
+
+			while (count <= monsterCount ) {
+				int monsterPosX = Mathf::Random::Range(
+					room->GetBottomLeftCorner().x + 1, 
+					room->GetBottomRightCorner().x
+				);
+				int monsterPosy = Mathf::Random::Range(
+					room->GetBottomLeftCorner().y + 1, 
+					room->GetTopLeftCorner().y
+				);
+
+				if (dungeon[i].map.mapArr[monsterPosy][monsterPosX] == 0) {
+					dungeon[i].map.mapArr[monsterPosy][monsterPosX] = 4;
+					count++;
+				}
+			}
+		}
+	}
+}
+
+void Game::SetBox()
+{
+
+}
+
+void Game::SetStatues()
+{
+	for (int i = 0; i < dungeon.size(); i++) {
+		vector<Node*> canPlaceStatues;	// 조각상을 놓을 수 있는 방을 뽑음
+		for (Node* room : dungeon[i].rooms) {
+			if (room->GetTopRightCorner().x - room->GetBottomLeftCorner().x > 7
+				&& room->GetTopRightCorner().y - room->GetBottomLeftCorner().y > 7
+				&& dungeon[i].rooms[upStairsRoomIndex[i]] != room	// 위로 올라가는 계단 없는 방
+				&& dungeon[i].rooms[0] != room						// 아래로 내려가는 계단 없는 방
+				&& dungeon[i].rooms[shopPosRoomIndex[i]] != room
+				&& dungeon[i].rooms[wellPosRoomIndex[i]] != room) {
+				canPlaceStatues.push_back(room);
+			}
+		}
+
+		if (canPlaceStatues.size() > 0) {
+			int roomIndex = Mathf::Random::Range(0, canPlaceStatues.size());
+
+			Vector2Int statuesPoint = canPlaceStatues[roomIndex]->GetNodeMiddlePoint();
+
+			statusPoint.push_back(statuesPoint);
+			statusPosRoomIndex.push_back(roomIndex);
+
+			if (rand() % 2) {
+				dungeon[i].map.mapArr[statuesPoint.y - 1][statuesPoint.x - 1] = 50;
+				dungeon[i].map.mapArr[statuesPoint.y - 1][statuesPoint.x] = 51;
+				dungeon[i].map.mapArr[statuesPoint.y - 1][statuesPoint.x + 1] = 52;
+				dungeon[i].map.mapArr[statuesPoint.y][statuesPoint.x] = 13;
+				dungeon[i].map.mapArr[statuesPoint.y + 1][statuesPoint.x] = 13;
+			}
+			else {
+				dungeon[i].map.mapArr[statuesPoint.y - 1][statuesPoint.x - 1] = 54;
+				dungeon[i].map.mapArr[statuesPoint.y - 1][statuesPoint.x] = 51;
+				dungeon[i].map.mapArr[statuesPoint.y - 1][statuesPoint.x + 1] = 55;
+				dungeon[i].map.mapArr[statuesPoint.y][statuesPoint.x] = 56;
+				dungeon[i].map.mapArr[statuesPoint.y + 1][statuesPoint.x] = 56;
+			}
+		}
+		else {
+			statusPoint.push_back(Vector2Int::zero());
+			statusPosRoomIndex.push_back(-999);
+		}
+	}
+}
+
+void Game::SetWell()
+{
+	for (int i = 0; i < dungeonFloor; i++) {
+		int wellRoomIndex;
+		while (true) {
+			wellRoomIndex = Mathf::Random::Range(1, dungeon[i].rooms.size());
+			if (wellRoomIndex != shopPosRoomIndex[i]) {
+				wellPosRoomIndex.push_back(wellRoomIndex);
+				break;
+			}
+		}
+	
+		Vector2Int shopPoint = dungeon[i].rooms[wellRoomIndex]->GetNodeMiddlePoint();
+		if (dungeon[i].map.mapArr[shopPoint.y][shopPoint.x] == 0) {
+			dungeon[i].map.mapArr[shopPoint.y][shopPoint.x] = 12;
+		}
+	}
+}
+
+void Game::SetStairAndShop()
+{	
+	for (int i = 0; i < dungeon.size(); i++) {
+		// 아래층으로 내려가는 계단 세팅 (플레이어의 시작 위치 주변에 내려가는 계단이 있음)
+		if (dungeon[i].map.mapArr[playerLocation[i].x][playerLocation[i].y + 1] == 0) {
+			dungeon[i].map.mapArr[playerLocation[i].x][playerLocation[i].y + 1] = 2;
+			downStairs.push_back(pair(
+				Vector2Int(playerLocation[i].x, playerLocation[i].y + 1),
+				playerLocation[i])
+			);
+		}
+		else if (dungeon[i].map.mapArr[playerLocation[i].x - 1][playerLocation[i].y] == 0) {
+			dungeon[i].map.mapArr[playerLocation[i].x - 1][playerLocation[i].y] = 2;
+			downStairs.push_back(pair(
+				Vector2Int(playerLocation[i].x - 1, playerLocation[i].y),
+				playerLocation[i])
+			);
+		}
+		else if (dungeon[i].map.mapArr[playerLocation[i].x + 1][playerLocation[i].y] == 0) {
+			dungeon[i].map.mapArr[playerLocation[i].x + 1][playerLocation[i].y] = 2;
+			downStairs.push_back(pair(
+				Vector2Int(playerLocation[i].x + 1, playerLocation[i].y),
+				playerLocation[i])
+			);
+		}
+		else {
+			dungeon[i].map.mapArr[playerLocation[i].x][playerLocation[i].y - 1] = 2;
+			downStairs.push_back(
+				pair(Vector2Int(playerLocation[i].x, playerLocation[i].y - 1),
+					playerLocation[i])
+			);
+		}
+
+		// 윗 층으로 올라가는 계단 위치 세팅
+		int upStairsRoomIndex = Mathf::Random::Range(1, dungeon[i].rooms.size());
+		Vector2Int upStairsPos = PlaceStructuresInRoom(dungeon[i].rooms[upStairsRoomIndex]);
+		dungeon[i].map.mapArr[upStairsPos.x][upStairsPos.y] = 3;
+		upStairs.push_back(upStairsPos);
+		this->upStairsRoomIndex.push_back(upStairsRoomIndex);
+
+		// 상점 세팅
+		// 트리 인덱스가 가장 큰 곳(길이 하나밖에 없는 곳)에 상점을 놓기위해
+		int treeIndex = 0;
+		for (Node* room : dungeon[i].rooms) {		// 트리 인덱스가 가장 큰 것을 뽑음
+			if (room->GetTreeIndex() > treeIndex) {
+				treeIndex = room->GetTreeIndex();
+			}
+		}
+
+		vector<Node*> canPlaceShopNode;	// 상점을 배치할 수 있는 방들을 뽑음
+		for (Node* room : dungeon[i].rooms) {
+			if (room->GetTreeIndex() == treeIndex
+				&& room->GetTopRightCorner().x - room->GetBottomLeftCorner().x > 7
+				&& room->GetTopRightCorner().y - room->GetBottomLeftCorner().y > 7
+				&& dungeon[i].rooms[upStairsRoomIndex] != room
+				&& dungeon[i].rooms[0] != room) {
+				canPlaceShopNode.push_back(room);
+			}
+		}
+
+		if (canPlaceShopNode.size() > 0) {
+			int roomIndex = Mathf::Random::Range(0, canPlaceShopNode.size());
+			
+			Vector2Int shopPoint = canPlaceShopNode[roomIndex]->GetNodeMiddlePoint();
+
+			shopPos.push_back(shopPoint);
+			shopPosRoomIndex.push_back(roomIndex);
+
+			dungeon[i].map.mapArr[shopPoint.y - 1][shopPoint.x] = 110;
+			dungeon[i].map.mapArr[shopPoint.y][shopPoint.x - 1] = 111;
+			dungeon[i].map.mapArr[shopPoint.y][shopPoint.x] = 115;
+			dungeon[i].map.mapArr[shopPoint.y][shopPoint.x + 1] = 112;
+			dungeon[i].map.mapArr[shopPoint.y + 1][shopPoint.x - 1] = 113;
+			dungeon[i].map.mapArr[shopPoint.y + 1][shopPoint.x] = 116;
+			dungeon[i].map.mapArr[shopPoint.y + 1][shopPoint.x + 1] = 114;
+		}
+		else {
+			shopPos.push_back(Vector2Int::zero());
+			shopPosRoomIndex.push_back(-999);
+		}
+	}
+	// 랜덤 음수대 세팅
+
+	// 상자 세팅
 }
 
 void Game::CreateMap()
@@ -30,174 +228,193 @@ void Game::CreateMap()
 	
 	int testPrint[dungeonSize][dungeonSize] = { 0 };
 
-	Map map;
-
-	playerLocation.push_back(
-		Vector2Int(
-			Mathf::Random::Range(
-				rooms[0]->GetBottomLeftCorner().y + 1, 
-				rooms[0]->GetTopLeftCorner().y)
-			, 
-			Mathf::Random::Range(
-				rooms[0]->GetBottomLeftCorner().x + 1,
-				rooms[0]->GetBottomRightCorner().x)
-		)
+	// 맵의 첫 번째 방에서 플레이어의 시작 위치를 세팅한다
+	Vector2Int playerloc = Vector2Int(
+		Mathf::Random::Range(
+			rooms[0]->GetBottomLeftCorner().y + 1,
+			rooms[0]->GetTopLeftCorner().y)
+		,
+		Mathf::Random::Range(
+			rooms[0]->GetBottomLeftCorner().x + 1,
+			rooms[0]->GetBottomRightCorner().x)
 	);
 
-	for (Node* cooridor : cooridorVector) {
-		for (int i = cooridor->GetBottomLeftCorner().x; i <= cooridor->GetBottomRightCorner().x; i++) {
-			map.mapArr[cooridor->GetBottomLeftCorner().y][i] = 7;
-			map.mapArr[cooridor->GetTopLeftCorner().y][i] = 7;
-		}
+	playerLocation.push_back(playerloc);
 
-		for (int j = cooridor->GetBottomLeftCorner().y; j <= cooridor->GetTopLeftCorner().y; j++) {
-			map.mapArr[j][cooridor->GetBottomLeftCorner().x] = 7;
-			map.mapArr[j][cooridor->GetBottomRightCorner().x] = 7;
-		}
+	DungeonFloor dungeonFloor;
+
+	Map map = playHelper::CreateMap(rooms, cooridorVector);
+
+
+	dungeonFloor.rooms = rooms;
+	dungeonFloor.cooridorVector = cooridorVector;
+	dungeonFloor.map = map;
+
+	dungeon.push_back(dungeonFloor);
+}
+
+bool Game::CheckPlayerGoShop()
+{
+	if (shopPos[currentFloor - 1] == Vector2Int::zero()) {
+		return false;
+	}
+	else if (
+				(
+					shopPos[currentFloor - 1].x == playerLocation[currentFloor - 1].y
+					&&
+					shopPos[currentFloor - 1].y - 1 == playerLocation[currentFloor - 1].x
+			)
+			||	(
+				shopPos[currentFloor - 1].x - 1 == playerLocation[currentFloor - 1].y
+				&&
+				shopPos[currentFloor - 1].y == playerLocation[currentFloor-1].x
+			)  
+			|| (
+				shopPos[currentFloor - 1].x == playerLocation[currentFloor - 1].y
+				&&
+				shopPos[currentFloor - 1].y == playerLocation[currentFloor - 1].x
+			)
+			|| (
+				shopPos[currentFloor - 1].x + 1 == playerLocation[currentFloor - 1].y
+				&&
+				shopPos[currentFloor - 1].y == playerLocation[currentFloor - 1].x
+			)
+			|| (
+				shopPos[currentFloor - 1].x - 1 == playerLocation[currentFloor - 1].y
+				&&
+				shopPos[currentFloor - 1].y + 1 == playerLocation[currentFloor - 1].x
+			)
+			|| (
+				shopPos[currentFloor - 1].x == playerLocation[currentFloor - 1].y
+				&&
+				shopPos[currentFloor - 1].y + 1 == playerLocation[currentFloor - 1].x
+			)
+			|| (
+				shopPos[currentFloor - 1].x + 1 == playerLocation[currentFloor - 1].y
+				&&
+				shopPos[currentFloor - 1].y + 1 == playerLocation[currentFloor - 1].x
+			)
+		)
+	{
+		return true;
+	}
+	return false;
+}
+
+void Game::EventCheck()
+{
+	if (downStairs[currentFloor - 1].first == playerLocation[currentFloor - 1]) {
+		//ChangeFloor();
+		GoDown();
+	}
+	else if (upStairs[currentFloor - 1] == playerLocation[currentFloor - 1]) {
+		GoUp();
+	}
+	else if (CheckPlayerGoShop()) {
+		GoShop();
 	}
 
-	for (Node* room : rooms) {
-
-		vector<pair<int, int>> notWall;
-
-		// 가로 벽 치기
-		for (int i = room->GetBottomLeftCorner().x; i <= room->GetBottomRightCorner().x; i++) {
-
-			if (map.mapArr[room->GetBottomLeftCorner().y][i] == 7) {
-				// 만약 기존에 벽이였으면
-				notWall.push_back(pair<int, int>(room->GetBottomLeftCorner().y, i)); // 벽이 아님에 넣어주고 (길이랑 겹쳤기 때문)
-				map.mapArr[room->GetBottomLeftCorner().y][i] = 0;	// 
-			}
-			else
-			{
-				bool canWall = true;
-				for (pair<int, int> point : notWall) {
-					if (point.first == room->GetBottomLeftCorner().y && point.second == i) {
-						canWall = false;
-						break;
-					}
-				}
-				if (canWall) {
-					map.mapArr[room->GetBottomLeftCorner().y][i] = 7;
-				}
-			}
-
-			if (map.mapArr[room->GetTopLeftCorner().y][i] == 7) {
-				notWall.push_back(pair<int, int>(room->GetTopLeftCorner().y, i));
-				map.mapArr[room->GetTopLeftCorner().y][i] = 0;
-			}
-			else {
-				bool canWall = true;
-				for (pair<int, int> point : notWall) {
-					if (point.first == room->GetTopLeftCorner().y && point.second == i) {
-						canWall = false;
-						break;
-					}
-				}
-				if (canWall) {
-					map.mapArr[room->GetTopLeftCorner().y][i] = 7;
-				}
-
-			}
-		}
-
-
-		// 세로 벽 치기
-		for (int j = room->GetBottomLeftCorner().y; j <= room->GetTopLeftCorner().y; j++) {
-			if (map.mapArr[j][room->GetBottomLeftCorner().x] == 7) {
-				notWall.push_back(pair<int, int>(j, room->GetBottomLeftCorner().x));
-				map.mapArr[j][room->GetBottomLeftCorner().x] = 0;
-
-			}
-			else {
-				bool canWall = true;
-				for (pair<int, int> point : notWall) {
-					if (point.first == j && point.second == room->GetBottomLeftCorner().x) {
-						canWall = false;
-						break;
-					}
-				}
-				if (canWall) {
-					map.mapArr[j][room->GetBottomLeftCorner().x] = 7;
-				}
-			}
-
-			if (map.mapArr[j][room->GetBottomRightCorner().x] == 7) {
-				notWall.push_back(pair<int, int>(j, room->GetBottomRightCorner().x));
-				map.mapArr[j][room->GetBottomRightCorner().x] = 0;
-			}
-			else {
-				bool canWall = true;
-				for (pair<int, int> point : notWall) {
-					if (point.first == j && point.second == room->GetBottomRightCorner().x) {
-						canWall = false;
-						break;
-					}
-				}
-				if (canWall) {
-					map.mapArr[j][room->GetBottomRightCorner().x] = 7;
-				}
-			}
-
-			map.mapArr[room->GetBottomLeftCorner().y][room->GetBottomLeftCorner().x] = 7;
-			map.mapArr[room->GetBottomRightCorner().y][room->GetBottomRightCorner().x] = 7;
-			map.mapArr[room->GetTopLeftCorner().y][room->GetTopLeftCorner().x] = 7;
-			map.mapArr[room->GetTopRightCorner().y][room->GetTopRightCorner().x] = 7;
-		}
-
-
-
-		// 가로 길이 이상하게 방 안에 있는 경우가 있으므로 방안의 것을 0으로 초기화
-		for (int i = room->GetBottomLeftCorner().x + 1; i < room->GetBottomRightCorner().x; i++) {
-			for (int j = room->GetBottomLeftCorner().y + 1; j < room->GetTopLeftCorner().y; j++) {
-				map.mapArr[j][i] = 0;
-			}
-		}
+ 	else {
+		PlayerMove();
 	}
-
-	for (Node* cooridor : cooridorVector) {
-		for (int i = cooridor->GetBottomLeftCorner().x + 1; i < cooridor->GetBottomRightCorner().x; i++) {
-			for (int j = cooridor->GetBottomLeftCorner().y + 1; j < cooridor->GetTopLeftCorner().y; j++) {
-				map.mapArr[j][i] = 0;
-			}
-		}
-	}
-
-	allRooms.push_back(rooms);
-	allcooridorVector.push_back(cooridorVector);
-	allMapArr.push_back(map);
-
-	//allMapArr.push_back(&testPrint);
 }
 
 void Game::RenderScene()
 {
 	system("cls");
 
+	cout << "[ " << currentFloor << "층 ]" << endl;
+
+	// 화면에 출력할 임시 배열 (맵)
 	int tempArr[dungeonSize][dungeonSize] = { 0 };
 
+	// 임시 배열에 옮겨 놓기
 	for (int i = 0; i < dungeonSize; i++) {
 		for (int j = 0; j < dungeonSize; j++) {
-			tempArr[i][j] = allMapArr[currentFloor - 1].mapArr[i][j];
+			tempArr[i][j] = dungeon[currentFloor - 1].map.mapArr[i][j];
 		}
 	}
 
+	// 플레이어 위치를 가져와 놓기
 	tempArr[playerLocation[currentFloor-1].x][playerLocation[currentFloor-1].y] = 9;
-	cout << "플레이어 위치 : (" << playerLocation[currentFloor - 1].x
-		<< ", " << playerLocation[currentFloor - 1].y << ")" << endl;
+	
 
+	/*cout << "플레이어 위치 : (" << playerLocation[currentFloor - 1].x
+		<< ", " << playerLocation[currentFloor - 1].y << ")" << endl;*/
+
+
+	// 출력
 	for (int i = 0; i < dungeonSize; i++) {
 		for (int j = 0; j < dungeonSize; j++) {
 			switch (tempArr[i][j]) {
 			case 0:
-				cout << "□";
+				cout << "  ";
+				break;
+			case 2:
+				SetConsoleColor(FOREGROUND_GREEN);
+				cout << "▧";
+				break;
+			case 3:
+				SetConsoleColor(FOREGROUND_GREEN);
+				cout << "▨";
+				break;
+			case 4:
+				SetConsoleColor(FOREGROUND_RED);
+				cout << "♤";
 				break;
 			case 7:
 				cout << "■";
 				break;
 			case 9:
-				SetConsoleColor(FOREGROUND_RED);
+				SetConsoleColor(11);
 				cout << "◎";
+				break;
+			case 12:
+				SetConsoleColor(FOREGROUND_BLUE);
+				cout << "Ħ";
+				break;
+			case 50:
+				cout << "┖━";
+				break;
+			case 51:
+				cout << "━";
+				break;
+			case 52:
+				cout << "━┚";
+				break;
+			case 53:
+				cout << "◇";
+				break;
+			case 54:
+				cout << "⊂";
+				break;
+			case 55:
+				cout << " ⊃";
+				break;
+			case 56:
+				cout << "◆";
+				break;
+			case 110:
+				cout << "▲";
+				break;
+			case 111:
+				cout << "↙";
+				break;
+			case 112:
+				cout << "↘";
+				break;
+			case 113:
+				cout << "| ";
+				break;
+			case 114:
+				cout << " |";
+				break;			
+			case 115:
+				SetConsoleColor(6);
+				cout << "＄";
+				break;			
+			case 116:
+				cout << "＿";
 				break;
 			}
 
@@ -205,88 +422,102 @@ void Game::RenderScene()
 		}
 		cout << endl;
 	}
+
+	EventCheck();
 }
+
+void Game::PlayerMove()
+{
+	oldPlayerLoc = playerLocation[currentFloor - 1];
+
+	int key = getCommand();
+
+	switch (key) {
+	case 119:
+		if (dungeon[currentFloor - 1].map.mapArr[playerLocation[currentFloor - 1].x - 1][playerLocation[currentFloor - 1].y] != 7) {
+			playerLocation[currentFloor - 1].x -= 1;
+		}
+		break;
+	case 115:
+		if (dungeon[currentFloor - 1].map.mapArr[playerLocation[currentFloor - 1].x + 1][playerLocation[currentFloor - 1].y] != 7) {
+			playerLocation[currentFloor - 1].x += 1;
+		}
+		break;
+	case 100:
+		if (dungeon[currentFloor - 1].map.mapArr[playerLocation[currentFloor - 1].x][playerLocation[currentFloor - 1].y + 1] != 7) {
+			playerLocation[currentFloor - 1].y += 1;
+		}
+		break;
+	case 97:
+		if (dungeon[currentFloor - 1].map.mapArr[playerLocation[currentFloor - 1].x][playerLocation[currentFloor - 1].y - 1] != 7) {
+			playerLocation[currentFloor - 1].y += -1;
+		}
+		break;
+	}
+}
+
+void Game::GoUp()
+{
+	if (currentFloor >= dungeonFloor) {
+		cout << "더이상 올라갈 수 없습니다" << endl;
+		Sleep(500);
+		playerLocation[currentFloor - 1] = oldPlayerLoc;
+	}
+	else {
+		playerLocation[currentFloor - 1] = oldPlayerLoc;
+		currentFloor += 1;
+		playerLocation[currentFloor - 1] = downStairs[currentFloor - 1].second;
+	}
+}
+
+void Game::GoDown()
+{
+	if (currentFloor - 1 <= 0) {
+		cout << "더이상 내려갈 수 없습니다" << endl;
+		Sleep(500);
+		playerLocation[currentFloor - 1] = oldPlayerLoc;
+	}
+	else {
+		playerLocation[currentFloor - 1] = oldPlayerLoc;
+		currentFloor -= 1;
+	}
+}
+
+void Game::GoShop()
+{
+	cout << "상점에 들어왔습니다" << endl;
+	cout << "상점에 나왔습니다" << endl;
+	Sleep(500);
+	playerLocation[currentFloor - 1] = oldPlayerLoc;
+}
+
+
 
 Game::Game(int dungeonFloor) :dungeonFloor(dungeonFloor)
 {
+	deleteConsolCursor();
+
+	isGameOver = false;
 	currentFloor = 1;
-	CreateMap();
-	CreateMap();
-	CreateMap();
-	CreateMap();
-	CreateMap();
+
+	for (int i = 0; i < dungeonFloor; i++) {
+		CreateMap();
+	}
+
+	SetStairAndShop();
+	SetWell();
+	SetStatues();
+	SetBox();
+	SetMonster();
 }
 
 void Game::GameStart()
 {
-	
-
-	bool isGameOver = false;
-
 	while (true) {
 		if (isGameOver) {
 			break;
 		}
 
 		RenderScene();
-
-		int key = getCommand();
-
-		switch (key) {
-		case 119:
-			if (allMapArr[currentFloor - 1].mapArr[playerLocation[currentFloor - 1].x - 1 ][playerLocation[currentFloor - 1].y] == 0) {
-				playerLocation[currentFloor - 1].x -= 1;
-			}
-			break;
-		case 115:
-			if (allMapArr[currentFloor - 1].mapArr[playerLocation[currentFloor - 1].x + 1][playerLocation[currentFloor - 1].y] == 0) {
-				playerLocation[currentFloor - 1].x += 1;
-			}
-			break;
-		case 100:
-			if (allMapArr[currentFloor - 1].mapArr[playerLocation[currentFloor - 1].x][playerLocation[currentFloor - 1].y + 1] == 0) {
-				playerLocation[currentFloor - 1].y += 1;
-			}
-			break;
-		case 97:
-			if (allMapArr[currentFloor - 1].mapArr[playerLocation[currentFloor - 1].x][playerLocation[currentFloor - 1].y - 1] == 0) {
-				playerLocation[currentFloor - 1].y += -1;
-			}
-			break;
-		}
-
-
-		/*int select;
-		cout << "[몇층으로 이동하시겠습니까? (현재 " << currentFloor << "층]" << endl;
-		cout << "1. 위로, 2. 아래로, 3. 종료 : ";
-
-		cin >> select;
-
-		switch (select) {
-		case 1:
-			if (currentFloor - 1 >= 4) {
-				cout << "더이상 올라거나 내려갈 수 없습니다" << endl;
-			}
-			else {
-				currentFloor += 1;
-			}
-			break;
-		case 2:
-			if (currentFloor - 1 <= 0) {
-				cout << "더이상 올라거나 내려갈 수 없습니다" << endl;
-			}
-			else {
-				currentFloor -= 1;
-			}
-			break;
-
-		case 3:
-			isGameOver = true;
-			break;
-
-		defalut :
-			cout << "유효한 값이 아닙니다 " << endl;
-			break;
-		}*/
 	}
 }

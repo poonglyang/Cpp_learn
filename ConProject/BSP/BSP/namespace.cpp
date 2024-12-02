@@ -158,7 +158,3 @@ namespace myMath {
 
 	};
 }
-
-namespace Color {
-
-}

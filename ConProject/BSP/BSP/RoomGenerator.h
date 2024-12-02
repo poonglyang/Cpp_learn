@@ -4,6 +4,7 @@
 
 using namespace StructureHelper;
 
+
 class RoomGenerator
 {
 private:

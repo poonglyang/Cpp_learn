@@ -1,8 +1,42 @@
 ﻿  Game.cpp
-C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(9,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\StructureHelper.h(14,3): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
   (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
   
-C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(14,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\StructureHelper.h(22,3): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
   (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
   
-  BSP.vcxproj -> C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\x64\Debug\BSP.exe
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\StructureHelper.h(123,3): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::Map' 왼쪽은 무시됩니다.
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\StructureHelper.h(131,3): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::DungeonFloor' 왼쪽은 무시됩니다.
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\Game.cpp(87,64): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\Game.cpp(121,65): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\Game.cpp(169,72): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\Game.cpp(196,65): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  main.cpp
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\StructureHelper.h(14,3): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\StructureHelper.h(22,3): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\StructureHelper.h(123,3): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::Map' 왼쪽은 무시됩니다.
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\StructureHelper.h(131,3): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::DungeonFloor' 왼쪽은 무시됩니다.
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\main.cpp(4,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  C/C++ 코드 분석을 실행하고 있습니다...
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\StructureHelper.h(14,3): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\StructureHelper.h(22,3): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\StructureHelper.h(123,3): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::Map' 왼쪽은 무시됩니다.
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\StructureHelper.h(131,3): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::DungeonFloor' 왼쪽은 무시됩니다.
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\StructureHelper.h(14,3): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\StructureHelper.h(22,3): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\StructureHelper.h(123,3): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::Map' 왼쪽은 무시됩니다.
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\StructureHelper.h(131,3): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::DungeonFloor' 왼쪽은 무시됩니다.
+  코드를 생성하고 있습니다...
+  BSP.vcxproj -> C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\x64\Debug\BSP.exe
