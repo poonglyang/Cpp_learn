@@ -27,13 +27,19 @@
     <ClCompile Include="StatuesDot.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="fuck.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="StatuesText.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="DevilStatuesDot.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="tempDevil.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DevileventText.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxDot.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

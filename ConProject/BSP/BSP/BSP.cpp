@@ -1,6 +1,6 @@
 #include "BSP.h"
 
-void BSP::SplitTheSpace(RoomNode* currentNode, vector<RoomNode*>& listToReturn, int roomLengthMin, int roomWidthMin, queue<RoomNode*>& graph)
+void BSP::SplitTheSpace(RoomNode* currentNode, std::vector<RoomNode*>& listToReturn, int roomLengthMin, int roomWidthMin, std::queue<RoomNode*>& graph)
 {
     // 분할할 라인을 가져옴
     Line line = GetLineDividingSpace(currentNode->GetBottomLeftCorner(), 
@@ -103,10 +103,10 @@ RoomNode* BSP::GetRootNode()
 	return rootNode;
 }
 
-vector<RoomNode*> BSP::PrepareNodesCollection(int maxIterations, int roomWidthMin, int roomLengthMin)
+std::vector<RoomNode*> BSP::PrepareNodesCollection(int maxIterations, int roomWidthMin, int roomLengthMin)
 {
-    queue<RoomNode*> graph;            // 그래프 생성
-    vector<RoomNode*> vectorToReturn;        // 리턴할 백터 생성
+    std::queue<RoomNode*> graph;            // 그래프 생성
+    std::vector<RoomNode*> vectorToReturn;        // 리턴할 백터 생성
 
     graph.push(this->rootNode);                               // 그래프에 루트 노드 넣고
     vectorToReturn.push_back(this->rootNode);                            // 리스트에도 루트 노드 넣어줌
@@ -131,7 +131,7 @@ vector<RoomNode*> BSP::PrepareNodesCollection(int maxIterations, int roomWidthMi
     return vectorToReturn;
 }
 
-void BSP::AddNewNodeToCollections(vector<RoomNode*>& listToReturn, queue<RoomNode*>& graph, RoomNode* node)
+void BSP::AddNewNodeToCollections(std::vector<RoomNode*>& listToReturn, std::queue<RoomNode*>& graph, RoomNode* node)
 {
     listToReturn.push_back(node);
     graph.push(node);

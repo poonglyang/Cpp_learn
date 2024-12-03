@@ -21,7 +21,7 @@ DungeonGenerator::~DungeonGenerator()
     
 }
 
-vector<Node*> DungeonGenerator::CalculateDungeon(int maxIterations, int roomWidthMin, int roomLengthMin, float roomBottomCornerModifier, float roomTopCornerModifier, int roomOffset, int corridorWidth)
+std::vector<Node*> DungeonGenerator::CalculateDungeon(int maxIterations, int roomWidthMin, int roomLengthMin, float roomBottomCornerModifier, float roomTopCornerModifier, int roomOffset, int corridorWidth)
 {
 
     BSP bsp = BSP(dungeonWidth, dungeonLength);
@@ -37,15 +37,15 @@ vector<Node*> DungeonGenerator::CalculateDungeon(int maxIterations, int roomWidt
         count++;
     }*/
 
-    vector<Node*> roomSpaces = StructureHelper::TraverseGraphToExtractLowestLeafes(bsp.GetRootNode());
+    std::vector<Node*> roomSpaces = StructureHelper::TraverseGraphToExtractLowestLeafes(bsp.GetRootNode());
     RoomGenerator roomGenerator = RoomGenerator(maxIterations, roomLengthMin, roomWidthMin);
-    vector<RoomNode*> roomList = roomGenerator.GenerateRoomInGivenSpaces(roomSpaces, roomBottomCornerModifier, roomTopCornerModifier, roomOffset);
+    std::vector<RoomNode*> roomList = roomGenerator.GenerateRoomInGivenSpaces(roomSpaces, roomBottomCornerModifier, roomTopCornerModifier, roomOffset);
 
     CooridorsGenerator cooridorsGenerator = CooridorsGenerator();
     cooridorVector = cooridorsGenerator.CreateCooridoer(allNodesCollection, corridorWidth);
     //auto cooridorList = cooridorsGenerator.CreateCooridoer(allNodesCollection, corridorWidth);
 
-    vector<Node*> returnVector;
+    std::vector<Node*> returnVector;
     for (auto roomNode : roomList) {
         returnVector.push_back(roomNode);
     }
@@ -73,7 +73,7 @@ vector<Node*> DungeonGenerator::CalculateDungeon(int maxIterations, int roomWidt
     return returnVector;
 }
 
-vector<Node*> DungeonGenerator::GetCooridorVector()
+std::vector<Node*> DungeonGenerator::GetCooridorVector()
 {
     return cooridorVector;
 }

@@ -1,7 +1,6 @@
 #include "namespace.cpp"
 #include "vector"
 
-using namespace std;
 using namespace myMath;
 
 #pragma once

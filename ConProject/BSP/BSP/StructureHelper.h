@@ -1,11 +1,9 @@
 #pragma once
 #include <iostream>
-#include <queue>
 #include <windows.h>
 #include <conio.h>
+#include <queue>
 #include "Node.h"
-
-using namespace std;
 
 namespace StructureHelper {
 
@@ -29,11 +27,11 @@ namespace StructureHelper {
 	/// </summary>
 	/// <param name="parentNode"></param>
 	/// <returns></returns>
-	static vector<Node*> TraverseGraphToExtractLowestLeafes
+	static std::vector<Node*> TraverseGraphToExtractLowestLeafes
 	(Node* parentNode)
 	{
-		queue<Node*> nodesToCheck;
-		vector<Node*> listToReturn;
+		std::queue<Node*> nodesToCheck;
+		std::vector<Node*> listToReturn;
 
 		if (parentNode->childrenNode.size() == 0) {
 			listToReturn.push_back(parentNode);
@@ -126,9 +124,9 @@ namespace playHelper {
 	};
 
 	static struct DungeonFloor {
-		vector<Node*> rooms;
+		std::vector<Node*> rooms;
 
-		vector<Node*> cooridorVector;
+		std::vector<Node*> cooridorVector;
 
 		Map map;
 	};
@@ -136,12 +134,13 @@ namespace playHelper {
 	static enum class EventEnum {
 		SHOP_EVENT,
 		WELL_EVENT,
-		STATUES_EVENT,
+		ANGEL_STATUES_EVENT,
+		DEVIL_STATUES_EVENT,
 		BOX_EVENT,
 		MONSTER_EVENT
 	};
 
-	static Map CreateMap(vector<Node*> rooms, vector<Node*> cooridorVector) {
+	static Map CreateMap(std::vector<Node*> rooms, std::vector<Node*> cooridorVector) {
 		Map map;
 		for (Node* cooridor : cooridorVector) {
 			for (int i = cooridor->GetBottomLeftCorner().x; i <= cooridor->GetBottomRightCorner().x; i++) {
@@ -157,20 +156,20 @@ namespace playHelper {
 
 		for (Node* room : rooms) {
 
-			vector<pair<int, int>> notWall;
+			std::vector<std::pair<int, int>> notWall;
 
 			// 가로 벽 치기
 			for (int i = room->GetBottomLeftCorner().x; i <= room->GetBottomRightCorner().x; i++) {
 
 				if (map.mapArr[room->GetBottomLeftCorner().y][i] == 7) {
 					// 만약 기존에 벽이였으면
-					notWall.push_back(pair<int, int>(room->GetBottomLeftCorner().y, i)); // 벽이 아님에 넣어주고 (길이랑 겹쳤기 때문)
+					notWall.push_back(std::pair<int, int>(room->GetBottomLeftCorner().y, i)); // 벽이 아님에 넣어주고 (길이랑 겹쳤기 때문)
 					map.mapArr[room->GetBottomLeftCorner().y][i] = 0;	// 
 				}
 				else
 				{
 					bool canWall = true;
-					for (pair<int, int> point : notWall) {
+					for (std::pair<int, int> point : notWall) {
 						if (point.first == room->GetBottomLeftCorner().y && point.second == i) {
 							canWall = false;
 							break;
@@ -182,12 +181,12 @@ namespace playHelper {
 				}
 
 				if (map.mapArr[room->GetTopLeftCorner().y][i] == 7) {
-					notWall.push_back(pair<int, int>(room->GetTopLeftCorner().y, i));
+					notWall.push_back(std::pair<int, int>(room->GetTopLeftCorner().y, i));
 					map.mapArr[room->GetTopLeftCorner().y][i] = 0;
 				}
 				else {
 					bool canWall = true;
-					for (pair<int, int> point : notWall) {
+					for (std::pair<int, int> point : notWall) {
 						if (point.first == room->GetTopLeftCorner().y && point.second == i) {
 							canWall = false;
 							break;
@@ -205,13 +204,13 @@ namespace playHelper {
 			// 세로 벽 치기
 			for (int j = room->GetBottomLeftCorner().y; j <= room->GetTopLeftCorner().y; j++) {
 				if (map.mapArr[j][room->GetBottomLeftCorner().x] == 7) {
-					notWall.push_back(pair<int, int>(j, room->GetBottomLeftCorner().x));
+					notWall.push_back(std::pair<int, int>(j, room->GetBottomLeftCorner().x));
 					map.mapArr[j][room->GetBottomLeftCorner().x] = 0;
 
 				}
 				else {
 					bool canWall = true;
-					for (pair<int, int> point : notWall) {
+					for (std::pair<int, int> point : notWall) {
 						if (point.first == j && point.second == room->GetBottomLeftCorner().x) {
 							canWall = false;
 							break;
@@ -223,12 +222,12 @@ namespace playHelper {
 				}
 
 				if (map.mapArr[j][room->GetBottomRightCorner().x] == 7) {
-					notWall.push_back(pair<int, int>(j, room->GetBottomRightCorner().x));
+					notWall.push_back(std::pair<int, int>(j, room->GetBottomRightCorner().x));
 					map.mapArr[j][room->GetBottomRightCorner().x] = 0;
 				}
 				else {
 					bool canWall = true;
-					for (pair<int, int> point : notWall) {
+					for (std::pair<int, int> point : notWall) {
 						if (point.first == j && point.second == room->GetBottomRightCorner().x) {
 							canWall = false;
 							break;

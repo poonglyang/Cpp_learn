@@ -5,9 +5,9 @@ bool CooridorsGenerator::compareByTreeIndex(const Node& n1, const Node& n2)
     return n1.GetTreeIndex() > n2.GetTreeIndex();
 }
 
-vector<Node*> CooridorsGenerator::CreateCooridoer(vector<RoomNode*> allNodesCollection, int corridorWidth)
+std::vector<Node*> CooridorsGenerator::CreateCooridoer(std::vector<RoomNode*> allNodesCollection, int corridorWidth)
 {
-    vector<Node*> corridorList;
+    std::vector<Node*> corridorList;
 
     //compareByTreeIndex를 기준으로 allNodesCollection을 정렬함
     sort(allNodesCollection.begin(), 
@@ -16,7 +16,7 @@ vector<Node*> CooridorsGenerator::CreateCooridoer(vector<RoomNode*> allNodesColl
             return node1->GetTreeIndex() > node2->GetTreeIndex();
         });
 
-    queue<RoomNode*> structuresToCheck;     // allNodesCollection의 구성원을 TreeLayerIndex을 기준으로 내림차순으로 넣음
+    std::queue<RoomNode*> structuresToCheck;     // allNodesCollection의 구성원을 TreeLayerIndex을 기준으로 내림차순으로 넣음
 
     for (RoomNode* roomNode : allNodesCollection) {
         structuresToCheck.push(roomNode);   // 큐에  (잎부터 넣음)

@@ -14,7 +14,7 @@ public:
     /// <param name="allNodesCollection">분할한 모든 노드</param>
     /// <param name="corridorWidth">복도 넓이</param>
     /// <returns>복도 노드 리스트</returns>
-    vector<Node*> CreateCooridoer(vector<RoomNode*> allNodesCollection, int corridorWidth);
+    std::vector<Node*> CreateCooridoer(std::vector<RoomNode*> allNodesCollection, int corridorWidth);
 
 };
 

@@ -87,6 +87,9 @@
     <ClCompile Include="StatuesEvent.cpp">
       <Filter>Event</Filter>
     </ClCompile>
+    <ClCompile Include="DevilStatuesEvent.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Node.h">
@@ -132,6 +135,9 @@
       <Filter>Event</Filter>
     </ClInclude>
     <ClInclude Include="StatuesEvent.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="DevilStatuesEvent.h">
       <Filter>Event</Filter>
     </ClInclude>
   </ItemGroup>

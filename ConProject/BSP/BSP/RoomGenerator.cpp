@@ -6,9 +6,9 @@ RoomGenerator::RoomGenerator(int maxIterations, int roomLengthMin, int roomWidth
 
 }
 
-vector<RoomNode*> RoomGenerator::GenerateRoomInGivenSpaces(vector<Node*> roomSpaces, float roomBottomCornerModifier, float roomTopCornerModifier, int roomOffset)
+std::vector<RoomNode*> RoomGenerator::GenerateRoomInGivenSpaces(std::vector<Node*> roomSpaces, float roomBottomCornerModifier, float roomTopCornerModifier, int roomOffset)
 {
-    vector<RoomNode*> vectorToReturn;
+    std::vector<RoomNode*> vectorToReturn;
 
     for(auto space : roomSpaces)
     {

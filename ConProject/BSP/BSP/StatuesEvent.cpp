@@ -10,7 +10,7 @@ void StatuesEvent::EventStart()
 	system("cls");
 
 	if (isPray) {
-		cout << "[이미 기도하셨습니다]" << endl;
+		std::cout << "[이미 기도하셨습니다]" << std::endl;
 		Sleep(2000);
 		return;
 	}
@@ -35,49 +35,49 @@ void StatuesEvent::RenderEvent()
 
 	while (true) {
 		system("cls");
-		cout << "[조각상을 발견했다] " << endl;
+		std::cout << "[조각상을 발견했다] " << std::endl;
 
 		for (int i = 0; i < 46; i++) {
 			for (int j = 0; j < 60; j++) {
 				switch (statuesImage[i][j])
 				{
 				case 0:
-					cout << "  ";
+					std::cout << "  ";
 					break;
 				case 1:
-					cout << "■";
+					std::cout << "■";
 					break;
 				case 2:
 					SetRGBColor(223, 246, 245);
-					cout << "■";
+					std::cout << "■";
 					break;
 				case 3:
 					SetRGBColor(183, 217, 219);
-					cout << "■";
+					std::cout << "■";
 					break;
 				case 4:
 					SetRGBColor(237, 181, 204);
-					cout << "■";
+					std::cout << "■";
 					break;
 				case 5:
 					SetRGBColor(209, 126, 159);
-					cout << "■";
+					std::cout << "■";
 					break;
 				case 6:
 					SetRGBColor(222, 170, 126);
-					cout << "■";
+					std::cout << "■";
 					break;
 				case 7:
 					SetRGBColor(254, 224, 182);
-					cout << "■";
+					std::cout << "■";
 					break;
 				case 8:
 					SetRGBColor(219, 213, 178);
-					cout << "■";
+					std::cout << "■";
 					break;
 				case 9:
 					SetRGBColor(247, 241, 223);
-					cout << "■";
+					std::cout << "■";
 					break;
 
 				default:
@@ -87,7 +87,7 @@ void StatuesEvent::RenderEvent()
 				// 텍스트 색상 리셋 (기본)
 				printf("\033[0m");
 			}
-			std::cout << endl;
+			std::cout << std::endl;
 		}
 
 		for (int i = 0; i < 10; i++) {
@@ -95,52 +95,52 @@ void StatuesEvent::RenderEvent()
 				switch (text[i][j])
 				{
 				case 0:
-					cout << "  ";
+					std::cout << "  ";
 					break;
 				case 7:
 					SetRGBColor(255, 255, 255);
-					cout << "■";
+					std::cout << "■";
 					break;
 				case 2:
 					SetConsoleColor(8);
-					cout << "■";
+					std::cout << "■";
 					break;
 				case 3:
 					SetRGBColor(93, 148, 255);
-					cout << "■";
+					std::cout << "■";
 					break;
 				case 4:
 					SetRGBColor(61, 61, 147);
-					cout << "■";
+					std::cout << "■";
 					break;
 				case 5:
 					SetConsoleColor(9);
-					cout << "[조각상이 보인다] ";
+					std::cout << "[조각상이 보인다] ";
 					break;
 				case 6:
 					SetConsoleColor(15);
-					cout << "▶  ";
+					std::cout << "▶  ";
 					SetConsoleColor(9);
-					cout << "[기도한다]\t\t\t[기도하지 않는다]\t\t";
+					std::cout << "[기도한다]\t\t\t[기도하지 않는다]\t\t";
 					SetConsoleColor(15);
-					cout << "■";
+					std::cout << "■";
 					break;
 				case 8:
 					SetConsoleColor(9);
-					cout << "[기도한다]\t\t";
+					std::cout << "[기도한다]\t\t";
 					SetConsoleColor(15);
-					cout << "\t▶  ";
+					std::cout << "\t▶  ";
 					SetConsoleColor(9);
-					cout << "[기도하지 않는다]\t\t";
+					std::cout << "[기도하지 않는다]\t\t";
 					SetConsoleColor(15);
-					cout << "■";
+					std::cout << "■";
 					break;
 				case 9:
-					cout << "\t[천사 조각상에 기도하였습니다]\t\t\t\t■";
+					std::cout << "\t[천사 조각상에 기도하였습니다]\t\t\t\t■";
 					isPray = true;
 					break;
 				case 10:
-					cout << "\t[조각상에 기도하지 않았습니다]\t\t\t\t■";
+					std::cout << "\t[조각상에 기도하지 않았습니다]\t\t\t\t■";
 					text[5][8] = 6;
 					break;
 				default:
@@ -150,11 +150,11 @@ void StatuesEvent::RenderEvent()
 				// 텍스트 색상 리셋 (기본)
 				printf("\033[0m");
 			}
-			cout << endl;
+			std::cout << std::endl;
 		}
 
 		if (isPlayerChoice) {
-			cout << "[계속할려면 아무키 누르기]" << endl;
+			std::cout << "[계속할려면 아무키 누르기]" << std::endl;
 			playHelper::getCommand();
 			break;
 		}
@@ -164,23 +164,23 @@ void StatuesEvent::RenderEvent()
 		switch (input) {
 		case 100:
 		case 77:
-			cout << "오른쪽으로 선택키 이동" << endl;
+			std::cout << "오른쪽으로 선택키 이동" << std::endl;
 			text[5][8] = 8;
 			break;
 		case 97:
 		case 75:
-			cout << "왼쪽으로 선택키 이동" << endl;
+			std::cout << "왼쪽으로 선택키 이동" << std::endl;
 			text[5][8] = 6;
 			break;
 		case 13:
 			if (text[5][8] == 6) {
 				text[5][8] = 9;
-				cout << "조각상 기도 이벤트 넣어줘야함" << endl;
+				std::cout << "조각상 기도 이벤트 넣어줘야함" << std::endl;
 				isPlayerChoice = true;
 			}
 			else if (text[5][8] == 8) {
 				text[5][8] = 10;
-				cout << "이벤트 없음" << endl;
+				std::cout << "이벤트 없음" << std::endl;
 				isPlayerChoice = true;
 			}
 			break;

@@ -5,7 +5,7 @@
 #include "namespace.cpp"
 
 using namespace myMath;
-using namespace std;
+
 
 class Node
 {
@@ -26,7 +26,7 @@ protected:
 
 	Vector2Int GetMiddlePoint();
 public:
-	vector<Node*> childrenNode;
+	std::vector<Node*> childrenNode;
 
 	Node();
 

@@ -5,15 +5,16 @@
 #include "DungeonGenerator.h"
 #include "EventManager.h"
 
-using namespace std;
 using namespace playHelper;
-
+typedef unsigned char byte;
 class Game
 {
 private:
 	bool isGameOver;
 
 	EventManager eventManager;
+
+	std::vector< EventManager> eventManagers;
 
 	/// <summary>
 	/// 던전의 층수
@@ -30,12 +31,12 @@ private:
 	/// <summary>
 	/// 층별 방, 복도, 맵이 들어있는 구조체 백터
 	/// </summary>
-	vector<DungeonFloor> dungeon;
+	std::vector<DungeonFloor> dungeon;
 
 	/// <summary>
 	/// 층별 플레이어 위치
 	/// </summary>
-	vector<Vector2Int> playerLocation;
+	std::vector<Vector2Int> playerLocation;
 
 	/// <summary>
 	/// 플레이어 이전 위치
@@ -45,27 +46,27 @@ private:
 	/// <summary>
 	/// 층별 올라가는 계단 위치
 	/// </summary>
-	vector<Vector2Int> upStairs;
+	std::vector<Vector2Int> upStairs;
 	
-	vector<int> upStairsRoomIndex;
+	std::vector<int> upStairsRoomIndex;
 
 	/// <summary>
 	/// 층별 내려가는 계단 위치
 	/// </summary>
-	vector<pair<Vector2Int, Vector2Int>> downStairs;
+	std::vector<std::pair<Vector2Int, Vector2Int>> downStairs;
 
 	/// <summary>
 	/// 상점의 중앙 위치 (상점 생성 x일 경우 0,0)
 	/// </summary>
-	vector<Vector2Int> shopPos;
+	std::vector<Vector2Int> shopPos;
 	
-	vector<int> shopPosRoomIndex;
+	std::vector<int> shopPosRoomIndex;
 
-	vector<int> wellPosRoomIndex;
+	std::vector<int> wellPosRoomIndex;
 
-	vector<Vector2Int> statusPoint;
+	std::vector<Vector2Int> statusPoint;
 
-	vector<int> statusPosRoomIndex;
+	std::vector<int> statusPosRoomIndex;
 
 	int getCommand();
 
@@ -89,7 +90,9 @@ private:
 
 	bool CheckPlayerGetBox();
 
-	bool CheckPlayerGoStatues();
+	bool CheckPlayerGoDevilStatues();
+
+	bool CheckPlayerGoAngelStatues();
 
 	bool CheckPlayerGoWell();
 
@@ -111,7 +114,9 @@ private:
 
 	void GoWell();
 
-	void GoStatues();
+	void GoDevilStatues();
+
+	void GoAngelStatues();
 
 	void GoBox();
 

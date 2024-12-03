@@ -1,8 +1,6 @@
 #include <iostream>
 #include <cmath>
 
-using namespace std;
-
 namespace myMath {
 	
 	class Vector2Int

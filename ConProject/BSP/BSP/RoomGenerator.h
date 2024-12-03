@@ -21,8 +21,8 @@ public:
     /// </summary>
     /// <param name="roomSpaces">잎 노드가 들어있는 리스트</param>
     /// <returns>꼭지점(모서리)가 재정의된 RoomNode리스트</returns>
-    vector<RoomNode*> GenerateRoomInGivenSpaces(
-        vector<Node*> roomSpaces, float roomBottomCornerModifier,
+    std::vector<RoomNode*> GenerateRoomInGivenSpaces(
+        std::vector<Node*> roomSpaces, float roomBottomCornerModifier,
         float roomTopCornerModifier, int roomOffset);
 };
 

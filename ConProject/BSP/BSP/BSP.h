@@ -14,7 +14,7 @@ private:
     /// <param name="roomLengthMin">방의 세로 최소 길이</param>
     /// <param name="roomWidthMin">방의 가로 최소 길이 </param>
     /// <param name="graph">그래프</param>
-    void SplitTheSpace(RoomNode* currentNode, vector<RoomNode*>& listToReturn, int roomLengthMin, int roomWidthMin, queue<RoomNode*>& graph);
+    void SplitTheSpace(RoomNode* currentNode, std::vector<RoomNode*>& listToReturn, int roomLengthMin, int roomWidthMin, std::queue<RoomNode*>& graph);
 
     /// <summary>
     /// 분할할 선을 가져오는 함수
@@ -57,9 +57,9 @@ public:
     /// <param name="roomWidthMin">방 최소 가로 길이</param>
     /// <param name="roomLengthMin">방 최소 세로 길이</param>
     /// <returns>방을 만든 노드들</returns>
-    vector<RoomNode*> PrepareNodesCollection(int maxIterations, int roomWidthMin, int roomLengthMin);
+    std::vector<RoomNode*> PrepareNodesCollection(int maxIterations, int roomWidthMin, int roomLengthMin);
 
-    void AddNewNodeToCollections(vector<RoomNode*>& listToReturn, queue<RoomNode*>& graph, RoomNode* node);
+    void AddNewNodeToCollections(std::vector<RoomNode*>& listToReturn, std::queue<RoomNode*>& graph, RoomNode* node);
 
 
 

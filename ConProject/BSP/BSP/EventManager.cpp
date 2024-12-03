@@ -4,6 +4,7 @@ EventManager::EventManager()
 {
 	wellEvent = WellEvent();
 	statuesEvent = StatuesEvent();
+	devilStatuesEvent = DevilStatuesEvent();
 }
 
 void EventManager::EventStart(playHelper::EventEnum eventNum)
@@ -17,8 +18,12 @@ void EventManager::EventStart(playHelper::EventEnum eventNum)
 		wellEvent.EventStart();
 		break;
 	}
-	case playHelper::EventEnum::STATUES_EVENT: {
+	case playHelper::EventEnum::ANGEL_STATUES_EVENT: {
 		statuesEvent.EventStart();
+		break;
+	}
+	case playHelper::EventEnum::DEVIL_STATUES_EVENT: {
+		devilStatuesEvent.EventStart();
 		break;
 	}
 	case playHelper::EventEnum::BOX_EVENT: {

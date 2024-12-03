@@ -1,7 +1,5 @@
 #include "Event.h"
 
-using namespace std;
-
 #pragma once
 class StatuesEvent : public Event
 {

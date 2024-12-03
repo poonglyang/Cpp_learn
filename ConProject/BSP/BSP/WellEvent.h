@@ -1,8 +1,6 @@
 #pragma once
 #include "Event.h"
 
-using namespace std;
-
 class WellEvent : public Event
 {
 private:

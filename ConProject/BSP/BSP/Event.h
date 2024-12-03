@@ -3,8 +3,6 @@
 #include <conio.h>
 #include "StructureHelper.h"
 
-using namespace std;
-
 #pragma once
 /// <summary>
 /// 이벤트 추상 클래스

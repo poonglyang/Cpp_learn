@@ -5,8 +5,8 @@
 class DungeonGenerator
 {
 private:
-    vector<RoomNode*> allNodesCollection;
-    vector<Node*> cooridorVector;
+    std::vector<RoomNode*> allNodesCollection;
+    std::vector<Node*> cooridorVector;
     int dungeonWidth;
     int dungeonLength;
 
@@ -30,8 +30,8 @@ public:
     /// <param name="roomWidthMin"></param>
     /// <param name="roomLengthMin"></param>
     /// <returns></returns>
-    vector<Node*> CalculateDungeon(int maxIterations, int roomWidthMin, int roomLengthMin, float roomBottomCornerModifier, float roomTopCornerModifier, int roomOffset, int corridorWidth);
+    std::vector<Node*> CalculateDungeon(int maxIterations, int roomWidthMin, int roomLengthMin, float roomBottomCornerModifier, float roomTopCornerModifier, int roomOffset, int corridorWidth);
 
-    vector<Node*> GetCooridorVector();
+    std::vector<Node*> GetCooridorVector();
 };
 

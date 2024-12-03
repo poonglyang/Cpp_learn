@@ -76,9 +76,9 @@ bool CorridorNode::CompareByBottomRightCornerX(const Node* node1, const Node* no
 void CorridorNode::ProcessRoomInRelationRightOrLeft(Node* structure1, Node* structure2)
 {
     Node* leftStructure = nullptr;
-    vector<Node*> leftStructureChildren = StructureHelper::TraverseGraphToExtractLowestLeafes(structure1);      // structure1의 잎 노드 리스트를 가져옴 leftStructureChildren에 넣음
+    std::vector<Node*> leftStructureChildren = StructureHelper::TraverseGraphToExtractLowestLeafes(structure1);      // structure1의 잎 노드 리스트를 가져옴 leftStructureChildren에 넣음
     Node* rightStructure = nullptr;
-    vector<Node*> rightStructureChildren = StructureHelper::TraverseGraphToExtractLowestLeafes(structure2);     // structure2의 잎 노드 리스트를 가져와 rightStructureChildren에 넣음
+    std::vector<Node*> rightStructureChildren = StructureHelper::TraverseGraphToExtractLowestLeafes(structure2);     // structure2의 잎 노드 리스트를 가져와 rightStructureChildren에 넣음
 
     //leftStructureChildren에 있는 것들을 TopRightAreaCorner.x를 기준으로 내림차순 정렬
     sort(leftStructureChildren.begin(), 
@@ -93,7 +93,7 @@ void CorridorNode::ProcessRoomInRelationRightOrLeft(Node* structure1, Node* stru
         child = > child.TopRightAreaCorner.x).ToList();    // leftStructureChildren에 있는 것들을 TopRightAreaCorner.x를 기준으로 내림차순 정렬하고 리스트에 넣음
     // leftStructureChildren에 있는 것들 중 TopRightAreaCorner.x가 제일 큰 것이 가장 앞에 온다
     */
-    vector<Node*> sortedLeftStructure;
+    std::vector<Node*> sortedLeftStructure;
 
     if (leftStructureChildren.size() == 1)
     {
@@ -117,7 +117,7 @@ void CorridorNode::ProcessRoomInRelationRightOrLeft(Node* structure1, Node* stru
     }
 
     // 왼쪽방에 길을 놓을 수 있는 오른쪽 방 리스트
-    vector<Node*> possibleNeighboursInRightStructureVector;
+    std::vector<Node*> possibleNeighboursInRightStructureVector;
 
     for (Node* node : rightStructureChildren) { // rightStructureChildren에 있는 것들 중
         if (GetValidYForNeighourLeftRight(
@@ -156,7 +156,7 @@ void CorridorNode::ProcessRoomInRelationRightOrLeft(Node* structure1, Node* stru
     while (y == -1 && sortedLeftStructure.size() > 1)
     {
         // y가 -1(길을 놓을 수 없는 상태)이고 sortedLeftStructure가 남아 있다면
-        vector<Node*> temp;
+        std::vector<Node*> temp;
         for (auto node : sortedLeftStructure) {
             if (node->GetTopLeftCorner().y != leftStructure->GetTopLeftCorner().y) {
                 temp.push_back(node);
@@ -232,18 +232,18 @@ bool CorridorNode::COmpareByBottomRightCornerY(const Node* node1, const Node* no
 void CorridorNode::ProcessRoomInRelationUpOrDown(Node* structure1, Node* structure2)
 {
     Node* bottomStructure = nullptr;
-    vector<Node*> leftStructureChildren = StructureHelper::TraverseGraphToExtractLowestLeafes(structure1);      // structure1의 잎 노드 리스트를 가져옴 leftStructureChildren에 넣음
+    std::vector<Node*> leftStructureChildren = StructureHelper::TraverseGraphToExtractLowestLeafes(structure1);      // structure1의 잎 노드 리스트를 가져옴 leftStructureChildren에 넣음
     Node* topStructure = nullptr;
-    vector<Node*> rightStructureChildren = StructureHelper::TraverseGraphToExtractLowestLeafes(structure2);
+    std::vector<Node*> rightStructureChildren = StructureHelper::TraverseGraphToExtractLowestLeafes(structure2);
 
     //leftStructureChildren에 있는 것들을 TopRightAreaCorner.x를 기준으로 내림차순 정렬
-    sort(leftStructureChildren.begin(), 
+    std::sort(leftStructureChildren.begin(),
         leftStructureChildren.end(), 
         [](const Node* node1, const Node* node2) {
             return node1->GetTopRightCorner().y > node2->GetTopRightCorner().y;
         });
 
-    vector<Node*> sortedBottomStructure;
+    std::vector<Node*> sortedBottomStructure;
 
     if (leftStructureChildren.size() == 1)
     {
@@ -267,7 +267,7 @@ void CorridorNode::ProcessRoomInRelationUpOrDown(Node* structure1, Node* structu
     }
 
     // 왼쪽방에 길을 놓을 수 있는 오른쪽 방 리스트
-    vector<Node*> possibleNeighboursInTopStructureList;
+    std::vector<Node*> possibleNeighboursInTopStructureList;
 
     for (Node* node : rightStructureChildren) { // rightStructureChildren에 있는 것들 중
         if (GetValidYForNeighourUpDown(
@@ -282,7 +282,7 @@ void CorridorNode::ProcessRoomInRelationUpOrDown(Node* structure1, Node* structu
         }
     }
 
-    sort(possibleNeighboursInTopStructureList.begin(),  // CompareByBottomRightCornerX 기준으로 정렬
+    std::sort(possibleNeighboursInTopStructureList.begin(),  // CompareByBottomRightCornerX 기준으로 정렬
         possibleNeighboursInTopStructureList.end(),
         [](const Node* node1, const Node* node2) {
             return node1->GetBottomRightCorner().y < node2->GetBottomRightCorner().y;
@@ -306,7 +306,7 @@ void CorridorNode::ProcessRoomInRelationUpOrDown(Node* structure1, Node* structu
     while (x == -1 && sortedBottomStructure.size() > 1)
     {
         // y가 -1(길을 놓을 수 없는 상태)이고 sortedLeftStructure가 남아 있다면
-        vector<Node*> temp;
+        std::vector<Node*> temp;
         for (auto node : sortedBottomStructure) {
             if (node->GetTopLeftCorner().x != topStructure->GetTopLeftCorner().x) {
                 temp.push_back(node);
