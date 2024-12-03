@@ -130,6 +130,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BSP.cpp" />
+    <ClCompile Include="ChestEvent.cpp" />
     <ClCompile Include="CooridorsGenerator.cpp" />
     <ClCompile Include="CorridorNode.cpp" />
     <ClCompile Include="DevilStatuesEvent.cpp" />
@@ -153,6 +154,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BSP.h" />
+    <ClInclude Include="ChestEvent.h" />
     <ClInclude Include="CooridorsGenerator.h" />
     <ClInclude Include="CorridorNode.h" />
     <ClInclude Include="DevilStatuesEvent.h" />
