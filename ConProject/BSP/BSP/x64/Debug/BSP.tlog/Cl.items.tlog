@@ -2,6 +2,8 @@ C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\BSP.cpp;C:\Users\user\D
 C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\CooridorsGenerator.cpp;C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\x64\Debug\CooridorsGenerator.obj
 C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\CorridorNode.cpp;C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\x64\Debug\CorridorNode.obj
 C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\DungeonGenerator.cpp;C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\x64\Debug\DungeonGenerator.obj
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\Event.cpp;C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\x64\Debug\Event.obj
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\EventManager.cpp;C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\x64\Debug\EventManager.obj
 C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\Game.cpp;C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\x64\Debug\Game.obj
 C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\Line.cpp;C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\x64\Debug\Line.obj
 C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\main.cpp;C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\x64\Debug\main.obj
@@ -9,5 +11,7 @@ C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\namespace.cpp;C:\Users\
 C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\Node.cpp;C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\x64\Debug\Node.obj
 C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\RoomGenerator.cpp;C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\x64\Debug\RoomGenerator.obj
 C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\RoomNode.cpp;C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\x64\Debug\RoomNode.obj
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\StatuesEvent.cpp;C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\x64\Debug\StatuesEvent.obj
 C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\StructureHelper.cpp;C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\x64\Debug\StructureHelper.obj
 C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\TileBase.cpp;C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\x64\Debug\TileBase.obj
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\WellEvent.cpp;C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\x64\Debug\WellEvent.obj

@@ -3,6 +3,7 @@
 #include <windows.h>
 #include <conio.h>
 #include "DungeonGenerator.h"
+#include "EventManager.h"
 
 using namespace std;
 using namespace playHelper;
@@ -11,6 +12,8 @@ class Game
 {
 private:
 	bool isGameOver;
+
+	EventManager eventManager;
 
 	/// <summary>
 	/// 던전의 층수
@@ -82,6 +85,14 @@ private:
 
 	void CreateMap();
 	
+	bool CheckPlayerMeetMonster();
+
+	bool CheckPlayerGetBox();
+
+	bool CheckPlayerGoStatues();
+
+	bool CheckPlayerGoWell();
+
 	bool CheckPlayerGoShop();
 
 	void EventCheck();
@@ -97,6 +108,14 @@ private:
 	void GoDown();
 
 	void GoShop();
+
+	void GoWell();
+
+	void GoStatues();
+
+	void GoBox();
+
+	void GoMonster();
 public:
 	Game(int dungeonFloor);
 

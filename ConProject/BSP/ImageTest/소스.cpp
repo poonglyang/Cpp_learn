@@ -12,6 +12,9 @@ void SetConsoleColor(int color) {
 	SetConsoleTextAttribute(hConsole, color);         // 색상 변경
 }
 
+
+
+
 int main() {
 
 	/*for (int i = 0; i < 72 + 51; i++) {

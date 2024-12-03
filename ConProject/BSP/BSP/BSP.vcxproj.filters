@@ -28,6 +28,9 @@
     <Filter Include="MapTile\headerFile">
       <UniqueIdentifier>{b56606e7-9ad3-4887-a054-eeb72540c044}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Event">
+      <UniqueIdentifier>{2840cf7d-97fd-48e5-8366-67b3fd690ee7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="namespace.cpp">
@@ -72,6 +75,18 @@
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Event.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="WellEvent.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="EventManager.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="StatuesEvent.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Node.h">
@@ -106,6 +121,18 @@
     </ClInclude>
     <ClInclude Include="Game.h">
       <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Event.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="WellEvent.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="EventManager.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="StatuesEvent.h">
+      <Filter>Event</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
