@@ -4,12 +4,21 @@
 #include <conio.h>
 #include "DungeonGenerator.h"
 #include "EventManager.h"
+#include "ItemManager.h"
+#include "Player.h"
+#include "ViewInventory.h"
+
 
 using namespace playHelper;
-typedef unsigned char byte;
+
 class Game
 {
 private:
+
+	Player* player;
+
+	ItemManager itemManager;
+
 	bool isGameOver;
 
 	EventManager eventManager;
@@ -68,15 +77,13 @@ private:
 
 	std::vector<int> statusPosRoomIndex;
 
-	int getCommand();
-
 	void deleteConsolCursor();
 
 	void SetConsoleColor(int color);
 
 	void SetMonster();
 
-	void SetBox();
+	void SetChest();
 
 	void SetStatues();
 
@@ -118,7 +125,7 @@ private:
 
 	void GoAngelStatues();
 
-	void GoBox();
+	void GoChest();
 
 	void GoMonster();
 public:

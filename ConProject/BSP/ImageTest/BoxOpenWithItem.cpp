@@ -76,7 +76,7 @@ int main() {
 
 	for (int i = 0; i < 40; i++) {
 		for (int j = 0; j < 40; j++) {
-			switch (boxOpenImage[i][j]) {
+			switch (boxOpenAndItem[i][j]) {
 			case 0:
 				std::cout << "  ";
 				break;

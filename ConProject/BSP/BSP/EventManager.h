@@ -2,6 +2,7 @@
 #include "WellEvent.h"
 #include "StatuesEvent.h"
 #include "DevilStatuesEvent.h"
+#include "ChestEvent.h"
 #pragma once
 class EventManager
 {
@@ -11,8 +12,10 @@ private:
 	DevilStatuesEvent devilStatuesEvent;
 
 public:
-	EventManager();
+	EventManager(int chestSize);
 
 	void EventStart(playHelper::EventEnum eventNum);
+
+	EventManager() {};
 };
 

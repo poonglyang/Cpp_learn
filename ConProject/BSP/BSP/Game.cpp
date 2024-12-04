@@ -1,19 +1,5 @@
 #include "Game.h"
 
-int Game::getCommand()
-{
-	while (true) {
-		if (_kbhit()) { // 키 입력 감지
-			int input = _getch(); // 키 입력 읽기
-			std::cout << "입력된 값: " << input << std::endl;
-			return input;
-			// break; // 루프 종료
-		}
-	}
-
-	return -1;
-}
-
 void Game::deleteConsolCursor()
 {
 	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE); // 콘솔 핸들 가져오기
@@ -63,7 +49,7 @@ void Game::SetMonster()
 	}
 }
 
-void Game::SetBox()
+void Game::SetChest()
 {
 	for (int i = 0; i < dungeon.size(); i++) {
 		int roomIndex = -1;
@@ -300,7 +286,7 @@ bool Game::CheckPlayerGetBox()
 
 bool Game::CheckPlayerGoDevilStatues()
 {
-	if (dungeon[currentFloor - 1].map.mapArr[playerLocation[currentFloor - 1].x][playerLocation[currentFloor - 1].y] == 51
+	if (dungeon[currentFloor - 1].map.mapArr[playerLocation[currentFloor - 1].x][playerLocation[currentFloor - 1].y] == 50
 		|| dungeon[currentFloor - 1].map.mapArr[playerLocation[currentFloor - 1].x][playerLocation[currentFloor - 1].y] == 51
 		|| dungeon[currentFloor - 1].map.mapArr[playerLocation[currentFloor - 1].x][playerLocation[currentFloor - 1].y] == 52
 		|| dungeon[currentFloor - 1].map.mapArr[playerLocation[currentFloor - 1].x][playerLocation[currentFloor - 1].y] == 53
@@ -401,7 +387,7 @@ void Game::EventCheck()
 		GoDevilStatues();
 	}
 	else if (CheckPlayerGetBox()) {
-		GoBox();
+		GoChest();
 	}
 	else if(CheckPlayerMeetMonster()) {
 		GoMonster();
@@ -527,28 +513,35 @@ void Game::PlayerMove()
 {
 	oldPlayerLoc = playerLocation[currentFloor - 1];
 
-	int key = getCommand();
+	int key = playHelper::getCommand();
 
 	switch (key) {
-	case 119:
+	case 119:	// 위 또는 w
+	case 72:
 		if (dungeon[currentFloor - 1].map.mapArr[playerLocation[currentFloor - 1].x - 1][playerLocation[currentFloor - 1].y] != 7) {
 			playerLocation[currentFloor - 1].x -= 1;
 		}
 		break;
-	case 115:
+	case 115:	// 아래 방향키 또는 s
+	case 80:
 		if (dungeon[currentFloor - 1].map.mapArr[playerLocation[currentFloor - 1].x + 1][playerLocation[currentFloor - 1].y] != 7) {
 			playerLocation[currentFloor - 1].x += 1;
 		}
 		break;
-	case 100:
+	case 100:	// 오른쪽 방향키 또는 a
+	case 77:
 		if (dungeon[currentFloor - 1].map.mapArr[playerLocation[currentFloor - 1].x][playerLocation[currentFloor - 1].y + 1] != 7) {
 			playerLocation[currentFloor - 1].y += 1;
 		}
 		break;
-	case 97:
+	case 97:	// 왼쪽 방향키 또는 d
+	case 75:
 		if (dungeon[currentFloor - 1].map.mapArr[playerLocation[currentFloor - 1].x][playerLocation[currentFloor - 1].y - 1] != 7) {
 			playerLocation[currentFloor - 1].y += -1;
 		}
+		break;
+	case 105:	// i 키
+		InventoryView::ViewInventory(player);
 		break;
 	}
 }
@@ -615,14 +608,15 @@ void Game::GoAngelStatues()
 	playerLocation[currentFloor - 1] = oldPlayerLoc;
 }
 
-void Game::GoBox()
+void Game::GoChest()
 {
 	std::cout << "상자를 발견했다" << std::endl;
 	std::cout << "상자 이벤트 실행" << std::endl;
-	std::cout << "상자의 아이템을 먹었다" << std::endl;
+	int count = 0;
+	eventManagers[currentFloor - 1].EventStart(playHelper::EventEnum::BOX_EVENT);
 	dungeon[currentFloor - 1].map.mapArr[playerLocation[currentFloor - 1].x][playerLocation[currentFloor - 1].y] = 0;
 	Sleep(500);
-	playerLocation[currentFloor - 1] = oldPlayerLoc;
+	//playerLocation[currentFloor - 1] = oldPlayerLoc;
 }
 
 void Game::GoMonster()
@@ -630,30 +624,60 @@ void Game::GoMonster()
 	std::cout << "몬스터에 접근했습니다 이에 맞는 이벤트를 만들어주세요" << std::endl;
 	std::cout << "몬스터 이벤트 실행" << std::endl;
 	Sleep(500);
-	playerLocation[currentFloor - 1] = oldPlayerLoc;
+	dungeon[currentFloor - 1].map.mapArr[playerLocation[currentFloor - 1].x][playerLocation[currentFloor - 1].y] = 0;
 }
 
 
 
 Game::Game(int dungeonFloor) :dungeonFloor(dungeonFloor)
 {
-	deleteConsolCursor();
+	itemManager = ItemManager();
 
-	eventManager = EventManager();
+	player = new Player(
+		100,	// hp
+		100,	// maxHp
+		50,		// mp
+		50,		// maxMp
+		10,		// atk
+		20,		// 크리확률 
+		1.2f,	// 크리 배율
+		0,		// 방무
+		10,		// 방어력
+		0.8f,	// 명중률
+		0.2f,	// 회피율
+		0.3f,	// 방패 막기 확률
+		5,		// 행동력
+		itemManager
+	);
+	Item_Equipable* tempItem = itemManager.GetEquipableItem(1);
+	Item_Equipable* tempItem2 = itemManager.GetEquipableItem(2);
+	player->inventory->PushItem(tempItem);
+	player->inventory->PushItem(tempItem2);
+	player->inventory->PushItem(100001, 5);
+	player->inventory->PushItem(100002, 5);
+	player->inventory->PushItem(100003, 5);
+	player->inventory->PushItem(100004, 5);
+	player->inventory->PushItem(100005, 5);
+	player->inventory->PushItem(100006, 5);
+
+	deleteConsolCursor();
 
 	isGameOver = false;
 	currentFloor = 1;
 
 	for (int i = 0; i < dungeonFloor; i++) {
 		CreateMap();
-		eventManagers.push_back(EventManager());
 	}
 
 	SetStairAndShop();
 	SetWell();
 	SetStatues();
-	SetBox();
+	SetChest();
 	SetMonster();
+
+	for (int i = 0; i < dungeonFloor; i++) {
+		eventManagers.push_back(EventManager());
+	}
 
 	
 }

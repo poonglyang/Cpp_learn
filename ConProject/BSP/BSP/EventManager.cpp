@@ -1,6 +1,6 @@
 #include "EventManager.h"
 
-EventManager::EventManager()
+EventManager::EventManager(int chestSize)
 {
 	wellEvent = WellEvent();
 	statuesEvent = StatuesEvent();
@@ -25,12 +25,14 @@ void EventManager::EventStart(playHelper::EventEnum eventNum)
 	case playHelper::EventEnum::DEVIL_STATUES_EVENT: {
 		devilStatuesEvent.EventStart();
 		break;
-	}
 	case playHelper::EventEnum::BOX_EVENT: {
+		ChestEvent chestEvent = ChestEvent();
+		chestEvent.EventStart();
 		break;
-	}
+		}
 	case playHelper::EventEnum::MONSTER_EVENT: {
 		break;
+		}
 	}
 	default: {
 		break;

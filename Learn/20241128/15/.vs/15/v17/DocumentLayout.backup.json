@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241128\\15\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C0F5A0BE-9A4F-49E2-A8AD-80533AAFB038}|15.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241128\\15\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C0F5A0BE-9A4F-49E2-A8AD-80533AAFB038}|15.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C0F5A0BE-9A4F-49E2-A8AD-80533AAFB038}|15.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241128\\15\\QuickSort.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C0F5A0BE-9A4F-49E2-A8AD-80533AAFB038}|15.vcxproj|solutionrelative:QuickSort.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -31,19 +35,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241128\\15\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241128\\15\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-28T02:29:08.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "QuickSort.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241128\\15\\QuickSort.cpp",
               "RelativeDocumentMoniker": "QuickSort.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241128\\15\\QuickSort.cpp",
               "RelativeToolTip": "QuickSort.cpp",
-              "ViewState": "AgIAAG0AAAAAAAAAAAAgwFwAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwJgAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-28T01:45:47.613Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Bubble.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241128\\15\\Bubble.cpp",
               "RelativeDocumentMoniker": "Bubble.cpp",
@@ -56,7 +73,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "observe.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241128\\15\\observe.cpp",
               "RelativeDocumentMoniker": "observe.cpp",

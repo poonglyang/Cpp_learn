@@ -1,50 +1,27 @@
-﻿  Game.cpp
-C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(12,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
-  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+﻿  ItemManager.cpp
+  Item_Consumables.cpp
+  ViewInventory.cpp
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\StructureHelper.h(15,3): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
+  (소스 파일 'ViewInventory.cpp'을(를) 컴파일하는 중)
   
-C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(17,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
-  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\StructureHelper.h(23,3): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
+  (소스 파일 'ViewInventory.cpp'을(를) 컴파일하는 중)
   
-C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(122,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::Map' 왼쪽은 무시됩니다.
-  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\StructureHelper.h(124,3): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::Map' 왼쪽은 무시됩니다.
+  (소스 파일 'ViewInventory.cpp'을(를) 컴파일하는 중)
   
-C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(126,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::DungeonFloor' 왼쪽은 무시됩니다.
-  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\StructureHelper.h(132,3): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::DungeonFloor' 왼쪽은 무시됩니다.
+  (소스 파일 'ViewInventory.cpp'을(를) 컴파일하는 중)
   
-C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(134,20): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::EventEnum' 왼쪽은 무시됩니다.
-  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\StructureHelper.h(141,3): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::EventEnum' 왼쪽은 무시됩니다.
+  (소스 파일 'ViewInventory.cpp'을(를) 컴파일하는 중)
   
-C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Game.cpp(116,64): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Game.cpp(150,65): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Game.cpp(198,72): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Game.cpp(225,65): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  main.cpp
-C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(12,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
-  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(17,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
-  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(122,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::Map' 왼쪽은 무시됩니다.
-  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(126,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::DungeonFloor' 왼쪽은 무시됩니다.
-  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(134,20): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::EventEnum' 왼쪽은 무시됩니다.
-  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(4,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   C/C++ 코드 분석을 실행하고 있습니다...
-C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(12,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
-C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(17,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
-C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(122,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::Map' 왼쪽은 무시됩니다.
-C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(126,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::DungeonFloor' 왼쪽은 무시됩니다.
-C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(134,20): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::EventEnum' 왼쪽은 무시됩니다.
-C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(12,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
-C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(17,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
-C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(122,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::Map' 왼쪽은 무시됩니다.
-C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(126,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::DungeonFloor' 왼쪽은 무시됩니다.
-C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(134,20): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::EventEnum' 왼쪽은 무시됩니다.
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\StructureHelper.h(15,3): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\StructureHelper.h(23,3): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\StructureHelper.h(124,3): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::Map' 왼쪽은 무시됩니다.
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\StructureHelper.h(132,3): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::DungeonFloor' 왼쪽은 무시됩니다.
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\StructureHelper.h(141,3): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::EventEnum' 왼쪽은 무시됩니다.
+C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\ViewInventory.h(287): warning C6246: 'item'의 지역 선언이 외부 범위에 있는 같은 이름의 선언을 숨깁니다. 자세한 내용은 줄 '282'('c:\users\user\desktop\cppfile\k_learn\conproject\bsp\bsp\viewinventory.h')에 있는 이전 선언을 참조하십시오.: Lines: 282
   코드를 생성하고 있습니다...
-  BSP.vcxproj -> C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\x64\Debug\BSP.exe
+  BSP.vcxproj -> C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\x64\Debug\BSP.exe

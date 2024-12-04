@@ -3,6 +3,34 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241127\\14\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3A929AB5-DA75-4489-A934-3DD038BC9C27}|14.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241127\\14\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3A929AB5-DA75-4489-A934-3DD038BC9C27}|14.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A929AB5-DA75-4489-A934-3DD038BC9C27}|14.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241127\\14\\Singleton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3A929AB5-DA75-4489-A934-3DD038BC9C27}|14.vcxproj|solutionrelative:Singleton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A929AB5-DA75-4489-A934-3DD038BC9C27}|14.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241127\\14\\SceneManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3A929AB5-DA75-4489-A934-3DD038BC9C27}|14.vcxproj|solutionrelative:SceneManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A929AB5-DA75-4489-A934-3DD038BC9C27}|14.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241127\\14\\Singleton.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3A929AB5-DA75-4489-A934-3DD038BC9C27}|14.vcxproj|solutionrelative:Singleton.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A929AB5-DA75-4489-A934-3DD038BC9C27}|14.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241127\\14\\Tree.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3A929AB5-DA75-4489-A934-3DD038BC9C27}|14.vcxproj|solutionrelative:Tree.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A929AB5-DA75-4489-A934-3DD038BC9C27}|14.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241127\\14\\State.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3A929AB5-DA75-4489-A934-3DD038BC9C27}|14.vcxproj|solutionrelative:State.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A929AB5-DA75-4489-A934-3DD038BC9C27}|14.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241127\\14\\main.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3A929AB5-DA75-4489-A934-3DD038BC9C27}|14.vcxproj|solutionrelative:main.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3A929AB5-DA75-4489-A934-3DD038BC9C27}|14.vcxproj|C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241127\\14\\BinaryTree.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3A929AB5-DA75-4489-A934-3DD038BC9C27}|14.vcxproj|solutionrelative:BinaryTree.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -14,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,7 +50,98 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Tree.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241127\\14\\Tree.cpp",
+              "RelativeDocumentMoniker": "Tree.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241127\\14\\Tree.cpp",
+              "RelativeToolTip": "Tree.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-04T04:05:33.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "State.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241127\\14\\State.cpp",
+              "RelativeDocumentMoniker": "State.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241127\\14\\State.cpp",
+              "RelativeToolTip": "State.cpp",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-04T04:05:30.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "main.h",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241127\\14\\main.h",
+              "RelativeDocumentMoniker": "main.h",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241127\\14\\main.h",
+              "RelativeToolTip": "main.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-04T04:05:16.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Singleton.h",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241127\\14\\Singleton.h",
+              "RelativeDocumentMoniker": "Singleton.h",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241127\\14\\Singleton.h",
+              "RelativeToolTip": "Singleton.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-04T04:04:39.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SceneManager.h",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241127\\14\\SceneManager.h",
+              "RelativeDocumentMoniker": "SceneManager.h",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241127\\14\\SceneManager.h",
+              "RelativeToolTip": "SceneManager.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-04T04:04:37.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Singleton.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241127\\14\\Singleton.cpp",
+              "RelativeDocumentMoniker": "Singleton.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241127\\14\\Singleton.cpp",
+              "RelativeToolTip": "Singleton.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-04T04:04:24.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241127\\14\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241127\\14\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-04T04:04:21.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "BinaryTree.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\CppFIle\\K_learn\\Learn\\20241127\\14\\BinaryTree.cpp",
               "RelativeDocumentMoniker": "BinaryTree.cpp",

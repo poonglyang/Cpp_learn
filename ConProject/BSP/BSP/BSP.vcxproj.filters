@@ -13,12 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="소스 파일\Inventory">
-      <UniqueIdentifier>{63107262-f06c-4fb5-9c00-66c999c8c9b3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\Inventory">
-      <UniqueIdentifier>{fc323b15-b9dd-4a83-a576-641c0ba604d9}</UniqueIdentifier>
-    </Filter>
     <Filter Include="MapTile">
       <UniqueIdentifier>{ab0fa730-14ef-4c81-ac71-3eea6282c29c}</UniqueIdentifier>
     </Filter>
@@ -30,6 +24,21 @@
     </Filter>
     <Filter Include="Event">
       <UniqueIdentifier>{2840cf7d-97fd-48e5-8366-67b3fd690ee7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InventoryAndShop">
+      <UniqueIdentifier>{d3ab0e4f-d892-4f26-aead-d3e2c805f8ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InventoryAndShop\cppFile">
+      <UniqueIdentifier>{001cf6ab-786c-4a12-8f0b-c0df358e5e03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InventoryAndShop\headerFile">
+      <UniqueIdentifier>{d4445ffd-daa1-423f-b1cf-ffbca13aa465}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\PlayerEvent">
+      <UniqueIdentifier>{c5a359fe-5949-4784-9c34-2ebaa5cbf727}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\PlayerEvent">
+      <UniqueIdentifier>{aaf982c6-cac7-4d9e-80e9-5be0c14a5d8a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -93,6 +102,42 @@
     <ClCompile Include="ChestEvent.cpp">
       <Filter>Event</Filter>
     </ClCompile>
+    <ClCompile Include="InventoryAndShop\Inventory.cpp">
+      <Filter>InventoryAndShop\cppFile</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryAndShop\IState.cpp">
+      <Filter>InventoryAndShop\cppFile</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryAndShop\Item_Consumables.cpp">
+      <Filter>InventoryAndShop\cppFile</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryAndShop\Item_Equipable.cpp">
+      <Filter>InventoryAndShop\cppFile</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryAndShop\Item_Material.cpp">
+      <Filter>InventoryAndShop\cppFile</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryAndShop\ItemBase.cpp">
+      <Filter>InventoryAndShop\cppFile</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryAndShop\ItemData.cpp">
+      <Filter>InventoryAndShop\cppFile</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryAndShop\ItemManager.cpp">
+      <Filter>InventoryAndShop\cppFile</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryAndShop\ShopBase.cpp">
+      <Filter>InventoryAndShop\cppFile</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryAndShop\Player.cpp">
+      <Filter>InventoryAndShop\cppFile</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryAndShop\Test.cpp">
+      <Filter>InventoryAndShop\cppFile</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewInventory.cpp">
+      <Filter>소스 파일\PlayerEvent</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Node.h">
@@ -145,6 +190,42 @@
     </ClInclude>
     <ClInclude Include="ChestEvent.h">
       <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryAndShop\resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryAndShop\ShopBase.h">
+      <Filter>InventoryAndShop\headerFile</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryAndShop\Player.h">
+      <Filter>InventoryAndShop\headerFile</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryAndShop\ItemManager.h">
+      <Filter>InventoryAndShop\headerFile</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryAndShop\ItemData.h">
+      <Filter>InventoryAndShop\headerFile</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryAndShop\ItemBase.h">
+      <Filter>InventoryAndShop\headerFile</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryAndShop\Item_Material.h">
+      <Filter>InventoryAndShop\headerFile</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryAndShop\Item_Equipable.h">
+      <Filter>InventoryAndShop\headerFile</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryAndShop\Item_Consumables.h">
+      <Filter>InventoryAndShop\headerFile</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryAndShop\IState.h">
+      <Filter>InventoryAndShop\headerFile</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryAndShop\Inventory.h">
+      <Filter>InventoryAndShop\headerFile</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewInventory.h">
+      <Filter>헤더 파일\PlayerEvent</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

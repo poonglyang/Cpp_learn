@@ -106,10 +106,12 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <AdditionalOptions>/analyze:stacksize 50000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\InventoryAndShop;C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\InventoryAndShop;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -138,6 +140,19 @@
     <ClCompile Include="Event.cpp" />
     <ClCompile Include="EventManager.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="InventoryAndShop\Inventory.cpp" />
+    <ClCompile Include="InventoryAndShop\IState.cpp" />
+    <ClCompile Include="InventoryAndShop\ItemBase.cpp" />
+    <ClCompile Include="InventoryAndShop\ItemData.cpp" />
+    <ClCompile Include="InventoryAndShop\ItemManager.cpp" />
+    <ClCompile Include="InventoryAndShop\Item_Consumables.cpp" />
+    <ClCompile Include="InventoryAndShop\Item_Equipable.cpp" />
+    <ClCompile Include="InventoryAndShop\Item_Material.cpp" />
+    <ClCompile Include="InventoryAndShop\Player.cpp" />
+    <ClCompile Include="InventoryAndShop\ShopBase.cpp" />
+    <ClCompile Include="InventoryAndShop\Test.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Line.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="namespace.cpp" />
@@ -150,6 +165,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="TileBase.cpp" />
+    <ClCompile Include="ViewInventory.cpp" />
     <ClCompile Include="WellEvent.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -162,6 +178,17 @@
     <ClInclude Include="Event.h" />
     <ClInclude Include="EventManager.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="InventoryAndShop\Inventory.h" />
+    <ClInclude Include="InventoryAndShop\IState.h" />
+    <ClInclude Include="InventoryAndShop\ItemBase.h" />
+    <ClInclude Include="InventoryAndShop\ItemData.h" />
+    <ClInclude Include="InventoryAndShop\ItemManager.h" />
+    <ClInclude Include="InventoryAndShop\Item_Consumables.h" />
+    <ClInclude Include="InventoryAndShop\Item_Equipable.h" />
+    <ClInclude Include="InventoryAndShop\Item_Material.h" />
+    <ClInclude Include="InventoryAndShop\Player.h" />
+    <ClInclude Include="InventoryAndShop\resource.h" />
+    <ClInclude Include="InventoryAndShop\ShopBase.h" />
     <ClInclude Include="Line.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="RoomGenerator.h" />
@@ -169,6 +196,7 @@
     <ClInclude Include="StatuesEvent.h" />
     <ClInclude Include="StructureHelper.h" />
     <ClInclude Include="TileBase.h" />
+    <ClInclude Include="ViewInventory.h" />
     <ClInclude Include="WellEvent.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

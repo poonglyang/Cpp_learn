@@ -344,27 +344,8 @@ namespace playHelper {
 				int input = _getch(); // 키 입력 읽기
 				if (input == 224) { // 방향키의 첫 번째 바이트 (224)
 					input = _getch(); // 두 번째 바이트 (방향키에 해당하는 값)
-					//std::cout << "입력된 값: " << input << std::endl;
 					return input;
-					/*switch (input) {
-					case 72:
-						std::cout << "위 방향키" << std::endl;
-						break;
-					case 80:
-						std::cout << "아래 방향키" << std::endl;
-						break;
-					case 75:
-						std::cout << "왼쪽 방향키" << std::endl;
-						break;
-					case 77:
-						std::cout << "오른쪽 방향키" << std::endl;
-						break;
-					default:
-						std::cout << "알 수 없는 방향키" << std::endl;
-						break;
-					}*/
 				}
-				//std::cout << "입력된 값: " << input << std::endl;
 				return input;
 				// break; // 루프 종료
 			}
