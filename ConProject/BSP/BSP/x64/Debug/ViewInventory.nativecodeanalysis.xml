@@ -2,19 +2,19 @@
 <DEFECTS>
   <DEFECT>
     <SFA>
-      <FILEPATH>C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\</FILEPATH>
+      <FILEPATH>C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\</FILEPATH>
       <FILENAME>ViewInventory.h</FILENAME>
       <LINE>292</LINE>
       <COLUMN>17</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>'item'의 지역 선언이 외부 범위에 있는 같은 이름의 선언을 숨깁니다. 자세한 내용은 줄 '286'('c:\users\mh\desktop\unreallearn\k_learn\conproject\bsp\bsp\viewinventory.h')에 있는 이전 선언을 참조하십시오.</DESCRIPTION>
+    <DESCRIPTION>'item'의 지역 선언이 외부 범위에 있는 같은 이름의 선언을 숨깁니다. 자세한 내용은 줄 '286'('c:\users\user\desktop\cppfile\k_learn\conproject\bsp\bsp\viewinventory.h')에 있는 이전 선언을 참조하십시오.</DESCRIPTION>
     <FUNCTION>InventoryView::ViewInventory</FUNCTION>
     <DECORATED>?ViewInventory@InventoryView@@YAXPEAVPlayer@@@Z</DECORATED>
     <FUNCLINE>8</FUNCLINE>
     <PATH>
       <SFA>
-        <FILEPATH>C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\</FILEPATH>
+        <FILEPATH>C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\</FILEPATH>
         <FILENAME>ViewInventory.h</FILENAME>
         <LINE>286</LINE>
         <COLUMN>16</COLUMN>

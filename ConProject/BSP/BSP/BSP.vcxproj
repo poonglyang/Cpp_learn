@@ -106,12 +106,12 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <AdditionalOptions>/analyze:stacksize 50000 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP;C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\InventoryAndShop;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\InventoryAndShop;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <StackReserveSize>5</StackReserveSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -131,6 +131,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BattleEvent.cpp" />
     <ClCompile Include="BSP.cpp" />
     <ClCompile Include="ChestEvent.cpp" />
     <ClCompile Include="CooridorsGenerator.cpp" />
@@ -140,28 +141,29 @@
     <ClCompile Include="Event.cpp" />
     <ClCompile Include="EventManager.cpp" />
     <ClCompile Include="Game.cpp" />
-    <ClCompile Include="InventoryAndShop\Inventory.cpp" />
-    <ClCompile Include="InventoryAndShop\IState.cpp" />
-    <ClCompile Include="InventoryAndShop\ItemBase.cpp" />
-    <ClCompile Include="InventoryAndShop\ItemData.cpp" />
-    <ClCompile Include="InventoryAndShop\ItemManager.cpp" />
-    <ClCompile Include="InventoryAndShop\Item_Consumables.cpp" />
-    <ClCompile Include="InventoryAndShop\Item_Equipable.cpp" />
-    <ClCompile Include="InventoryAndShop\Item_Material.cpp" />
-    <ClCompile Include="InventoryAndShop\Player.cpp" />
-    <ClCompile Include="InventoryAndShop\ShopBase.cpp" />
-    <ClCompile Include="InventoryAndShop\Test.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
+    <ClCompile Include="Inventory.cpp" />
+    <ClCompile Include="IState.cpp" />
+    <ClCompile Include="ItemBase.cpp" />
+    <ClCompile Include="ItemData.cpp" />
+    <ClCompile Include="ItemManager.cpp" />
+    <ClCompile Include="Item_Consumables.cpp" />
+    <ClCompile Include="Item_Equipable.cpp" />
+    <ClCompile Include="Item_Material.cpp" />
     <ClCompile Include="Line.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Monster.cpp" />
     <ClCompile Include="namespace.cpp" />
     <ClCompile Include="Node.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="RoomGenerator.cpp" />
     <ClCompile Include="RoomNode.cpp" />
+    <ClCompile Include="ShopBase.cpp" />
     <ClCompile Include="ShopEvent.cpp" />
     <ClCompile Include="StatuesEvent.cpp" />
     <ClCompile Include="StructureHelper.cpp" />
+    <ClCompile Include="Test.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Test01.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -170,6 +172,7 @@
     <ClCompile Include="WellEvent.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BattleEvent.h" />
     <ClInclude Include="BSP.h" />
     <ClInclude Include="ChestEvent.h" />
     <ClInclude Include="CooridorsGenerator.h" />
@@ -179,21 +182,22 @@
     <ClInclude Include="Event.h" />
     <ClInclude Include="EventManager.h" />
     <ClInclude Include="Game.h" />
-    <ClInclude Include="InventoryAndShop\Inventory.h" />
-    <ClInclude Include="InventoryAndShop\IState.h" />
-    <ClInclude Include="InventoryAndShop\ItemBase.h" />
-    <ClInclude Include="InventoryAndShop\ItemData.h" />
-    <ClInclude Include="InventoryAndShop\ItemManager.h" />
-    <ClInclude Include="InventoryAndShop\Item_Consumables.h" />
-    <ClInclude Include="InventoryAndShop\Item_Equipable.h" />
-    <ClInclude Include="InventoryAndShop\Item_Material.h" />
-    <ClInclude Include="InventoryAndShop\Player.h" />
+    <ClInclude Include="Inventory.h" />
     <ClInclude Include="InventoryAndShop\resource.h" />
-    <ClInclude Include="InventoryAndShop\ShopBase.h" />
+    <ClInclude Include="IState.h" />
+    <ClInclude Include="ItemBase.h" />
+    <ClInclude Include="ItemData.h" />
+    <ClInclude Include="ItemManager.h" />
+    <ClInclude Include="Item_Consumables.h" />
+    <ClInclude Include="Item_Equipable.h" />
+    <ClInclude Include="Item_Material.h" />
     <ClInclude Include="Line.h" />
+    <ClInclude Include="Monster.h" />
     <ClInclude Include="Node.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="RoomGenerator.h" />
     <ClInclude Include="RoomNode.h" />
+    <ClInclude Include="ShopBase.h" />
     <ClInclude Include="ShopEvent.h" />
     <ClInclude Include="StatuesEvent.h" />
     <ClInclude Include="StructureHelper.h" />

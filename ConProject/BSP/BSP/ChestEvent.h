@@ -153,13 +153,6 @@ public:
 	void EventEnd() override;
 	void RenderEvent() override;
 
-	/// <summary>
-	/// 상자를 없엘지 여부 (몬스터의 장애물로 사용할 수 있기 때문에)
-	/// (라고 쓰고 텅빈상자가 있는게 아쉬워서)
-	/// </summary>
-	/// <returns>상자를 없엘지 여부</returns>
-	int ChestEventStart();
-
 	ChestEvent();
 };
 

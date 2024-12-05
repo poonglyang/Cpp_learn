@@ -56,9 +56,9 @@ int main() {
 	player.inventory->SetMoney(1000000, false);
 	
 	player.inventory->PushItem(100001, 30);
-	Item_Equipable tempItem = itemManager.GetEquipableItem(1);
+	Item_Equipable* tempItem = itemManager.GetEquipableItem(1);
 
-	player.inventory->PushItem(&tempItem);
+	player.inventory->PushItem(tempItem);
 	
 	/*
 	player.PrintPlayerInfo();

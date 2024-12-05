@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <random>
 
 namespace myMath {
 	
@@ -147,6 +148,14 @@ namespace myMath {
 				}
 
 				return num1 + rand() % (num2 -1 - num1);
+			}
+
+			static float Value() {
+				static std::random_device rd;                        // 난수 생성기
+				static std::default_random_engine engine(rd());      // 엔진 초기화
+				static std::uniform_real_distribution<float> dist(0.0f, 1.0f); // 0.0 ~ 1.0 사이
+
+				return dist(engine);
 			}
 		};
 

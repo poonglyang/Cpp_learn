@@ -102,44 +102,50 @@
     <ClCompile Include="ChestEvent.cpp">
       <Filter>Event</Filter>
     </ClCompile>
-    <ClCompile Include="InventoryAndShop\Inventory.cpp">
-      <Filter>InventoryAndShop\cppFile</Filter>
-    </ClCompile>
-    <ClCompile Include="InventoryAndShop\IState.cpp">
-      <Filter>InventoryAndShop\cppFile</Filter>
-    </ClCompile>
-    <ClCompile Include="InventoryAndShop\Item_Consumables.cpp">
-      <Filter>InventoryAndShop\cppFile</Filter>
-    </ClCompile>
-    <ClCompile Include="InventoryAndShop\Item_Equipable.cpp">
-      <Filter>InventoryAndShop\cppFile</Filter>
-    </ClCompile>
-    <ClCompile Include="InventoryAndShop\Item_Material.cpp">
-      <Filter>InventoryAndShop\cppFile</Filter>
-    </ClCompile>
-    <ClCompile Include="InventoryAndShop\ItemBase.cpp">
-      <Filter>InventoryAndShop\cppFile</Filter>
-    </ClCompile>
-    <ClCompile Include="InventoryAndShop\ItemData.cpp">
-      <Filter>InventoryAndShop\cppFile</Filter>
-    </ClCompile>
-    <ClCompile Include="InventoryAndShop\ItemManager.cpp">
-      <Filter>InventoryAndShop\cppFile</Filter>
-    </ClCompile>
-    <ClCompile Include="InventoryAndShop\Player.cpp">
-      <Filter>InventoryAndShop\cppFile</Filter>
-    </ClCompile>
-    <ClCompile Include="InventoryAndShop\Test.cpp">
-      <Filter>InventoryAndShop\cppFile</Filter>
-    </ClCompile>
     <ClCompile Include="ViewInventory.cpp">
       <Filter>소스 파일\PlayerEvent</Filter>
     </ClCompile>
-    <ClCompile Include="InventoryAndShop\ShopBase.cpp">
-      <Filter>InventoryAndShop\cppFile</Filter>
-    </ClCompile>
     <ClCompile Include="ShopEvent.cpp">
       <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventory.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="IState.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Item_Consumables.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Item_Equipable.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Item_Material.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemBase.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemData.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ShopBase.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Test.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleEvent.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -197,41 +203,47 @@
     <ClInclude Include="InventoryAndShop\resource.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="InventoryAndShop\Player.h">
-      <Filter>InventoryAndShop\headerFile</Filter>
-    </ClInclude>
-    <ClInclude Include="InventoryAndShop\ItemManager.h">
-      <Filter>InventoryAndShop\headerFile</Filter>
-    </ClInclude>
-    <ClInclude Include="InventoryAndShop\ItemData.h">
-      <Filter>InventoryAndShop\headerFile</Filter>
-    </ClInclude>
-    <ClInclude Include="InventoryAndShop\ItemBase.h">
-      <Filter>InventoryAndShop\headerFile</Filter>
-    </ClInclude>
-    <ClInclude Include="InventoryAndShop\Item_Material.h">
-      <Filter>InventoryAndShop\headerFile</Filter>
-    </ClInclude>
-    <ClInclude Include="InventoryAndShop\Item_Equipable.h">
-      <Filter>InventoryAndShop\headerFile</Filter>
-    </ClInclude>
-    <ClInclude Include="InventoryAndShop\Item_Consumables.h">
-      <Filter>InventoryAndShop\headerFile</Filter>
-    </ClInclude>
-    <ClInclude Include="InventoryAndShop\IState.h">
-      <Filter>InventoryAndShop\headerFile</Filter>
-    </ClInclude>
-    <ClInclude Include="InventoryAndShop\Inventory.h">
-      <Filter>InventoryAndShop\headerFile</Filter>
-    </ClInclude>
     <ClInclude Include="ViewInventory.h">
       <Filter>헤더 파일\PlayerEvent</Filter>
     </ClInclude>
-    <ClInclude Include="InventoryAndShop\ShopBase.h">
-      <Filter>InventoryAndShop\headerFile</Filter>
-    </ClInclude>
     <ClInclude Include="ShopEvent.h">
       <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventory.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="IState.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Item_Consumables.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Item_Equipable.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Item_Material.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemBase.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemData.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemManager.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ShopBase.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleEvent.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

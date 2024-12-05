@@ -578,9 +578,8 @@ void Game::GoDown()
 
 void Game::GoShop()
 {
-	std::cout << "상점에 들어왔습니다" << std::endl;
-	std::cout << "상점에 나왔습니다" << std::endl;
-	Sleep(500);
+	eventManagers[currentFloor - 1].EventStart(EventEnum::SHOP_EVENT, player);
+	
 	playerLocation[currentFloor - 1] = oldPlayerLoc;
 }
 
@@ -588,7 +587,7 @@ void Game::GoWell()
 {
 	/*cout << "우물에 접근했습니다 이에 맞는 이벤트를 만들어주세요" << endl;
 	cout << "우물 이벤트 실행" << endl;*/
-	eventManagers[currentFloor-1].EventStart(EventEnum::WELL_EVENT);
+	eventManagers[currentFloor-1].EventStart(EventEnum::WELL_EVENT, player);
 	Sleep(500);
 	playerLocation[currentFloor - 1] = oldPlayerLoc;
 }
@@ -597,7 +596,7 @@ void Game::GoDevilStatues()
 {
 	std::cout << "조각상에 접근했습니다 이에 맞는 이벤트를 만들어주세요" << std::endl;
 	std::cout << "조각상 이벤트 실행" << std::endl;
-	eventManagers[currentFloor - 1].EventStart(EventEnum::DEVIL_STATUES_EVENT);
+	eventManagers[currentFloor - 1].EventStart(EventEnum::DEVIL_STATUES_EVENT, player);
 	Sleep(500);
 	playerLocation[currentFloor - 1] = oldPlayerLoc;
 }
@@ -606,7 +605,7 @@ void Game::GoAngelStatues()
 {
 	std::cout << "조각상에 접근했습니다 이에 맞는 이벤트를 만들어주세요" << std::endl;
 	std::cout << "조각상 이벤트 실행" << std::endl;
-	eventManagers[currentFloor - 1].EventStart(EventEnum::ANGEL_STATUES_EVENT);
+	eventManagers[currentFloor - 1].EventStart(EventEnum::ANGEL_STATUES_EVENT, player);
 	Sleep(500);
 	playerLocation[currentFloor - 1] = oldPlayerLoc;
 }
@@ -616,7 +615,7 @@ void Game::GoChest()
 	std::cout << "상자를 발견했다" << std::endl;
 	std::cout << "상자 이벤트 실행" << std::endl;
 	int count = 0;
-	eventManagers[currentFloor - 1].EventStart(playHelper::EventEnum::BOX_EVENT);
+	eventManagers[currentFloor - 1].EventStart(playHelper::EventEnum::BOX_EVENT, player);
 	dungeon[currentFloor - 1].map.mapArr[playerLocation[currentFloor - 1].x][playerLocation[currentFloor - 1].y] = 0;
 	Sleep(500);
 	//playerLocation[currentFloor - 1] = oldPlayerLoc;
@@ -624,8 +623,8 @@ void Game::GoChest()
 
 void Game::GoMonster()
 {
-	std::cout << "몬스터에 접근했습니다 이에 맞는 이벤트를 만들어주세요" << std::endl;
 	std::cout << "몬스터 이벤트 실행" << std::endl;
+	eventManagers[currentFloor - 1].EventStart(playHelper::EventEnum::MONSTER_EVENT, player);
 	Sleep(500);
 	dungeon[currentFloor - 1].map.mapArr[playerLocation[currentFloor - 1].x][playerLocation[currentFloor - 1].y] = 0;
 }
@@ -662,7 +661,7 @@ Game::Game(int dungeonFloor) :dungeonFloor(dungeonFloor)
 	player->inventory->PushItem(100004, 5);
 	player->inventory->PushItem(100005, 5);
 	player->inventory->PushItem(100006, 5);
-
+	player->inventory->SetMoney(1000, false);
 	deleteConsolCursor();
 
 	isGameOver = false;
