@@ -177,6 +177,25 @@ void Player::EquipSelect(int index)
 
 }
 
+void Player::UseItem(int index)
+{
+	Item_Consumables* temp = dynamic_cast<Item_Consumables*>(inventory->consumables[index]);
+
+	std::vector<float> consumeItemAmount = temp->GetConsumableState();
+
+	SetHp(consumeItemAmount[0], true);
+	SetMaxHp(consumeItemAmount[1], true);
+	SetMp(consumeItemAmount[2], true);
+	SetMaxMp(consumeItemAmount[3], true);
+	SetAtk(consumeItemAmount[4], true);
+	SetDef(consumeItemAmount[5], true);
+
+	int id = inventory->GetConsumableInventoryItemIdByIndex(index);
+
+	inventory->PopItem(id, 1);
+
+}
+
 void Player::PrintPlayerInfo()
 {
 	std::cout << "[플레이어 스탯]" << std::endl;

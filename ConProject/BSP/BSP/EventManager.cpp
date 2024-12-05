@@ -7,7 +7,7 @@ EventManager::EventManager(int chestSize)
 	devilStatuesEvent = DevilStatuesEvent();
 }
 
-void EventManager::EventStart(playHelper::EventEnum eventNum)
+void EventManager::EventStart(playHelper::EventEnum eventNum, Player* player)
 {
 	switch (eventNum)
 	{

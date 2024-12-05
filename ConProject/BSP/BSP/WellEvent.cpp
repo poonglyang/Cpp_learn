@@ -5,7 +5,7 @@ WellEvent::WellEvent()
 	isDrink = false;
 }
 
-void WellEvent::EventStart()
+void WellEvent::EventStart(Player* player)
 {
 	system("cls");
 
@@ -158,3 +158,4 @@ void WellEvent::RenderEvent()
 
 
 }
+

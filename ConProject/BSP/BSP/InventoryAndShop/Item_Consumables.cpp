@@ -18,6 +18,20 @@ void Item_Consumables::OnUse()
 	
 }
 
+std::vector<float> Item_Consumables::GetConsumableState()
+{
+	std::vector<float> returnVector;
+
+	returnVector.push_back(hpHeal);
+	returnVector.push_back(addMaxHp);
+	returnVector.push_back(mpHeal);
+	returnVector.push_back(addMaxMp);
+	returnVector.push_back(addAtk);
+	returnVector.push_back(addDef);
+
+	return returnVector;
+}
+
 void Item_Consumables::PrintItemInfo()
 {
 	std::cout << "¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á" << std::endl;

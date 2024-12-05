@@ -2,6 +2,7 @@
 #include <windows.h>
 #include <conio.h>
 #include "StructureHelper.h"
+#include "Player.h"
 
 #pragma once
 /// <summary>
@@ -14,7 +15,7 @@ protected:
 
 	void SetConsoleColor(int color);
 public:
-	virtual void EventStart() = 0;
+	virtual void EventStart(Player* player) = 0;
 
 	virtual void EventUpdate() = 0;
 

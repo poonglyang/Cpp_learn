@@ -5,7 +5,7 @@ DevilStatuesEvent::DevilStatuesEvent()
 	isPray = false;
 }
 
-void DevilStatuesEvent::EventStart()
+void DevilStatuesEvent::EventStart(Player* player)
 {
 	system("cls");
 

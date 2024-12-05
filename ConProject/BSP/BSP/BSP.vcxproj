@@ -106,7 +106,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <AdditionalOptions>/analyze:stacksize 50000 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\InventoryAndShop;C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP;C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\InventoryAndShop;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -159,6 +159,7 @@
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="RoomGenerator.cpp" />
     <ClCompile Include="RoomNode.cpp" />
+    <ClCompile Include="ShopEvent.cpp" />
     <ClCompile Include="StatuesEvent.cpp" />
     <ClCompile Include="StructureHelper.cpp" />
     <ClCompile Include="Test01.cpp">
@@ -193,6 +194,7 @@
     <ClInclude Include="Node.h" />
     <ClInclude Include="RoomGenerator.h" />
     <ClInclude Include="RoomNode.h" />
+    <ClInclude Include="ShopEvent.h" />
     <ClInclude Include="StatuesEvent.h" />
     <ClInclude Include="StructureHelper.h" />
     <ClInclude Include="TileBase.h" />

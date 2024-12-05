@@ -543,6 +543,9 @@ void Game::PlayerMove()
 	case 105:	// i Ű
 		InventoryView::ViewInventory(player);
 		break;
+	case 117:
+		InventoryView::ViewState(player);
+		break;
 	}
 }
 

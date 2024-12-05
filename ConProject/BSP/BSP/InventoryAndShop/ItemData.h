@@ -16,6 +16,10 @@ namespace itemDatas {
         Equipable1 = 1,
         Equipable2,
         Equipable3,
+        Equipable4,
+        Equipable5,
+        Equipable6,
+        Equipable7,
 
         /// <summary>
         /// 어아탬 10만이상 20만 미만은 반드시 소비 아이템이다
@@ -23,13 +27,21 @@ namespace itemDatas {
         Consumables1 = 100001,
         Consumables2,
         Consumables3,
+        Consumables4,
+        Consumables5,
+        Consumables6,
+        Consumables7,
 
         /// <summary>
         /// 아이템 20만 이상은 반드시 잡탬이다
         /// </summary>
         Materials1 = 200001,
         Materials2,
-        Materials3
+        Materials3,
+        Materials4,
+        Materials5,
+        Materials6,
+        Materials7,
     };
 
     enum ItemType {

@@ -187,6 +187,10 @@ void Inventory::PopItem(int id, int count)
 	case (int)itemDatas::ItemType::Consumables:
 		
 		for (int i = 0; i < consumables.size() - k; i++) {
+			if (consumables.empty()) {
+				break;
+			}
+
 			if (consumables[i]->GetItemId() == id) {
 				// id가 같고
 				if (consumables[i]->GetItemCount() <= count) {
@@ -231,6 +235,9 @@ void Inventory::PopItem(int id, int count)
 	case (int)itemDatas::ItemType::Materials:
 
 		for (int i = 0; i < materials.size() - k; i++) {
+			if (materials.empty()) {
+				break;
+			}
 			if (materials[i]->GetItemId() == id) {
 				// id가 같고
 				if (materials[i]->GetItemCount() <= count) {
@@ -339,7 +346,6 @@ int Inventory::GetEquipableInventoryItemPriceByIndex(int index)
 
 int Inventory::GetConsumableInventoryItemIdByIndex(int index)
 {
-
 	return consumables[index]->GetItemId();
 }
 

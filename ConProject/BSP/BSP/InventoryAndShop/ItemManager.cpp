@@ -14,33 +14,9 @@ ItemManager::ItemManager()
 
 #pragma endregion 초보자용 검
 
-#pragma region 초보자용 양손검
-	equipable_Item = Item_Equipable(
-		2,		// 아이템 id
-		"초보자용 양손검",		// 아이템 설명
-		10,		// 가격
-		(int)itemDatas::ItemType::Equipable,			// 아이템 타입
-		"양손검에 막 입문한 초보자가 쓰기 좋은 양손검",		// 아이템 설명
-		(int)itemDatas::EquipSlot::Weapon_Both,			// 아이템 장착 부위
-		20,		// 장착시 추가 hp
-		0,		// 장착시 추가 mp
-		10,		// 장착시 추가 atk
-		1,		// 장착시 추가 크확
-		5,		// 장착시 추가 크뎀증
-		0,		// 장착시 추가 방무
-		0,		// 장착시 추가 방어력
-		7,		// 장착시 추가 명중률
-		0,		// 장착시 추가 회피율
-		0,		// 장착시 추가 방패 막기 확률
-		1		// 장착시 추가 행동력
-	);
-
-	equipable_Items.push_back(equipable_Item);
-#pragma endregion 초보자용 양손검
-
 #pragma region 초보자용 단검
 	equipable_Item = Item_Equipable(
-		3,		// 아이템 id
+		2,		// 아이템 id
 		"초보자용 단검",		// 아이템 설명
 		10,		// 가격
 		(int)itemDatas::ItemType::Equipable,			// 아이템 타입
@@ -64,7 +40,7 @@ ItemManager::ItemManager()
 
 #pragma region 초보자용 창
 	equipable_Item = Item_Equipable(
-		4,		// 아이템 id
+		3,		// 아이템 id
 		"초보자용 창",		// 아이템 설명
 		10,		// 가격
 		(int)itemDatas::ItemType::Equipable,			// 아이템 타입
@@ -88,7 +64,7 @@ ItemManager::ItemManager()
 
 #pragma region 초보자용 둔기
 	equipable_Item = Item_Equipable(
-		5,		// 아이템 id
+		4,		// 아이템 id
 		"초보자용 둔기",		// 아이템 설명
 		10,		// 가격
 		(int)itemDatas::ItemType::Equipable,			// 아이템 타입
@@ -112,7 +88,7 @@ ItemManager::ItemManager()
 
 #pragma region 초보자용 활
 	equipable_Item = Item_Equipable(
-		6,		// 아이템 id
+		5,		// 아이템 id
 		"초보자용 활",		// 아이템 설명
 		10,		// 가격
 		(int)itemDatas::ItemType::Equipable,			// 아이템 타입
@@ -136,7 +112,7 @@ ItemManager::ItemManager()
 
 #pragma region 초보자용 방패
 	equipable_Item = Item_Equipable(
-		7,		// 아이템 id
+		6,		// 아이템 id
 		"초보자용 방패",		// 아이템 설명
 		10,		// 가격
 		(int)itemDatas::ItemType::Equipable,			// 아이템 타입
@@ -182,7 +158,320 @@ ItemManager::ItemManager()
 	equipable_Items.push_back(equipable_Item);
 #pragma endregion 초보자의 지팡이
 
-#pragma region 초보자용 정체 모를 목걸이
+#pragma region 철 단검
+	equipable_Item = Item_Equipable(
+		8,		// 아이템 id
+		"철 단검",		// 아이템 설명
+		50,		// 가격
+		(int)itemDatas::ItemType::Equipable,			// 아이템 타입
+		"질좋은 철로 만든 단검",		// 아이템 설명
+		(int)itemDatas::EquipSlot::Weapon_Both_OneHand,			// 아이템 장착 부위
+		50,		// 장착시 추가 hp
+		10,		// 장착시 추가 mp
+		30,		// 장착시 추가 atk
+		30,		// 장착시 추가 크확
+		15,		// 장착시 추가 크뎀증
+		0,		// 장착시 추가 방무
+		0,		// 장착시 추가 방어력
+		20,		// 장착시 추가 명중률
+		0,		// 장착시 추가 회피율
+		0,		// 장착시 추가 방패 막기 확률
+		1		// 장착시 추가 행동력
+	);
+
+	equipable_Items.push_back(equipable_Item);
+#pragma endregion 초보자용 양손검
+
+#pragma region 철 한손검
+	equipable_Item = Item_Equipable(
+		9,		// 아이템 id
+		"철 한손검",		// 아이템 설명
+		50,		// 가격
+		(int)itemDatas::ItemType::Equipable,			// 아이템 타입
+		"질 좋은 철로 만든 단검",		// 아이템 설명
+		(int)itemDatas::EquipSlot::Weapon_Both_OneHand,			// 아이템 장착 부위
+		80,		// 장착시 추가 hp
+		0,		// 장착시 추가 mp
+		50,		// 장착시 추가 atk
+		20,		// 장착시 추가 크확
+		10,		// 장착시 추가 크뎀증
+		0,		// 장착시 추가 방무
+		0,		// 장착시 추가 방어력
+		15,		// 장착시 추가 명중률
+		0,		// 장착시 추가 회피율
+		0,		// 장착시 추가 방패 막기 확률
+		1		// 장착시 추가 행동력
+	);
+
+	equipable_Items.push_back(equipable_Item);
+#pragma endregion 철 한손검
+
+#pragma region 철 창
+	equipable_Item = Item_Equipable(
+		10,		// 아이템 id
+		"철 창",		// 아이템 설명
+		50,		// 가격
+		(int)itemDatas::ItemType::Equipable,			// 아이템 타입
+		"질 좋은 철로 만든 창",		// 아이템 설명
+		(int)itemDatas::EquipSlot::Weapon_Both_OneHand,			// 아이템 장착 부위
+		70,		// 장착시 추가 hp
+		0,		// 장착시 추가 mp
+		40,		// 장착시 추가 atk
+		35,		// 장착시 추가 크확
+		22,		// 장착시 추가 크뎀증
+		10,		// 장착시 추가 방무
+		0,		// 장착시 추가 방어력
+		70,		// 장착시 추가 명중률
+		0,		// 장착시 추가 회피율
+		0,		// 장착시 추가 방패 막기 확률
+		1		// 장착시 추가 행동력
+	);
+
+	equipable_Items.push_back(equipable_Item);
+#pragma endregion 철 창
+
+#pragma region 나무 갑옷
+	equipable_Item = Item_Equipable(
+		11,		// 아이템 id
+		"나무 갑옷",		// 아이템 설명
+		10,		// 가격
+		(int)itemDatas::ItemType::Equipable,			// 아이템 타입
+		"나무로 만든 갑옷",		// 아이템 설명
+		(int)itemDatas::EquipSlot::Armor_Top,			// 아이템 장착 부위
+		100,		// 장착시 추가 hp
+		0,		// 장착시 추가 mp
+		0,		// 장착시 추가 atk
+		0,		// 장착시 추가 크확
+		0,		// 장착시 추가 크뎀증
+		0,		// 장착시 추가 방무
+		10,		// 장착시 추가 방어력
+		0,		// 장착시 추가 명중률
+		0,		// 장착시 추가 회피율
+		0,		// 장착시 추가 방패 막기 확률
+		1		// 장착시 추가 행동력
+	);
+
+	equipable_Items.push_back(equipable_Item);
+#pragma endregion 나무 갑옷
+
+#pragma region 철 갑옷
+	equipable_Item = Item_Equipable(
+		12,		// 아이템 id
+		"철 갑옷",		// 아이템 설명
+		50,		// 가격
+		(int)itemDatas::ItemType::Equipable,			// 아이템 타입
+		"질 좋은 철로 만든 갑옷",		// 아이템 설명
+		(int)itemDatas::EquipSlot::Armor_Top,			// 아이템 장착 부위
+		200,		// 장착시 추가 hp
+		0,		// 장착시 추가 mp
+		0,		// 장착시 추가 atk
+		0,		// 장착시 추가 크확
+		0,		// 장착시 추가 크뎀증
+		0,		// 장착시 추가 방무
+		50,		// 장착시 추가 방어력
+		0,		// 장착시 추가 명중률
+		0,		// 장착시 추가 회피율
+		0,		// 장착시 추가 방패 막기 확률
+		1		// 장착시 추가 행동력
+	);
+
+	equipable_Items.push_back(equipable_Item);
+#pragma endregion 철 갑옷
+
+#pragma region 나무 각반
+	equipable_Item = Item_Equipable(
+		13,		// 아이템 id
+		"나무 각반",		// 아이템 설명
+		10,		// 가격
+		(int)itemDatas::ItemType::Equipable,			// 아이템 타입
+		"나무로 만든 각반",		// 아이템 설명
+		(int)itemDatas::EquipSlot::Armor_Bottom,			// 아이템 장착 부위
+		80,		// 장착시 추가 hp
+		0,		// 장착시 추가 mp
+		0,		// 장착시 추가 atk
+		0,		// 장착시 추가 크확
+		0,		// 장착시 추가 크뎀증
+		0,		// 장착시 추가 방무
+		8,		// 장착시 추가 방어력
+		0,		// 장착시 추가 명중률
+		0,		// 장착시 추가 회피율
+		0,		// 장착시 추가 방패 막기 확률
+		1		// 장착시 추가 행동력
+	);
+
+	equipable_Items.push_back(equipable_Item);
+#pragma endregion 나무 각반
+
+#pragma region 철 각반
+	equipable_Item = Item_Equipable(
+		14,		// 아이템 id
+		"나무 각반",		// 아이템 설명
+		50,		// 가격
+		(int)itemDatas::ItemType::Equipable,			// 아이템 타입
+		"질 좋은 철로 만든 각반",		// 아이템 설명
+		(int)itemDatas::EquipSlot::Armor_Bottom,			// 아이템 장착 부위
+		160,		// 장착시 추가 hp
+		0,		// 장착시 추가 mp
+		0,		// 장착시 추가 atk
+		0,		// 장착시 추가 크확
+		0,		// 장착시 추가 크뎀증
+		0,		// 장착시 추가 방무
+		20,		// 장착시 추가 방어력
+		0,		// 장착시 추가 명중률
+		0,		// 장착시 추가 회피율
+		0,		// 장착시 추가 방패 막기 확률
+		1		// 장착시 추가 행동력
+	);
+
+	equipable_Items.push_back(equipable_Item);
+#pragma endregion 철 각반
+
+
+#pragma region 나무 헬멧
+	equipable_Item = Item_Equipable(
+		15,		// 아이템 id
+		"나무 헬멧",		// 아이템 설명
+		10,		// 가격
+		(int)itemDatas::ItemType::Equipable,			// 아이템 타입
+		"나무로 만든 헬멧",		// 아이템 설명
+		(int)itemDatas::EquipSlot::Helmet,			// 아이템 장착 부위
+		30,		// 장착시 추가 hp
+		0,		// 장착시 추가 mp
+		0,		// 장착시 추가 atk
+		0,		// 장착시 추가 크확
+		0,		// 장착시 추가 크뎀증
+		0,		// 장착시 추가 방무
+		10,		// 장착시 추가 방어력
+		0,		// 장착시 추가 명중률
+		0,		// 장착시 추가 회피율
+		0,		// 장착시 추가 방패 막기 확률
+		1		// 장착시 추가 행동력
+	);
+
+	equipable_Items.push_back(equipable_Item);
+#pragma endregion 나무 헬멧
+
+#pragma region 철 헬멧
+	equipable_Item = Item_Equipable(
+		16,		// 아이템 id
+		"철 헬멧",		// 아이템 설명
+		50,		// 가격
+		(int)itemDatas::ItemType::Equipable,			// 아이템 타입
+		"질 좋은 철로 만든 헬멧",		// 아이템 설명
+		(int)itemDatas::EquipSlot::Helmet,			// 아이템 장착 부위
+		65,		// 장착시 추가 hp
+		0,		// 장착시 추가 mp
+		0,		// 장착시 추가 atk
+		0,		// 장착시 추가 크확
+		0,		// 장착시 추가 크뎀증
+		0,		// 장착시 추가 방무
+		33,		// 장착시 추가 방어력
+		0,		// 장착시 추가 명중률
+		0,		// 장착시 추가 회피율
+		0,		// 장착시 추가 방패 막기 확률
+		1		// 장착시 추가 행동력
+	);
+
+	equipable_Items.push_back(equipable_Item);
+#pragma endregion 철 헬멧
+
+#pragma region 채력의 반지
+	equipable_Item = Item_Equipable(
+		17,		// 아이템 id
+		"채력의 반지",		// 아이템 설명
+		200,		// 가격
+		(int)itemDatas::ItemType::Equipable,			// 아이템 타입
+		"채력을 대폭 올려주는 반지",		// 아이템 설명
+		(int)itemDatas::EquipSlot::Ring,			// 아이템 장착 부위
+		500,		// 장착시 추가 hp
+		0,		// 장착시 추가 mp
+		0,		// 장착시 추가 atk
+		0,		// 장착시 추가 크확
+		0,		// 장착시 추가 크뎀증
+		0,		// 장착시 추가 방무
+		0,		// 장착시 추가 방어력
+		0,		// 장착시 추가 명중률
+		0,		// 장착시 추가 회피율
+		0,		// 장착시 추가 방패 막기 확률
+		1		// 장착시 추가 행동력
+	);
+
+	equipable_Items.push_back(equipable_Item);
+#pragma endregion 채력의 반지
+
+#pragma region 마나의 반지
+	equipable_Item = Item_Equipable(
+		18,		// 아이템 id
+		"마나의 반지",		// 아이템 설명
+		200,		// 가격
+		(int)itemDatas::ItemType::Equipable,			// 아이템 타입
+		"마나을 대폭 올려주는 반지",		// 아이템 설명
+		(int)itemDatas::EquipSlot::Ring,			// 아이템 장착 부위
+		0,		// 장착시 추가 hp
+		500,		// 장착시 추가 mp
+		0,		// 장착시 추가 atk
+		0,		// 장착시 추가 크확
+		0,		// 장착시 추가 크뎀증
+		0,		// 장착시 추가 방무
+		0,		// 장착시 추가 방어력
+		0,		// 장착시 추가 명중률
+		0,		// 장착시 추가 회피율
+		0,		// 장착시 추가 방패 막기 확률
+		1		// 장착시 추가 행동력
+	);
+
+	equipable_Items.push_back(equipable_Item);
+#pragma endregion 마나의 반지
+
+#pragma region 공격력의 반지
+	equipable_Item = Item_Equipable(
+		19,		// 아이템 id
+		"공격력의 반지",		// 아이템 설명
+		300,		// 가격
+		(int)itemDatas::ItemType::Equipable,			// 아이템 타입
+		"공격력을 대폭 올려주는 반지",		// 아이템 설명
+		(int)itemDatas::EquipSlot::Ring,			// 아이템 장착 부위
+		0,		// 장착시 추가 hp
+		0,		// 장착시 추가 mp
+		200,		// 장착시 추가 atk
+		0,		// 장착시 추가 크확
+		0,		// 장착시 추가 크뎀증
+		0,		// 장착시 추가 방무
+		0,		// 장착시 추가 방어력
+		0,		// 장착시 추가 명중률
+		0,		// 장착시 추가 회피율
+		0,		// 장착시 추가 방패 막기 확률
+		1		// 장착시 추가 행동력
+	);
+
+	equipable_Items.push_back(equipable_Item);
+#pragma endregion 공격력의 반지
+
+#pragma region 오색찬란 반지
+	equipable_Item = Item_Equipable(
+		20,		// 아이템 id
+		"오색찬란 반지",		// 아이템 설명
+		150,		// 가격
+		(int)itemDatas::ItemType::Equipable,			// 아이템 타입
+		"여려 능력치를 골고루 올려주는 아이템",		// 아이템 설명
+		(int)itemDatas::EquipSlot::Ring,			// 아이템 장착 부위
+		100,		// 장착시 추가 hp
+		100,		// 장착시 추가 mp
+		50,		// 장착시 추가 atk
+		0,		// 장착시 추가 크확
+		20,		// 장착시 추가 크뎀증
+		0,		// 장착시 추가 방무
+		70,		// 장착시 추가 방어력
+		0,		// 장착시 추가 명중률
+		0,		// 장착시 추가 회피율
+		0,		// 장착시 추가 방패 막기 확률
+		1		// 장착시 추가 행동력
+	);
+
+	equipable_Items.push_back(equipable_Item);
+#pragma endregion 오색찬란 반지
+
+#pragma region 정체 모를 목걸이
 	equipable_Item = Item_Equipable(
 		2, "정체 모를 아이템", 99999999, (int)itemDatas::ItemType::Equipable,
 		"신화시대 때 만들어졌을  추측되는 목걸이\n\t부조리하다고 생각될 정도로 많은 능력치를 올린다",
@@ -295,6 +584,12 @@ int ItemManager::GetItemMaxCountById(int id)
 	}
 }
 
+Item_Equipable* ItemManager::GetEquipableItemByIndex(int index)
+{
+	Item_Equipable* deepCopyItem = new Item_Equipable(equipable_Items[index]);
+	return deepCopyItem;
+}
+
 Item_Equipable* ItemManager::GetEquipableItem(int id)
 {
 	int itemType = id / 100000;
@@ -304,6 +599,14 @@ Item_Equipable* ItemManager::GetEquipableItem(int id)
 
 	return deepCopyItem;
 }
+
+Item_Consumables* ItemManager::GetConsumableItemByIndex(int index, int count)
+{
+	Item_Consumables* deepCopyItem = new Item_Consumables(consumables_Items[index]);
+	deepCopyItem->SetItemCount(count, false);
+	return deepCopyItem;
+}
+
 
 Item_Consumables* ItemManager::GetConsumableItem(int id, int count)
 {
@@ -321,6 +624,16 @@ Item_Material* ItemManager::GetMaterialItem(int id, int count)
 	Item_Material* deepCopyItem = new Item_Material(material_Items[index]);
 	deepCopyItem->SetItemCount(count, false);
 	return deepCopyItem;
+}
+
+int ItemManager::GetEquipVectorSize()
+{
+	return equipable_Items.size();;
+}
+
+int ItemManager::GetConsumableVectorSize()
+{
+	return consumables_Items.size();
 }
 
 

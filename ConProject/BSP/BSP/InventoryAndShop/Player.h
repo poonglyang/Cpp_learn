@@ -89,7 +89,11 @@ public:
 
 	void EquipSelect(int index);
 
-	void UseItem(int id);
+	/// <summary>
+	/// ¿Œµ¶Ω∫
+	/// </summary>
+	/// <param name="id"></param>
+	void UseItem(int index);
 
 	void PrintPlayerInfo();
 

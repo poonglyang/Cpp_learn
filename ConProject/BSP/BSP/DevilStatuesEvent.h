@@ -68,7 +68,7 @@ public:
 	DevilStatuesEvent();
 
 	// Event을(를) 통해 상속됨
-	void EventStart() override;
+	void EventStart(Player* player) override;
 	void EventUpdate() override;
 	void EventEnd() override;
 	void RenderEvent() override;

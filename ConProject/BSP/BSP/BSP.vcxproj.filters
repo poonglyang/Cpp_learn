@@ -126,9 +126,6 @@
     <ClCompile Include="InventoryAndShop\ItemManager.cpp">
       <Filter>InventoryAndShop\cppFile</Filter>
     </ClCompile>
-    <ClCompile Include="InventoryAndShop\ShopBase.cpp">
-      <Filter>InventoryAndShop\cppFile</Filter>
-    </ClCompile>
     <ClCompile Include="InventoryAndShop\Player.cpp">
       <Filter>InventoryAndShop\cppFile</Filter>
     </ClCompile>
@@ -137,6 +134,12 @@
     </ClCompile>
     <ClCompile Include="ViewInventory.cpp">
       <Filter>소스 파일\PlayerEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryAndShop\ShopBase.cpp">
+      <Filter>InventoryAndShop\cppFile</Filter>
+    </ClCompile>
+    <ClCompile Include="ShopEvent.cpp">
+      <Filter>Event</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -194,9 +197,6 @@
     <ClInclude Include="InventoryAndShop\resource.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="InventoryAndShop\ShopBase.h">
-      <Filter>InventoryAndShop\headerFile</Filter>
-    </ClInclude>
     <ClInclude Include="InventoryAndShop\Player.h">
       <Filter>InventoryAndShop\headerFile</Filter>
     </ClInclude>
@@ -226,6 +226,12 @@
     </ClInclude>
     <ClInclude Include="ViewInventory.h">
       <Filter>헤더 파일\PlayerEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryAndShop\ShopBase.h">
+      <Filter>InventoryAndShop\headerFile</Filter>
+    </ClInclude>
+    <ClInclude Include="ShopEvent.h">
+      <Filter>Event</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,6 +1,6 @@
 #include "ChestEvent.h"
 
-void ChestEvent::EventStart()
+void ChestEvent::EventStart(Player* player)
 {
 	RenderEvent();
 }

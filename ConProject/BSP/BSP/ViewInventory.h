@@ -110,6 +110,7 @@ namespace InventoryView {
 			std::cout << std::endl;
 			// 아이템 설명 출력
 			if (!currentInventory->empty()) {
+				
 				ItemBase* item = (*currentInventory)[choiceIndex];
 				std::cout << "\t이름\t\t" << item->GetItemName() << std::endl;
 				std::cout << "\t갯수\t\t" << item->GetItemCount() << "개" << std::endl;
@@ -275,17 +276,24 @@ namespace InventoryView {
 							ItemBase* popItem = player->inventory->PopItem(choiceIndex);
 							delete popItem;
 							popItem = nullptr;
+							if (choiceIndex >= player->inventory->equipable.size()) {
+								choiceIndex = player->inventory->equipable.size() - 1;
+							}
 						}
 						break;
 					}
 					case itemDatas::InventoryNum::Consumable: {
 						ItemBase* item = (*currentInventory)[choiceIndex];
 						if (inventoryAction[2][3] == 4) {
-							std::cout << "사용 구현해야함 시발" << std::endl;
+							player->UseItem(choiceIndex);
+							//std::cout << "사용 구현해야함 시발" << std::endl;
 						}
 						else {
 							ItemBase* item = (*currentInventory)[choiceIndex];
 							player->inventory->PopItem(item->GetItemId(), 1);;
+							if (choiceIndex >= player->inventory->consumables.size()) {
+								choiceIndex = 0;
+							}
 						}
 					}
 						
@@ -293,6 +301,9 @@ namespace InventoryView {
 					case itemDatas::InventoryNum::Material: {
 						ItemBase* item = (*currentInventory)[choiceIndex];
 						player->inventory->PopItem(item->GetItemId(), 1);
+						if (choiceIndex >= player->inventory->materials.size()) {
+							choiceIndex = 0;
+						}
 						break;
 					}
 						
@@ -302,6 +313,9 @@ namespace InventoryView {
 				}
 				
 				break;
+			case 105:	// i 키
+				wantShowInventory = false;
+				break;
 			default:
 				break;
 			}
@@ -309,17 +323,18 @@ namespace InventoryView {
 		}
 	}
 
-	static void ViewEquip(Inventory* inventory) {
-
+	static void ViewState(Player* player) {
+		system("cls");
+		player->PrintPlayerInfo();
+		player->PrintEquip();
+		playHelper::getCommand();
 	}
 
-	static void ViewConsum(Inventory* inventory) {
-
+	static void ViewEquip(Player* player) {
+		player->PrintEquip();
 	}
 
-	static void ViewMaterial(Inventory* inventory) {
-
-	}
+	
 }
 
 

@@ -43,6 +43,12 @@ public:
 	/// </summary>
 	void OnUse();
 
+	/// <summary>
+	/// 포션이 회복하는 양을 가져오는 함수
+	/// </summary>
+	/// <returns>회복량이 들어있는 백터</returns>
+	std::vector<float> GetConsumableState();
+
 	void PrintItemInfo() override;
 };
 

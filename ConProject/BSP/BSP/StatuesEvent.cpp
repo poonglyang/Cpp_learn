@@ -5,7 +5,7 @@ StatuesEvent::StatuesEvent()
 	isPray = false;
 }
 
-void StatuesEvent::EventStart()
+void StatuesEvent::EventStart(Player* player)
 {
 	system("cls");
 

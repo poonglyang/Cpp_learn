@@ -350,7 +350,6 @@ namespace playHelper {
 				// break; // 루프 종료
 			}
 		}
-
 		return -1;
 	}
 }

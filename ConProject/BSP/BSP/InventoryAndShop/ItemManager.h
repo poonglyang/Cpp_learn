@@ -84,11 +84,18 @@ public:
 	//	}
 	//}
 	
+	Item_Equipable* GetEquipableItemByIndex(int index);
+
 	Item_Equipable* GetEquipableItem(int id);
+
+	Item_Consumables* GetConsumableItemByIndex(int index, int count);
 
 	Item_Consumables* GetConsumableItem(int id, int count);
 
 	Item_Material* GetMaterialItem(int id, int count);
 
+
+	int GetEquipVectorSize();
+	int GetConsumableVectorSize();
 };
 

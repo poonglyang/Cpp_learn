@@ -71,6 +71,8 @@ public:
 	/// </summary>
 	std::vector<ItemBase*> materials;
 
+	Inventory() {};
+
 	/// <summary>
 	/// 인벤토리 생성자
 	/// </summary>
