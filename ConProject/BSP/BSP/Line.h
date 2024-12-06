@@ -12,16 +12,16 @@ private:
     /// <summary>
     /// 선의 좌표
     /// </summary>
-    Vector2Int coordinates;
+    myMath::Vector2Int coordinates;
 
 public:
     StructureHelper::Orientation GetOrientation();
 
     void SetOrientation(StructureHelper::Orientation ori);
 
-    Vector2Int GetCoordinates();
+    myMath::Vector2Int GetCoordinates();
 
-    void SetCoordinates(Vector2Int coordinates);
+    void SetCoordinates(myMath::Vector2Int coordinates);
 
     Line() {};
 
@@ -30,7 +30,7 @@ public:
     /// </summary>
     /// <param name="orientation">선의 방향(가로, 세로)</param>
     /// <param name="coordinates">선의 시작 좌표</param>
-    Line(StructureHelper::Orientation orientation, Vector2Int coordinates);
+    Line(StructureHelper::Orientation orientation, myMath::Vector2Int coordinates);
 	
 };
 

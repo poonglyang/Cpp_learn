@@ -20,6 +20,20 @@ protected:
 
 	float addDef;
 
+	float addCritialProbability;
+
+	float critialDamage;
+
+	float defIgnore;
+
+	float hit;
+
+	float avoid;
+
+	float defenseProbability;
+
+	float behaviorSpeed;
+
 public:
 	/// <summary>
 	/// 생성자
@@ -32,7 +46,8 @@ public:
 	/// <param name="itemType">아이템 타입</param>
 	/// <param name="explain">아이템 설명</param>
 	Item_Consumables(int id, const std::string& name, int count, int maxCount, int price, int itemType, const std::string& explain,
-		float hpHeal, float addMaxHp,float  mpHeal, float addMaxMp, float addAtk, float addDef);
+		float hpHeal, float addMaxHp,float  mpHeal, float addMaxMp, float addAtk, float addDef, 
+		float addCritialProbability, float critialDamage, float defIgnore, float hit, float avoid, float defenseProbability, float behaviorSpeed);
 
 	Item_Consumables(const Item_Consumables& other);
 

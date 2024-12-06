@@ -7,6 +7,7 @@ DevilStatuesEvent::DevilStatuesEvent()
 
 void DevilStatuesEvent::EventStart(Player* player)
 {
+	system("mode con: cols=150 lines=130");
 	system("cls");
 
 	if (isPray) {
@@ -15,12 +16,38 @@ void DevilStatuesEvent::EventStart(Player* player)
 		return;
 	}
 
-	EventUpdate();
+	EventUpdate(player);
 }
 
-void DevilStatuesEvent::EventUpdate()
+void DevilStatuesEvent::EventUpdate(Player* player)
 {
 	RenderEvent();
+	if (isPray) {
+		switch (rand() % 6)
+		{
+		case 0:
+			player->SetMaxHp(-rand() % 30, true);
+			break;
+		case 1:
+			player->SetMaxMp(-rand() % 30, true);
+			break;
+		case 2:
+			player->SetAtk(-rand() % 5, true);
+			break;
+		case 3:
+			player->SetDef(-rand() % 10, true);
+			break;
+		case 4:
+			player->SetCritialDamage(-rand() % 20, true);
+			break;
+		case 5:
+			player->SetBehaviorSpeed(-rand() % 3, true);
+			break;
+		default:
+			break;
+		}
+		//player.set
+	}
 }
 
 void DevilStatuesEvent::EventEnd()

@@ -32,7 +32,7 @@ protected:
 	float atk;
 
 	/// <summary>
-	/// 크리티컬 확률
+	/// 크리티컬 확률 %
 	/// </summary>
 	float critialProbability;
 
@@ -52,17 +52,17 @@ protected:
 	float def;
 
 	/// <summary>
-	/// 명중률
+	/// 명중률 %
 	/// </summary>
 	float hit;
 
 	/// <summary>
-	/// 회피률
+	/// 회피률 % 
 	/// </summary>
 	float avoid;
 
 	/// <summary>
-	/// 방패 막기 확률
+	/// 방패 막기 확률 %
 	/// </summary>
 	float defenseProbability;
 

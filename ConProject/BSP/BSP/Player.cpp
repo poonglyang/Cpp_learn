@@ -188,7 +188,14 @@ void Player::UseItem(int index)
 	SetMp(consumeItemAmount[2], true);
 	SetMaxMp(consumeItemAmount[3], true);
 	SetAtk(consumeItemAmount[4], true);
-	SetDef(consumeItemAmount[5], true);
+	SetCritialProbability(consumeItemAmount[5], true);
+	SetCritialDamage(consumeItemAmount[6], true);
+	SetDefIgnore(consumeItemAmount[7], true);
+	SetDef(consumeItemAmount[8], true);
+	SetHit(consumeItemAmount[9], true);
+	SetAvoid(consumeItemAmount[10], true);
+	SetDefenseProbability(consumeItemAmount[11], true);
+	SetBehaviorSpeed(consumeItemAmount[12], true);
 
 	int id = inventory->GetConsumableInventoryItemIdByIndex(index);
 

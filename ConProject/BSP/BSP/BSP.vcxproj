@@ -90,6 +90,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -105,13 +106,13 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalOptions>/analyze:stacksize 50000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/analyze:stacksize 100000 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>C:\Users\user\Desktop\CppFIle\K_learn\ConProject\BSP\BSP\InventoryAndShop;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <StackReserveSize>5</StackReserveSize>
+      <StackReserveSize>20</StackReserveSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -122,6 +123,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -141,6 +143,7 @@
     <ClCompile Include="Event.cpp" />
     <ClCompile Include="EventManager.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Intro.cpp" />
     <ClCompile Include="Inventory.cpp" />
     <ClCompile Include="IState.cpp" />
     <ClCompile Include="ItemBase.cpp" />
@@ -161,13 +164,6 @@
     <ClCompile Include="ShopEvent.cpp" />
     <ClCompile Include="StatuesEvent.cpp" />
     <ClCompile Include="StructureHelper.cpp" />
-    <ClCompile Include="Test.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="Test01.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="TileBase.cpp" />
     <ClCompile Include="ViewInventory.cpp" />
     <ClCompile Include="WellEvent.cpp" />
   </ItemGroup>
@@ -182,6 +178,7 @@
     <ClInclude Include="Event.h" />
     <ClInclude Include="EventManager.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="Intro.h" />
     <ClInclude Include="Inventory.h" />
     <ClInclude Include="InventoryAndShop\resource.h" />
     <ClInclude Include="IState.h" />
@@ -201,7 +198,6 @@
     <ClInclude Include="ShopEvent.h" />
     <ClInclude Include="StatuesEvent.h" />
     <ClInclude Include="StructureHelper.h" />
-    <ClInclude Include="TileBase.h" />
     <ClInclude Include="ViewInventory.h" />
     <ClInclude Include="WellEvent.h" />
   </ItemGroup>

@@ -11,10 +11,10 @@ void BSP::SplitTheSpace(RoomNode* currentNode, std::vector<RoomNode*>& listToRet
     {
         // 수평선이면
         RoomNode* node1 = new RoomNode(currentNode, currentNode->GetBottomLeftCorner(),                          // 노드 1의 좌하단 좌표 = 부모의 좌하단 좌표
-            Vector2Int(currentNode->GetTopRightCorner().x, line.GetCoordinates().y),       // 노드 1의 우상단 좌표 = (부모의 우상단 x 좌표, 분할선의 y 좌표) 
+            myMath::Vector2Int(currentNode->GetTopRightCorner().x, line.GetCoordinates().y),       // 노드 1의 우상단 좌표 = (부모의 우상단 x 좌표, 분할선의 y 좌표) 
             currentNode->GetTreeIndex() + 1);                                            // 트리 인덱스는 부모 노드 + 1
 
-        RoomNode* node2 = new RoomNode(currentNode, Vector2Int(currentNode->GetBottomLeftCorner().x,
+        RoomNode* node2 = new RoomNode(currentNode, myMath::Vector2Int(currentNode->GetBottomLeftCorner().x,
             line.GetCoordinates().y), currentNode->GetTopRightCorner(),
             currentNode->GetTreeIndex() + 1);
 
@@ -24,10 +24,10 @@ void BSP::SplitTheSpace(RoomNode* currentNode, std::vector<RoomNode*>& listToRet
     else
     {
         RoomNode* node1 = new RoomNode(currentNode, currentNode->GetBottomLeftCorner(),
-            Vector2Int(line.GetCoordinates().x, currentNode->GetTopRightCorner().y),
+            myMath::Vector2Int(line.GetCoordinates().x, currentNode->GetTopRightCorner().y),
             currentNode->GetTreeIndex() + 1);
 
-        RoomNode* node2 = new RoomNode(currentNode, Vector2Int(
+        RoomNode* node2 = new RoomNode(currentNode, myMath::Vector2Int(
             line.GetCoordinates().x, currentNode->GetBottomLeftCorner().y),
             currentNode->GetTopRightCorner(), currentNode->GetTreeIndex() + 1);
 
@@ -38,7 +38,7 @@ void BSP::SplitTheSpace(RoomNode* currentNode, std::vector<RoomNode*>& listToRet
     
 }
 
-Line BSP::GetLineDividingSpace(Vector2Int bottomLeftAreaCorner, Vector2Int topRightAreaCorner, int roomWidthMin, int roomLengthMin)
+Line BSP::GetLineDividingSpace(myMath::Vector2Int bottomLeftAreaCorner, myMath::Vector2Int topRightAreaCorner, int roomWidthMin, int roomLengthMin)
 {
     Orientation orientation;
 
@@ -62,15 +62,15 @@ Line BSP::GetLineDividingSpace(Vector2Int bottomLeftAreaCorner, Vector2Int topRi
     return Line(orientation, GetCoordinatesFororientation(orientation, bottomLeftAreaCorner, topRightAreaCorner, roomWidthMin, roomLengthMin));
 }
 
-Vector2Int BSP::GetCoordinatesFororientation(Orientation orientation, Vector2Int bottomLeftAreaCorner, Vector2Int topRightAreaCorner, int roomWidthMin, int roomLengthMin)
+myMath::Vector2Int BSP::GetCoordinatesFororientation(Orientation orientation, myMath::Vector2Int bottomLeftAreaCorner, myMath::Vector2Int topRightAreaCorner, int roomWidthMin, int roomLengthMin)
 {
-    Vector2Int coordinates = Vector2Int::zero();
+    myMath::Vector2Int coordinates = myMath::Vector2Int::zero();
 
     if (orientation == Orientation::Horiszontal)
     {
         // 세로 선이면
         // 분할점을 0, 아래서부터 방 가능한 크기, 위에서부터 방 가능한 크기 사이의 선으로 정한다
-        coordinates = Vector2Int(0, Mathf::Random::Range(
+        coordinates = myMath::Vector2Int(0, myMath::Mathf::Random::Range(
             (bottomLeftAreaCorner.y + roomLengthMin),
             (topRightAreaCorner.y - roomLengthMin)));
         
@@ -79,7 +79,7 @@ Vector2Int BSP::GetCoordinatesFororientation(Orientation orientation, Vector2Int
     {
         // 가로 선이면
         // 분할점을 왼쪽부터 방 가능한 크기, 오른쪽에서부터 방 가능한 크기 사이의 선으로 정한다
-        coordinates = Vector2Int(Mathf::Random::Range(
+        coordinates = myMath::Vector2Int(myMath::Mathf::Random::Range(
             (bottomLeftAreaCorner.x + roomWidthMin),
             (topRightAreaCorner.x - roomWidthMin)), 0);
 
@@ -90,7 +90,7 @@ Vector2Int BSP::GetCoordinatesFororientation(Orientation orientation, Vector2Int
 
 BSP::BSP(int dungeonWidth, int dungeonLength)
 {
-	this->rootNode = new RoomNode(nullptr, Vector2Int(0, 0), Vector2Int(dungeonWidth, dungeonLength), 0);
+	this->rootNode = new RoomNode(nullptr, myMath::Vector2Int(0, 0), myMath::Vector2Int(dungeonWidth, dungeonLength), 0);
 }
 
 BSP::~BSP()

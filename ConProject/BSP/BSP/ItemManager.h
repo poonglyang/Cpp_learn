@@ -1,8 +1,12 @@
 #pragma once
+
 #include <vector>
 #include "Item_Equipable.h"
 #include "Item_Consumables.h"
 #include "Item_Material.h"
+#include "namespace.cpp"
+
+using namespace myMath;
 
 /// <summary>
 /// 모든 아이템의 정보를 가지고 있는 클래스
@@ -94,6 +98,7 @@ public:
 
 	Item_Material* GetMaterialItem(int id, int count);
 
+	int GetRandomItemId();
 
 	int GetEquipVectorSize();
 	int GetConsumableVectorSize();

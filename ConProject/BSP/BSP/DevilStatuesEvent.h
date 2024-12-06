@@ -69,7 +69,7 @@ public:
 
 	// Event을(를) 통해 상속됨
 	void EventStart(Player* player) override;
-	void EventUpdate() override;
+	void EventUpdate(Player* player) override;
 	void EventEnd() override;
 	void RenderEvent() override;
 };

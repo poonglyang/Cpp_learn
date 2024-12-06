@@ -1,12 +1,12 @@
 #include "RoomNode.h"
 
-RoomNode::RoomNode(Node* parentNode, Vector2Int bottomLeftCorner, Vector2Int topRightCorner, int index)
+RoomNode::RoomNode(Node* parentNode, myMath::Vector2Int bottomLeftCorner, myMath::Vector2Int topRightCorner, int index)
 	: Node(parentNode)
 {
 	this->bottomLeftCorner = bottomLeftCorner;
 	this->topRightCorner = topRightCorner;
-	this->bottomRightCorner = Vector2Int(topRightCorner.x, bottomLeftCorner.y);
-	this->topLeftCorner = Vector2Int(bottomLeftCorner.x, topRightCorner.y);
+	this->bottomRightCorner = myMath::Vector2Int(topRightCorner.x, bottomLeftCorner.y);
+	this->topLeftCorner = myMath::Vector2Int(bottomLeftCorner.x, topRightCorner.y);
 	this->treeIndex = index;
 }
 

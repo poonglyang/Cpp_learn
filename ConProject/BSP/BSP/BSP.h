@@ -24,7 +24,7 @@ private:
     /// <param name="roomWidthMin">방의 최소 가로 길이</param>
     /// <param name="roomLengthMin">방의 최소 세로 길이</param>
     /// <returns></returns>
-    Line GetLineDividingSpace(Vector2Int bottomLeftAreaCorner, Vector2Int topRightAreaCorner, int roomWidthMin, int roomLengthMin);
+    Line GetLineDividingSpace(myMath::Vector2Int bottomLeftAreaCorner, myMath::Vector2Int topRightAreaCorner, int roomWidthMin, int roomLengthMin);
 
     /// <summary>
     /// 분할 선의 시작점을 반환는 함수
@@ -35,7 +35,7 @@ private:
     /// <param name="roomWidthMin">방 가로 최소 크기</param>
     /// <param name="roomLengthMin">방 세로 최소 크기</param>
     /// <returns></returns>
-    Vector2Int GetCoordinatesFororientation(Orientation orientation, Vector2Int bottomLeftAreaCorner, Vector2Int topRightAreaCorner, int roomWidthMin, int roomLengthMin);
+    myMath::Vector2Int GetCoordinatesFororientation(Orientation orientation, myMath::Vector2Int bottomLeftAreaCorner, myMath::Vector2Int topRightAreaCorner, int roomWidthMin, int roomLengthMin);
 
 public:
     /// <summary>

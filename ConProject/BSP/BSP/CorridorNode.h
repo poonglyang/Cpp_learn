@@ -30,7 +30,7 @@ private:
     /// <returns>방의 방향</returns>
     StructureHelper::RelativePosition CheckPositionStructure2AgainstStructure1();
 
-    double CalcuateAngle(Vector2 middlePointStructure1Temp, Vector2 middlePointStructure2Temp);
+    double CalcuateAngle(myMath::Vector2 middlePointStructure1Temp, myMath::Vector2 middlePointStructure2Temp);
     
     bool CompareByTopRightCornerX(const Node* node1, const Node* node2);
 
@@ -46,7 +46,7 @@ private:
     /// <param name="rightNodeUp">오른쪽 방의 좌 또는 우 상단 좌표</param>
     /// <param name="rightNodeDown">오른쪽 방의 좌 또는 우 하단 좌표</param>
     /// <returns>-1이 아니면 해당함, -1이면 해당 안함(길못만든다고 해석)</returns>
-    int GetValidYForNeighourLeftRight(Vector2Int leftNodeUp, Vector2Int leftNodeDown, Vector2Int rightNodeUp, Vector2Int rightNodeDown);
+    int GetValidYForNeighourLeftRight(myMath::Vector2Int leftNodeUp, myMath::Vector2Int leftNodeDown, myMath::Vector2Int rightNodeUp, myMath::Vector2Int rightNodeDown);
 
     bool CompareByTopRightCornerY(const Node* node1, const Node* node2);
 
@@ -54,7 +54,7 @@ private:
 
     void ProcessRoomInRelationUpOrDown(Node* structure1, Node* structure2);
 
-    int GetValidYForNeighourUpDown(Vector2Int bottomNodeLeft, Vector2Int bottomNodeRight, Vector2Int topNodeLeft, Vector2Int topNodeRight);
+    int GetValidYForNeighourUpDown(myMath::Vector2Int bottomNodeLeft, myMath::Vector2Int bottomNodeRight, myMath::Vector2Int topNodeLeft, myMath::Vector2Int topNodeRight);
 public:
     CorridorNode() {};
 

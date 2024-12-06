@@ -20,6 +20,7 @@ void Game::SetMonster()
 	// 몬스터 세팅
 	for (int i = 0; i < dungeon.size(); i++) {
 		int roomIndex = -1;
+		std::vector<myMath::Vector2Int> tempVecotr;
 		for (Node* room : dungeon[i].rooms) {
 			roomIndex++;
 			if (roomIndex == shopPosRoomIndex[i]) {
@@ -31,21 +32,28 @@ void Game::SetMonster()
 			int count = 0;
 
 			while (count <= monsterCount ) {
-				int monsterPosX = Mathf::Random::Range(
+
+				
+				int monsterPosX = myMath::Mathf::Random::Range(
 					room->GetBottomLeftCorner().x + 1, 
 					room->GetBottomRightCorner().x
 				);
-				int monsterPosy = Mathf::Random::Range(
+
+				int monsterPosy = myMath::Mathf::Random::Range(
 					room->GetBottomLeftCorner().y + 1, 
 					room->GetTopLeftCorner().y
 				);
 
-				if (dungeon[i].map.mapArr[monsterPosy][monsterPosX] == 0) {
+				if (dungeon[i].map.mapArr[monsterPosy][monsterPosX] == 0 && playerLocation[i].x != monsterPosy && playerLocation[i].y != monsterPosX) {
 					dungeon[i].map.mapArr[monsterPosy][monsterPosX] = 4;
+					tempVecotr.push_back(myMath::Vector2Int(monsterPosy, monsterPosX));
 					count++;
 				}
+
 			}
+			
 		}
+		enemyPos.push_back(tempVecotr);
 	}
 }
 
@@ -64,16 +72,16 @@ void Game::SetChest()
 			int count = 0;
 
 			while (count <= boxCount) {
-				int boxPosX = Mathf::Random::Range(
+				int boxPosX = myMath::Mathf::Random::Range(
 					room->GetBottomLeftCorner().x + 1,
 					room->GetBottomRightCorner().x
 				);
-				int boxPosy = Mathf::Random::Range(
+				int boxPosy = myMath::Mathf::Random::Range(
 					room->GetBottomLeftCorner().y + 1,
 					room->GetTopLeftCorner().y
 				);
 
-				if (dungeon[i].map.mapArr[boxPosy][boxPosX] == 0) {
+				if (dungeon[i].map.mapArr[boxPosy][boxPosX] == 0 && playerLocation[i].x != boxPosy && playerLocation[i].y != boxPosX) {
 					dungeon[i].map.mapArr[boxPosy][boxPosX] = 60;
 					count++;
 				}
@@ -99,9 +107,9 @@ void Game::SetStatues()
 		}
 
 		if (canPlaceStatues.size() > 0) {
-			int roomIndex = Mathf::Random::Range(0, canPlaceStatues.size());
+			int roomIndex = myMath::Mathf::Random::Range(0, canPlaceStatues.size());
 
-			Vector2Int statuesPoint = canPlaceStatues[roomIndex]->GetNodeMiddlePoint();
+			myMath::Vector2Int statuesPoint = canPlaceStatues[roomIndex]->GetNodeMiddlePoint();
 
 			statusPoint.push_back(statuesPoint);
 			statusPosRoomIndex.push_back(roomIndex);
@@ -122,7 +130,7 @@ void Game::SetStatues()
 			}
 		}
 		else {
-			statusPoint.push_back(Vector2Int::zero());
+			statusPoint.push_back(myMath::Vector2Int::zero());
 			statusPosRoomIndex.push_back(-999);
 		}
 	}
@@ -133,14 +141,14 @@ void Game::SetWell()
 	for (int i = 0; i < dungeonFloor; i++) {
 		int wellRoomIndex;
 		while (true) {
-			wellRoomIndex = Mathf::Random::Range(1, dungeon[i].rooms.size());
+			wellRoomIndex = myMath::Mathf::Random::Range(1, dungeon[i].rooms.size());
 			if (wellRoomIndex != shopPosRoomIndex[i]) {
 				wellPosRoomIndex.push_back(wellRoomIndex);
 				break;
 			}
 		}
 	
-		Vector2Int shopPoint = dungeon[i].rooms[wellRoomIndex]->GetNodeMiddlePoint();
+		myMath::Vector2Int shopPoint = dungeon[i].rooms[wellRoomIndex]->GetNodeMiddlePoint();
 		if (dungeon[i].map.mapArr[shopPoint.y][shopPoint.x] == 0) {
 			dungeon[i].map.mapArr[shopPoint.y][shopPoint.x] = 12;
 		}
@@ -154,35 +162,35 @@ void Game::SetStairAndShop()
 		if (dungeon[i].map.mapArr[playerLocation[i].x][playerLocation[i].y + 1] == 0) {
 			dungeon[i].map.mapArr[playerLocation[i].x][playerLocation[i].y + 1] = 2;
 			downStairs.push_back(std::pair(
-				Vector2Int(playerLocation[i].x, playerLocation[i].y + 1),
+				myMath::Vector2Int(playerLocation[i].x, playerLocation[i].y + 1),
 				playerLocation[i])
 			);
 		}
 		else if (dungeon[i].map.mapArr[playerLocation[i].x - 1][playerLocation[i].y] == 0) {
 			dungeon[i].map.mapArr[playerLocation[i].x - 1][playerLocation[i].y] = 2;
 			downStairs.push_back(std::pair(
-				Vector2Int(playerLocation[i].x - 1, playerLocation[i].y),
+				myMath::Vector2Int(playerLocation[i].x - 1, playerLocation[i].y),
 				playerLocation[i])
 			);
 		}
 		else if (dungeon[i].map.mapArr[playerLocation[i].x + 1][playerLocation[i].y] == 0) {
 			dungeon[i].map.mapArr[playerLocation[i].x + 1][playerLocation[i].y] = 2;
 			downStairs.push_back(std::pair(
-				Vector2Int(playerLocation[i].x + 1, playerLocation[i].y),
+				myMath::Vector2Int(playerLocation[i].x + 1, playerLocation[i].y),
 				playerLocation[i])
 			);
 		}
 		else {
 			dungeon[i].map.mapArr[playerLocation[i].x][playerLocation[i].y - 1] = 2;
 			downStairs.push_back(
-				std::pair(Vector2Int(playerLocation[i].x, playerLocation[i].y - 1),
+				std::pair(myMath::Vector2Int(playerLocation[i].x, playerLocation[i].y - 1),
 					playerLocation[i])
 			);
 		}
 
 		// 윗 층으로 올라가는 계단 위치 세팅
-		int upStairsRoomIndex = Mathf::Random::Range(1, dungeon[i].rooms.size());
-		Vector2Int upStairsPos = PlaceStructuresInRoom(dungeon[i].rooms[upStairsRoomIndex]);
+		int upStairsRoomIndex = myMath::Mathf::Random::Range(1, dungeon[i].rooms.size());
+		myMath::Vector2Int upStairsPos = PlaceStructuresInRoom(dungeon[i].rooms[upStairsRoomIndex]);
 		dungeon[i].map.mapArr[upStairsPos.x][upStairsPos.y] = 3;
 		upStairs.push_back(upStairsPos);
 		this->upStairsRoomIndex.push_back(upStairsRoomIndex);
@@ -208,9 +216,9 @@ void Game::SetStairAndShop()
 		}
 
 		if (canPlaceShopNode.size() > 0) {
-			int roomIndex = Mathf::Random::Range(0, canPlaceShopNode.size());
+			int roomIndex = myMath::Mathf::Random::Range(0, canPlaceShopNode.size());
 			
-			Vector2Int shopPoint = canPlaceShopNode[roomIndex]->GetNodeMiddlePoint();
+			myMath::Vector2Int shopPoint = canPlaceShopNode[roomIndex]->GetNodeMiddlePoint();
 
 			shopPos.push_back(shopPoint);
 			shopPosRoomIndex.push_back(roomIndex);
@@ -224,7 +232,7 @@ void Game::SetStairAndShop()
 			dungeon[i].map.mapArr[shopPoint.y + 1][shopPoint.x + 1] = 114;
 		}
 		else {
-			shopPos.push_back(Vector2Int::zero());
+			shopPos.push_back(myMath::Vector2Int::zero());
 			shopPosRoomIndex.push_back(-999);
 		}
 	}
@@ -244,12 +252,12 @@ void Game::CreateMap()
 	int testPrint[dungeonSize][dungeonSize] = { 0 };
 
 	// 맵의 첫 번째 방에서 플레이어의 시작 위치를 세팅한다
-	Vector2Int playerloc = Vector2Int(
-		Mathf::Random::Range(
+	myMath::Vector2Int playerloc = myMath::Vector2Int(
+		myMath::Mathf::Random::Range(
 			rooms[0]->GetBottomLeftCorner().y + 1,
 			rooms[0]->GetTopLeftCorner().y)
 		,
-		Mathf::Random::Range(
+		myMath::Mathf::Random::Range(
 			rooms[0]->GetBottomLeftCorner().x + 1,
 			rooms[0]->GetBottomRightCorner().x)
 	);
@@ -259,7 +267,6 @@ void Game::CreateMap()
 	DungeonFloor dungeonFloor;
 
 	Map map = playHelper::CreateMap(rooms, cooridorVector);
-
 
 	dungeonFloor.rooms = rooms;
 	dungeonFloor.cooridorVector = cooridorVector;
@@ -319,7 +326,7 @@ bool Game::CheckPlayerGoWell()
 
 bool Game::CheckPlayerGoShop()
 {
-	if (shopPos[currentFloor - 1] == Vector2Int::zero()) {
+	if (shopPos[currentFloor - 1] == myMath::Vector2Int::zero()) {
 		return false;
 	}
 	else if (
@@ -373,6 +380,7 @@ void Game::EventCheck()
 	}
 	else if (upStairs[currentFloor - 1] == playerLocation[currentFloor - 1]) {
 		GoUp();
+
 	}
 	else if (CheckPlayerGoShop()) {
 		GoShop();
@@ -394,12 +402,19 @@ void Game::EventCheck()
 	}
  	else {
 		PlayerMove();
+		
 	}
+	system("mode con: cols=120 lines=120");
 }
 
 void Game::RenderScene()
 {
 	system("cls");
+
+	if (player->GetHp() <= 0) {
+		isGameOver = true;
+		return;
+	}
 
 	std::cout << "[ " << currentFloor << "층 ]" << std::endl;
 
@@ -505,7 +520,7 @@ void Game::RenderScene()
 		}
 		std::cout << std::endl;
 	}
-
+	
 	EventCheck();
 }
 
@@ -547,12 +562,98 @@ void Game::PlayerMove()
 		InventoryView::ViewState(player);
 		break;
 	}
+
+	UnitMove();
+}
+
+void Game::UnitMove()
+{
+	int count = -1;
+
+	for (myMath::Vector2Int& enemy : enemyPos[currentFloor - 1]) {
+		count++;
+		if ((enemy.x + 1 == playerLocation[currentFloor - 1].x && enemy.y == playerLocation[currentFloor - 1].y)
+			|| (enemy.x - 1 == playerLocation[currentFloor - 1].x && enemy.y == playerLocation[currentFloor - 1].y)
+			|| (enemy.x == playerLocation[currentFloor - 1].x && enemy.y + 1 == playerLocation[currentFloor - 1].y)
+			|| (enemy.x == playerLocation[currentFloor - 1].x && enemy.y - 1 == playerLocation[currentFloor - 1].y)) {
+			// 플레이어와 적 간의 거리가 1칸일 경우	
+			dungeon[currentFloor - 1].map.mapArr[enemy.x][enemy.y] = 0;
+			
+			enemyPos[currentFloor - 1].erase(enemyPos[currentFloor - 1].begin() + count);
+
+			Sleep(500);
+
+			GoMonster();
+			continue;
+		}
+
+		int east = -1, west = -1, south = -1, north = -1;
+		int temp;
+		temp = playerLocation[currentFloor - 1].x - enemy.x;
+		if (0 <= temp && temp < 6) {
+			// 플레이어가 아래로 5칸 이내에 있을 때
+			south = temp;
+		}
+
+		temp = playerLocation[currentFloor - 1].y - enemy.y;
+		if (0 <=temp && temp < 6) {
+			// 플레이어가 우로 5칸 이내에 있을 때
+			east = temp;
+		}
+
+		temp = enemy.x - playerLocation[currentFloor - 1].x;
+		if (0 <= temp && temp < 6) {
+			// 플레이어가 위로 5칸 이내에 있을 때
+			north = temp;
+		}
+
+		temp = enemy.y - playerLocation[currentFloor - 1].y;
+		if (0 <= temp && temp < 6) {
+			// 플레이어가 좌로 5칸 아니에 있을 때
+			west = temp;
+		}
+
+		temp = std::max({east, west, south, north});
+
+		if (temp == -1) {
+			continue;
+		}
+
+		if (temp == north && (east != -1 || west != -1) && dungeon[currentFloor - 1].map.mapArr[enemy.x - 1][enemy.y] == 0) {
+			dungeon[currentFloor - 1].map.mapArr[enemy.x][enemy.y] = 0;
+
+			enemy.x--;
+
+			dungeon[currentFloor - 1].map.mapArr[enemy.x][enemy.y] = 4;
+
+		}
+		else if (temp == south && (east != -1 || west != -1) && dungeon[currentFloor - 1].map.mapArr[enemy.x +1][enemy.y] == 0) {
+			dungeon[currentFloor - 1].map.mapArr[enemy.x][enemy.y] = 0;
+			enemy.x++;
+			dungeon[currentFloor - 1].map.mapArr[enemy.x][enemy.y] = 4;
+
+		}
+		else if (temp == east && (north != -1 || south != -1) && dungeon[currentFloor -1].map.mapArr[enemy.x][enemy.y + 1] == 0) {
+			dungeon[currentFloor - 1].map.mapArr[enemy.x][enemy.y] = 0;
+			enemy.y++;
+			dungeon[currentFloor - 1].map.mapArr[enemy.x][enemy.y] = 4;
+		}
+		else if (temp == west && (north != -1 || south != -1) && dungeon[currentFloor - 1].map.mapArr[enemy.x][enemy.y - 1] == 0) {
+			dungeon[currentFloor - 1].map.mapArr[enemy.x][enemy.y] = 0;
+			enemy.y--;
+			dungeon[currentFloor - 1].map.mapArr[enemy.x][enemy.y] = 4;
+		}
+	}
+
+	system("mode con: cols=120 lines=120");
 }
 
 void Game::GoUp()
 {
 	if (currentFloor >= dungeonFloor) {
-		std::cout << "더이상 올라갈 수 없습니다" << std::endl;
+		system("cls");
+		std::cout << "\n\n\n\n\n\n\t\t\t\t\t[던전을 탈출했습니다]" << std::endl;
+		isGameOver = true;
 		Sleep(500);
 		playerLocation[currentFloor - 1] = oldPlayerLoc;
 	}
@@ -581,6 +682,7 @@ void Game::GoShop()
 	eventManagers[currentFloor - 1].EventStart(EventEnum::SHOP_EVENT, player);
 	
 	playerLocation[currentFloor - 1] = oldPlayerLoc;
+	system("mode con: cols=120 lines=120");
 }
 
 void Game::GoWell()
@@ -590,6 +692,7 @@ void Game::GoWell()
 	eventManagers[currentFloor-1].EventStart(EventEnum::WELL_EVENT, player);
 	Sleep(500);
 	playerLocation[currentFloor - 1] = oldPlayerLoc;
+	system("mode con: cols=120 lines=120");
 }
 
 void Game::GoDevilStatues()
@@ -599,6 +702,7 @@ void Game::GoDevilStatues()
 	eventManagers[currentFloor - 1].EventStart(EventEnum::DEVIL_STATUES_EVENT, player);
 	Sleep(500);
 	playerLocation[currentFloor - 1] = oldPlayerLoc;
+	system("mode con: cols=120 lines=120");
 }
 
 void Game::GoAngelStatues()
@@ -608,6 +712,7 @@ void Game::GoAngelStatues()
 	eventManagers[currentFloor - 1].EventStart(EventEnum::ANGEL_STATUES_EVENT, player);
 	Sleep(500);
 	playerLocation[currentFloor - 1] = oldPlayerLoc;
+	system("mode con: cols=120 lines=120");
 }
 
 void Game::GoChest()
@@ -617,6 +722,7 @@ void Game::GoChest()
 	int count = 0;
 	eventManagers[currentFloor - 1].EventStart(playHelper::EventEnum::BOX_EVENT, player);
 	dungeon[currentFloor - 1].map.mapArr[playerLocation[currentFloor - 1].x][playerLocation[currentFloor - 1].y] = 0;
+	system("mode con: cols=120 lines=120");
 	Sleep(500);
 	//playerLocation[currentFloor - 1] = oldPlayerLoc;
 }
@@ -627,6 +733,7 @@ void Game::GoMonster()
 	eventManagers[currentFloor - 1].EventStart(playHelper::EventEnum::MONSTER_EVENT, player);
 	Sleep(500);
 	dungeon[currentFloor - 1].map.mapArr[playerLocation[currentFloor - 1].x][playerLocation[currentFloor - 1].y] = 0;
+	system("mode con: cols=120 lines=120");
 }
 
 
@@ -686,10 +793,14 @@ Game::Game(int dungeonFloor) :dungeonFloor(dungeonFloor)
 
 void Game::GameStart()
 {
+	system("mode con: cols=120 lines=120");
+
 	while (true) {
 		if (isGameOver) {
 			break;
 		}
+
+		
 
 		RenderScene();
 	}

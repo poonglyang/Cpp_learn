@@ -2,210 +2,16 @@
 
 void ChestEvent::EventStart(Player* player)
 {
-	RenderEvent();
+	EventUpdate(player);
 }
 
-void ChestEvent::EventUpdate()
+void ChestEvent::EventUpdate(Player* player)
 {
-}
-
-void ChestEvent::EventEnd()
-{
-}
-
-void ChestEvent::RenderEvent()
-{
-	int input = 0;
-	bool isEventEnd = false;
-
-	while (true) {
-		system("cls");
-		std::cout << "[상자를 발견했다] " << std::endl;
-
-		if (!isOpen) {
-			for (int i = 0; i < 29; i++) {
-				for (int j = 0; j < 40; j++) {
-					switch (chestClose[i][j]) {
-					case 0:
-						std::cout << "  ";
-						break;
-					case 1:
-						SetRGBColor(67, 4, 7);
-						std::cout << "■";
-						break;
-					case 2:
-						SetRGBColor(106, 107, 125);
-						std::cout << "■";
-						break;
-					case 3:
-						SetRGBColor(154, 156, 169);
-						std::cout << "■";
-						break;
-					case 4:
-						SetRGBColor(255, 255, 255);
-						std::cout << "■";
-						break;
-					case 5:
-						SetRGBColor(237, 159, 1);
-						std::cout << "■";
-						break;
-					case 6:
-						SetRGBColor(179, 89, 1);
-						std::cout << "■";
-						break;
-					case 7:
-						SetRGBColor(255, 210, 129);
-						std::cout << "■";
-						break;
-					case 8:
-						SetRGBColor(241, 134, 4);
-						std::cout << "■";
-						break;
-					case 9:
-						SetRGBColor(153, 69, 0);
-						std::cout << "■";
-						break;
-					}
-
-					SetConsoleColor(FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
-					// 텍스트 색상 리셋 (기본)
-					printf("\033[0m");
-				}
-				std::cout << std::endl;
-			}
-		}
-		else {
-			if (isPickUpItem) {
-				for (int i = 0; i < 40; i++) {
-					for (int j = 0; j < 40; j++) {
-						switch (chestOpen[i][j]) {
-						case 0:
-							std::cout << "  ";
-							break;
-						case 1:
-							SetRGBColor(67, 4, 7);
-							std::cout << "■";
-							break;
-						case 2:
-							SetRGBColor(106, 107, 125);
-							std::cout << "■";
-							break;
-						case 3:
-							SetRGBColor(154, 156, 169);
-							std::cout << "■";
-							break;
-						case 4:
-							SetRGBColor(255, 255, 255);
-							std::cout << "■";
-							break;
-						case 5:
-							SetRGBColor(237, 159, 1);
-							std::cout << "■";
-							break;
-						case 6:
-							SetRGBColor(179, 89, 1);
-							std::cout << "■";
-							break;
-						case 7:
-							SetRGBColor(255, 210, 129);
-							std::cout << "■";
-							break;
-						case 8:
-							SetRGBColor(241, 134, 4);
-							std::cout << "■";
-							break;
-						case 9:
-							SetRGBColor(153, 69, 0);
-							std::cout << "■";
-							break;
-						}
-
-						SetConsoleColor(FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
-						// 텍스트 색상 리셋 (기본)
-						printf("\033[0m");
-					}
-					std::cout << std::endl;
-				}
-			}
-			else {
-				for (int i = 0; i < 40; i++) {
-					for (int j = 0; j < 40; j++) {
-						switch (chestOpenAndItem[i][j]) {
-						case 0:
-							std::cout << "  ";
-							break;
-						case 1:
-							SetRGBColor(67, 4, 7);
-							std::cout << "■";
-							break;
-						case 2:
-							SetRGBColor(106, 107, 125);
-							std::cout << "■";
-							break;
-						case 3:
-							SetRGBColor(154, 156, 169);
-							std::cout << "■";
-							break;
-						case 4:
-							SetRGBColor(255, 255, 255);
-							std::cout << "■";
-							break;
-						case 5:
-							SetRGBColor(237, 159, 1);
-							std::cout << "■";
-							break;
-						case 6:
-							SetRGBColor(179, 89, 1);
-							std::cout << "■";
-							break;
-						case 7:
-							SetRGBColor(255, 210, 129);
-							std::cout << "■";
-							break;
-						case 8:
-							SetRGBColor(241, 134, 4);
-							std::cout << "■";
-							break;
-						case 9:
-							SetRGBColor(153, 69, 0);
-							std::cout << "■";
-							break;
-						case 10:
-							SetRGBColor(252, 248, 112);
-							std::cout << "■";
-							break;
-						case 11:
-							SetRGBColor(239, 157, 21);
-							std::cout << "■";
-							break;
-						case 12:
-							SetRGBColor(252, 204, 16);
-							std::cout << "■";
-							break;
-						case 13:
-							SetRGBColor(229, 20, 200);
-							std::cout << "■";
-							break;
-						case 14:
-							SetRGBColor(20, 213, 244);
-							std::cout << "■";
-							break;
-						case 15:
-							SetRGBColor(216, 1, 16);
-							std::cout << "■";
-							break;
-						}
-
-						SetConsoleColor(FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
-						// 텍스트 색상 리셋 (기본)
-						printf("\033[0m");
-					}
-					std::cout << std::endl;
-				}
-			}
-		}
-		
-
+	int input;
+	bool EventEnd = false;
+	text[5][8] == 6;
+	while (!EventEnd) {
+		RenderEvent();
 
 		for (int i = 0; i < 10; i++) {
 			for (int j = 0; j < 41; j++) {
@@ -256,19 +62,12 @@ void ChestEvent::RenderEvent()
 					break;
 				case 9:
 					std::cout << "\t\t [상자를 열었다]\t\t\t\t■";
-					
-					if (isMimic) {
-						std::cout << "미믹이 나옴 넣기" << std::endl;
-						isEventEnd = true;
-					}
-					else {
-						text[2][16] = 11;
-						text[5][8] = 12;
-					}
+					isOpen = true;
+					EventEnd = true;
 					break;
 				case 10:
 					std::cout << "\t   [상자를 열지 않고 지나갔다]\t\t\t\t■";
-					isEventEnd = true;
+					EventEnd = true;
 					break;
 				case 11:
 					std::cout << "[상자안에 \t\t가 있다]\t■" << std::endl;
@@ -293,11 +92,9 @@ void ChestEvent::RenderEvent()
 					break;
 				case 14:
 					std::cout << "\t\t [~~~을 획득했다]\t\t\t\t■";
-					isEventEnd = true;
 					break;
 				case 15:
 					std::cout << "\t [아이템을 가지지 않고 지나갔다]\t\t\t\t■";
-					isEventEnd = true;
 					break;
 				default:
 					break;
@@ -309,9 +106,40 @@ void ChestEvent::RenderEvent()
 			std::cout << std::endl;
 		}
 
-		if (isEventEnd) {
-			std::cout << "[계속할려면 아무키 누르기]" << std::endl;
+		if (EventEnd && text[5][8] == 9) {
 			playHelper::getCommand();
+			RenderEvent();
+			if (isMimic) {
+				std::cout << "\t\t\t미믹이 나타났습니다!!!" << std::endl;
+				playHelper::getCommand();
+				BattleEvent battleEvent = BattleEvent(5);
+				battleEvent.EventStart(player);
+				RenderEvent();
+				std::cout << "\t\t\t왜 짜증나게 미믹이 나타나" << std::endl;
+			}
+			else {
+				ItemBase* temp;
+
+				if (true) {
+					temp = player->inventory->itemManager.GetEquipableItemByIndex(rand() % player->inventory->itemManager.GetEquipVectorSize());
+					player->inventory->PushItem(temp);
+					std::cout<<std::endl << std::endl<< "\t\t" << temp->GetItemName() << "을 얻었습니다" << std::endl;
+				}
+				else {
+					int id = player->inventory->itemManager.GetRandomItemId();
+					int count = rand() % 3;
+
+					player->inventory->PushItem(id, count);
+					std::cout << std::endl << std::endl << "\t\t아이템 획득" << std::endl;
+
+				}
+			}
+			playHelper::getCommand();
+			continue;
+			break;
+		}
+		else if (EventEnd && text[5][8] == 10) {
+			continue;
 			break;
 		}
 
@@ -357,6 +185,199 @@ void ChestEvent::RenderEvent()
 	}
 }
 
+void ChestEvent::EventEnd()
+{
+}
+
+void ChestEvent::RenderEvent()
+{
+	system("cls");
+	std::cout << "[상자를 발견했다] " << std::endl;
+
+	if (!isOpen) {
+		for (int i = 0; i < 29; i++) {
+			for (int j = 0; j < 40; j++) {
+				switch (chestClose[i][j]) {
+				case 0:
+					std::cout << "  ";
+					break;
+				case 1:
+					SetRGBColor(67, 4, 7);
+					std::cout << "■";
+					break;
+				case 2:
+					SetRGBColor(106, 107, 125);
+					std::cout << "■";
+					break;
+				case 3:
+					SetRGBColor(154, 156, 169);
+					std::cout << "■";
+					break;
+				case 4:
+					SetRGBColor(255, 255, 255);
+					std::cout << "■";
+					break;
+				case 5:
+					SetRGBColor(237, 159, 1);
+					std::cout << "■";
+					break;
+				case 6:
+					SetRGBColor(179, 89, 1);
+					std::cout << "■";
+					break;
+				case 7:
+					SetRGBColor(255, 210, 129);
+					std::cout << "■";
+					break;
+				case 8:
+					SetRGBColor(241, 134, 4);
+					std::cout << "■";
+					break;
+				case 9:
+					SetRGBColor(153, 69, 0);
+					std::cout << "■";
+					break;
+				}
+
+				SetConsoleColor(FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+				// 텍스트 색상 리셋 (기본)
+				printf("\033[0m");
+			}
+			std::cout << std::endl;
+		}
+	}
+	else {
+		if (isPickUpItem) {
+			for (int i = 0; i < 40; i++) {
+				for (int j = 0; j < 40; j++) {
+					switch (chestOpen[i][j]) {
+					case 0:
+						std::cout << "  ";
+						break;
+					case 1:
+						SetRGBColor(67, 4, 7);
+						std::cout << "■";
+						break;
+					case 2:
+						SetRGBColor(106, 107, 125);
+						std::cout << "■";
+						break;
+					case 3:
+						SetRGBColor(154, 156, 169);
+						std::cout << "■";
+						break;
+					case 4:
+						SetRGBColor(255, 255, 255);
+						std::cout << "■";
+						break;
+					case 5:
+						SetRGBColor(237, 159, 1);
+						std::cout << "■";
+						break;
+					case 6:
+						SetRGBColor(179, 89, 1);
+						std::cout << "■";
+						break;
+					case 7:
+						SetRGBColor(255, 210, 129);
+						std::cout << "■";
+						break;
+					case 8:
+						SetRGBColor(241, 134, 4);
+						std::cout << "■";
+						break;
+					case 9:
+						SetRGBColor(153, 69, 0);
+						std::cout << "■";
+						break;
+					}
+
+					SetConsoleColor(FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+					// 텍스트 색상 리셋 (기본)
+					printf("\033[0m");
+				}
+				std::cout << std::endl;
+			}
+		}
+		else {
+			for (int i = 0; i < 40; i++) {
+				for (int j = 0; j < 40; j++) {
+					switch (chestOpenAndItem[i][j]) {
+					case 0:
+						std::cout << "  ";
+						break;
+					case 1:
+						SetRGBColor(67, 4, 7);
+						std::cout << "■";
+						break;
+					case 2:
+						SetRGBColor(106, 107, 125);
+						std::cout << "■";
+						break;
+					case 3:
+						SetRGBColor(154, 156, 169);
+						std::cout << "■";
+						break;
+					case 4:
+						SetRGBColor(255, 255, 255);
+						std::cout << "■";
+						break;
+					case 5:
+						SetRGBColor(237, 159, 1);
+						std::cout << "■";
+						break;
+					case 6:
+						SetRGBColor(179, 89, 1);
+						std::cout << "■";
+						break;
+					case 7:
+						SetRGBColor(255, 210, 129);
+						std::cout << "■";
+						break;
+					case 8:
+						SetRGBColor(241, 134, 4);
+						std::cout << "■";
+						break;
+					case 9:
+						SetRGBColor(153, 69, 0);
+						std::cout << "■";
+						break;
+					case 10:
+						SetRGBColor(252, 248, 112);
+						std::cout << "■";
+						break;
+					case 11:
+						SetRGBColor(239, 157, 21);
+						std::cout << "■";
+						break;
+					case 12:
+						SetRGBColor(252, 204, 16);
+						std::cout << "■";
+						break;
+					case 13:
+						SetRGBColor(229, 20, 200);
+						std::cout << "■";
+						break;
+					case 14:
+						SetRGBColor(20, 213, 244);
+						std::cout << "■";
+						break;
+					case 15:
+						SetRGBColor(216, 1, 16);
+						std::cout << "■";
+						break;
+					}
+
+					SetConsoleColor(FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+					// 텍스트 색상 리셋 (기본)
+					printf("\033[0m");
+				}
+				std::cout << std::endl;
+			}
+		}
+	}
+}
+
 ChestEvent::ChestEvent()
 {
 	isOpen = false;
@@ -364,7 +385,7 @@ ChestEvent::ChestEvent()
 
 	int randValue = rand() % 10;
 
-	if (randValue < 3) {
+	if (randValue < 2) {
 		isMimic = true;
 	}
 	else {

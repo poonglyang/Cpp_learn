@@ -5,8 +5,8 @@ class RoomNode : public Node
 {
 
 public:
-	RoomNode(Node* parentNode, Vector2Int bottomLeftCorner,
-		Vector2Int topRightCorner, int index);
+	RoomNode(Node* parentNode, myMath::Vector2Int bottomLeftCorner,
+		myMath::Vector2Int topRightCorner, int index);
 
 	RoomNode(const Node& node) :Node(node) {};
 

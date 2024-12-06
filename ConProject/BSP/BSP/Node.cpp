@@ -1,10 +1,10 @@
 #include "Node.h"
 
-Vector2Int Node::GetMiddlePoint()
+myMath::Vector2Int Node::GetMiddlePoint()
 {
 
 
-    return Vector2Int();
+    return myMath::Vector2Int();
 }
 
 Node::Node()
@@ -68,12 +68,12 @@ void Node::SetIsVisited(bool set)
     isVisited = set;
 }
 
-Vector2Int Node::GetBottomLeftCorner() const
+myMath::Vector2Int Node::GetBottomLeftCorner() const
 {
     return bottomLeftCorner;
 }
 
-void Node::SetBottomLeftCorner(Vector2Int vector2)
+void Node::SetBottomLeftCorner(myMath::Vector2Int vector2)
 {
     bottomLeftCorner = vector2;
 }
@@ -84,12 +84,12 @@ void Node::SetBottomLeftCorner(int x, int y)
     bottomLeftCorner.y = y;
 }
 
-Vector2Int Node::GetBottomRightCorner() const
+myMath::Vector2Int Node::GetBottomRightCorner() const
 {
     return bottomRightCorner;
 }
 
-void Node::SetBottomRightCorner(Vector2Int vector2)
+void Node::SetBottomRightCorner(myMath::Vector2Int vector2)
 {
     bottomRightCorner = vector2;
 }
@@ -100,12 +100,12 @@ void Node::SetBottomRightCorner(int x, int y)
     bottomRightCorner.y = y;
 }
 
-Vector2Int Node::GetTopRightCorner() const
+myMath::Vector2Int Node::GetTopRightCorner() const
 {
     return topRightCorner;
 }
 
-void Node::SetTopRightCorner(Vector2Int vector2)
+void Node::SetTopRightCorner(myMath::Vector2Int vector2)
 {
     topRightCorner = vector2;
 }
@@ -116,12 +116,12 @@ void Node::SetTopRightCorner(int x, int y)
     topRightCorner.y = y;
 }
 
-Vector2Int Node::GetTopLeftCorner() const
+myMath::Vector2Int Node::GetTopLeftCorner() const
 {
     return topLeftCorner;
 }
 
-void Node::SetTopLeftCorner(Vector2Int vector2)
+void Node::SetTopLeftCorner(myMath::Vector2Int vector2)
 {
     topLeftCorner = vector2;
 }
@@ -142,10 +142,10 @@ void Node::SetTreeIndex(int index)
     treeIndex = index;
 }
 
-Vector2Int Node::GetNodeMiddlePoint()
+myMath::Vector2Int Node::GetNodeMiddlePoint()
 {
-    Vector2Int sum = bottomLeftCorner + topRightCorner;
-    Vector2Int returnValue = Vector2Int(sum.x / 2, sum.y / 2);
+    myMath::Vector2Int sum = bottomLeftCorner + topRightCorner;
+    myMath::Vector2Int returnValue = myMath::Vector2Int(sum.x / 2, sum.y / 2);
     return returnValue;
 }
 

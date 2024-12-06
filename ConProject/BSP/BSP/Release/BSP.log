@@ -1,0 +1,704 @@
+﻿  BattleEvent.cpp
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(10,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
+  (소스 파일 'BattleEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(15,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
+  (소스 파일 'BattleEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(50,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'BattleEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(120,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::Map' 왼쪽은 무시됩니다.
+  (소스 파일 'BattleEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(124,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::DungeonFloor' 왼쪽은 무시됩니다.
+  (소스 파일 'BattleEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(132,20): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::EventEnum' 왼쪽은 무시됩니다.
+  (소스 파일 'BattleEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(354,14): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::MonsterNum' 왼쪽은 무시됩니다.
+  (소스 파일 'BattleEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Monster.h(3,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+  (소스 파일 'BattleEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\BattleEvent.cpp(5,11): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\BattleEvent.cpp(6,11): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\BattleEvent.cpp(7,12): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\BattleEvent.cpp(11,12): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\BattleEvent.cpp(62,11): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\BattleEvent.cpp(63,11): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\BattleEvent.cpp(64,12): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\BattleEvent.cpp(68,12): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\BattleEvent.cpp(255,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\BattleEvent.cpp(334,24): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\BattleEvent.cpp(343,22): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+  BSP.cpp
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(10,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
+  (소스 파일 'BSP.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(15,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
+  (소스 파일 'BSP.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(50,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'BSP.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(120,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::Map' 왼쪽은 무시됩니다.
+  (소스 파일 'BSP.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(124,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::DungeonFloor' 왼쪽은 무시됩니다.
+  (소스 파일 'BSP.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(132,20): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::EventEnum' 왼쪽은 무시됩니다.
+  (소스 파일 'BSP.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(354,14): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::MonsterNum' 왼쪽은 무시됩니다.
+  (소스 파일 'BSP.cpp'을(를) 컴파일하는 중)
+  
+  ChestEvent.cpp
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(10,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
+  (소스 파일 'ChestEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(15,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
+  (소스 파일 'ChestEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(50,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'ChestEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(120,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::Map' 왼쪽은 무시됩니다.
+  (소스 파일 'ChestEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(124,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::DungeonFloor' 왼쪽은 무시됩니다.
+  (소스 파일 'ChestEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(132,20): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::EventEnum' 왼쪽은 무시됩니다.
+  (소스 파일 'ChestEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(354,14): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::MonsterNum' 왼쪽은 무시됩니다.
+  (소스 파일 'ChestEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Monster.h(3,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+  (소스 파일 'ChestEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ChestEvent.cpp(12,13): warning C4553: '==': 식의 결과가 사용되지 않습니다. '='을(를) 의도했습니까?
+  CooridorsGenerator.cpp
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(10,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
+  (소스 파일 'CooridorsGenerator.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(15,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
+  (소스 파일 'CooridorsGenerator.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(50,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'CooridorsGenerator.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(120,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::Map' 왼쪽은 무시됩니다.
+  (소스 파일 'CooridorsGenerator.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(124,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::DungeonFloor' 왼쪽은 무시됩니다.
+  (소스 파일 'CooridorsGenerator.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(132,20): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::EventEnum' 왼쪽은 무시됩니다.
+  (소스 파일 'CooridorsGenerator.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(354,14): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::MonsterNum' 왼쪽은 무시됩니다.
+  (소스 파일 'CooridorsGenerator.cpp'을(를) 컴파일하는 중)
+  
+  CorridorNode.cpp
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(10,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
+  (소스 파일 'CorridorNode.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(15,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
+  (소스 파일 'CorridorNode.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(50,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'CorridorNode.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(120,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::Map' 왼쪽은 무시됩니다.
+  (소스 파일 'CorridorNode.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(124,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::DungeonFloor' 왼쪽은 무시됩니다.
+  (소스 파일 'CorridorNode.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(132,20): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::EventEnum' 왼쪽은 무시됩니다.
+  (소스 파일 'CorridorNode.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(354,14): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::MonsterNum' 왼쪽은 무시됩니다.
+  (소스 파일 'CorridorNode.cpp'을(를) 컴파일하는 중)
+  
+  DevilStatuesEvent.cpp
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(10,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
+  (소스 파일 'DevilStatuesEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(15,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
+  (소스 파일 'DevilStatuesEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(50,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'DevilStatuesEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(120,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::Map' 왼쪽은 무시됩니다.
+  (소스 파일 'DevilStatuesEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(124,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::DungeonFloor' 왼쪽은 무시됩니다.
+  (소스 파일 'DevilStatuesEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(132,20): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::EventEnum' 왼쪽은 무시됩니다.
+  (소스 파일 'DevilStatuesEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(354,14): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::MonsterNum' 왼쪽은 무시됩니다.
+  (소스 파일 'DevilStatuesEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\DevilStatuesEvent.cpp(29,29): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\DevilStatuesEvent.cpp(32,29): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\DevilStatuesEvent.cpp(35,27): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\DevilStatuesEvent.cpp(38,27): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\DevilStatuesEvent.cpp(41,37): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\DevilStatuesEvent.cpp(44,37): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  DungeonGenerator.cpp
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(10,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
+  (소스 파일 'DungeonGenerator.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(15,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
+  (소스 파일 'DungeonGenerator.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(50,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'DungeonGenerator.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(120,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::Map' 왼쪽은 무시됩니다.
+  (소스 파일 'DungeonGenerator.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(124,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::DungeonFloor' 왼쪽은 무시됩니다.
+  (소스 파일 'DungeonGenerator.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(132,20): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::EventEnum' 왼쪽은 무시됩니다.
+  (소스 파일 'DungeonGenerator.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(354,14): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::MonsterNum' 왼쪽은 무시됩니다.
+  (소스 파일 'DungeonGenerator.cpp'을(를) 컴파일하는 중)
+  
+  Event.cpp
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(10,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
+  (소스 파일 'Event.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(15,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
+  (소스 파일 'Event.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(50,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'Event.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(120,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::Map' 왼쪽은 무시됩니다.
+  (소스 파일 'Event.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(124,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::DungeonFloor' 왼쪽은 무시됩니다.
+  (소스 파일 'Event.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(132,20): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::EventEnum' 왼쪽은 무시됩니다.
+  (소스 파일 'Event.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(354,14): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::MonsterNum' 왼쪽은 무시됩니다.
+  (소스 파일 'Event.cpp'을(를) 컴파일하는 중)
+  
+  EventManager.cpp
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(10,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
+  (소스 파일 'EventManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(15,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
+  (소스 파일 'EventManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(50,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'EventManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(120,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::Map' 왼쪽은 무시됩니다.
+  (소스 파일 'EventManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(124,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::DungeonFloor' 왼쪽은 무시됩니다.
+  (소스 파일 'EventManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(132,20): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::EventEnum' 왼쪽은 무시됩니다.
+  (소스 파일 'EventManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(354,14): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::MonsterNum' 왼쪽은 무시됩니다.
+  (소스 파일 'EventManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Monster.h(3,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+  (소스 파일 'EventManager.cpp'을(를) 컴파일하는 중)
+  
+  Game.cpp
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(10,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(15,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(50,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(120,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::Map' 왼쪽은 무시됩니다.
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(124,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::DungeonFloor' 왼쪽은 무시됩니다.
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(132,20): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::EventEnum' 왼쪽은 무시됩니다.
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(354,14): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::MonsterNum' 왼쪽은 무시됩니다.
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Monster.h(3,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ViewInventory.h(95,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ViewInventory.h(221,25): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ViewInventory.h(287,24): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ViewInventory.h(297,24): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ViewInventory.h(305,24): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ViewInventory.h(314,23): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Game.cpp(21,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Game.cpp(62,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Game.cpp(95,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Game.cpp(160,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  Intro.cpp
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(10,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(15,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(50,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(120,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::Map' 왼쪽은 무시됩니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(124,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::DungeonFloor' 왼쪽은 무시됩니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(132,20): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::EventEnum' 왼쪽은 무시됩니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(354,14): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::MonsterNum' 왼쪽은 무시됩니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Monster.h(3,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ViewInventory.h(95,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ViewInventory.h(221,25): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ViewInventory.h(287,24): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ViewInventory.h(297,24): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ViewInventory.h(305,24): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ViewInventory.h(314,23): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Intro.h(11,9): warning C4566: 유니버설 문자 이름 '\u2580'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Intro.h(11,9): warning C4566: 유니버설 문자 이름 '\u2588'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Intro.h(11,9): warning C4566: 유니버설 문자 이름 '\u2584'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Intro.h(12,9): warning C4566: 유니버설 문자 이름 '\u2588'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Intro.h(12,9): warning C4566: 유니버설 문자 이름 '\u2584'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Intro.h(12,9): warning C4566: 유니버설 문자 이름 '\u2580'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Intro.h(13,9): warning C4566: 유니버설 문자 이름 '\u2588'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Intro.h(13,9): warning C4566: 유니버설 문자 이름 '\u2580'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Intro.h(13,9): warning C4566: 유니버설 문자 이름 '\u258C'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Intro.h(13,9): warning C4566: 유니버설 문자 이름 '\u2590'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Intro.h(14,9): warning C4566: 유니버설 문자 이름 '\u2584'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Intro.h(14,9): warning C4566: 유니버설 문자 이름 '\u2588'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Intro.h(14,9): warning C4566: 유니버설 문자 이름 '\u2580'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Intro.h(14,9): warning C4566: 유니버설 문자 이름 '\u258C'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Intro.h(15,9): warning C4566: 유니버설 문자 이름 '\u2580'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Intro.h(15,9): warning C4566: 유니버설 문자 이름 '\u2588'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Intro.h(15,9): warning C4566: 유니버설 문자 이름 '\u2584'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Intro.h(15,9): warning C4566: 유니버설 문자 이름 '\u258C'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Intro.h(16,9): warning C4566: 유니버설 문자 이름 '\u2588'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Intro.h(16,9): warning C4566: 유니버설 문자 이름 '\u2584'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Intro.h(16,9): warning C4566: 유니버설 문자 이름 '\u2580'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Intro.h(16,9): warning C4566: 유니버설 문자 이름 '\u2590'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Intro.h(17,9): warning C4566: 유니버설 문자 이름 '\u2588'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Intro.h(17,9): warning C4566: 유니버설 문자 이름 '\u2584'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Intro.h(17,9): warning C4566: 유니버설 문자 이름 '\u258C'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Intro.h(17,9): warning C4566: 유니버설 문자 이름 '\u2580'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Intro.h(18,9): warning C4566: 유니버설 문자 이름 '\u2584'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Intro.h(18,9): warning C4566: 유니버설 문자 이름 '\u2588'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Intro.h(18,9): warning C4566: 유니버설 문자 이름 '\u2580'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  (소스 파일 'Intro.cpp'을(를) 컴파일하는 중)
+  
+  Inventory.cpp
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Inventory.cpp(66,27): warning C4018: '>': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Inventory.cpp(99,30): warning C4018: '>': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Inventory.cpp(135,28): warning C4018: '>': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Inventory.cpp(189,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Inventory.cpp(237,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Inventory.cpp(289,26): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Inventory.cpp(294,30): warning C4018: '<=': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Inventory.cpp(299,28): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Inventory.cpp(304,26): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  IState.cpp
+  ItemBase.cpp
+  ItemData.cpp
+  ItemManager.cpp
+  Item_Consumables.cpp
+  Item_Equipable.cpp
+  Item_Material.cpp
+  Line.cpp
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(10,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
+  (소스 파일 'Line.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(15,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
+  (소스 파일 'Line.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(50,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'Line.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(120,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::Map' 왼쪽은 무시됩니다.
+  (소스 파일 'Line.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(124,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::DungeonFloor' 왼쪽은 무시됩니다.
+  (소스 파일 'Line.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(132,20): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::EventEnum' 왼쪽은 무시됩니다.
+  (소스 파일 'Line.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(354,14): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::MonsterNum' 왼쪽은 무시됩니다.
+  (소스 파일 'Line.cpp'을(를) 컴파일하는 중)
+  
+  컴파일하고 있습니다...
+  main.cpp
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(10,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(15,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(50,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(120,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::Map' 왼쪽은 무시됩니다.
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(124,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::DungeonFloor' 왼쪽은 무시됩니다.
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(132,20): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::EventEnum' 왼쪽은 무시됩니다.
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(354,14): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::MonsterNum' 왼쪽은 무시됩니다.
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Monster.h(3,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ViewInventory.h(95,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ViewInventory.h(221,25): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ViewInventory.h(287,24): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ViewInventory.h(297,24): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ViewInventory.h(305,24): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ViewInventory.h(314,23): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(9,9): warning C4566: 유니버설 문자 이름 '\u2580'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(9,9): warning C4566: 유니버설 문자 이름 '\u2588'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(9,9): warning C4566: 유니버설 문자 이름 '\u2584'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(10,9): warning C4566: 유니버설 문자 이름 '\u2588'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(10,9): warning C4566: 유니버설 문자 이름 '\u2584'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(10,9): warning C4566: 유니버설 문자 이름 '\u2580'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(11,9): warning C4566: 유니버설 문자 이름 '\u2588'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(11,9): warning C4566: 유니버설 문자 이름 '\u2580'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(11,9): warning C4566: 유니버설 문자 이름 '\u258C'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(11,9): warning C4566: 유니버설 문자 이름 '\u2590'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(12,9): warning C4566: 유니버설 문자 이름 '\u2584'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(12,9): warning C4566: 유니버설 문자 이름 '\u2588'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(12,9): warning C4566: 유니버설 문자 이름 '\u2580'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(12,9): warning C4566: 유니버설 문자 이름 '\u258C'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(13,9): warning C4566: 유니버설 문자 이름 '\u2580'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(13,9): warning C4566: 유니버설 문자 이름 '\u2588'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(13,9): warning C4566: 유니버설 문자 이름 '\u2584'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(13,9): warning C4566: 유니버설 문자 이름 '\u258C'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(14,9): warning C4566: 유니버설 문자 이름 '\u2588'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(14,9): warning C4566: 유니버설 문자 이름 '\u2584'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(14,9): warning C4566: 유니버설 문자 이름 '\u2580'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(14,9): warning C4566: 유니버설 문자 이름 '\u2590'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(15,9): warning C4566: 유니버설 문자 이름 '\u2588'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(15,9): warning C4566: 유니버설 문자 이름 '\u2584'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(15,9): warning C4566: 유니버설 문자 이름 '\u258C'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(15,9): warning C4566: 유니버설 문자 이름 '\u2580'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(16,9): warning C4566: 유니버설 문자 이름 '\u2584'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(16,9): warning C4566: 유니버설 문자 이름 '\u2588'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(16,9): warning C4566: 유니버설 문자 이름 '\u2580'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(17,9): warning C4566: 유니버설 문자 이름 '\u2588'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(17,9): warning C4566: 유니버설 문자 이름 '\u2580'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\main.cpp(48,27): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Monster.cpp
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Monster.h(3,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+  (소스 파일 'Monster.cpp'을(를) 컴파일하는 중)
+  
+  namespace.cpp
+  Node.cpp
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\Node.cpp(44,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  Player.cpp
+  RoomGenerator.cpp
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(10,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
+  (소스 파일 'RoomGenerator.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(15,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
+  (소스 파일 'RoomGenerator.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(50,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'RoomGenerator.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(120,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::Map' 왼쪽은 무시됩니다.
+  (소스 파일 'RoomGenerator.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(124,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::DungeonFloor' 왼쪽은 무시됩니다.
+  (소스 파일 'RoomGenerator.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(132,20): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::EventEnum' 왼쪽은 무시됩니다.
+  (소스 파일 'RoomGenerator.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(354,14): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::MonsterNum' 왼쪽은 무시됩니다.
+  (소스 파일 'RoomGenerator.cpp'을(를) 컴파일하는 중)
+  
+  RoomNode.cpp
+  ShopBase.cpp
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ShopBase.cpp(156,72): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ShopBase.cpp(171,79): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ShopBase.cpp(188,78): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  ShopEvent.cpp
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(10,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
+  (소스 파일 'ShopEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(15,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
+  (소스 파일 'ShopEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(50,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'ShopEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(120,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::Map' 왼쪽은 무시됩니다.
+  (소스 파일 'ShopEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(124,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::DungeonFloor' 왼쪽은 무시됩니다.
+  (소스 파일 'ShopEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(132,20): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::EventEnum' 왼쪽은 무시됩니다.
+  (소스 파일 'ShopEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(354,14): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::MonsterNum' 왼쪽은 무시됩니다.
+  (소스 파일 'ShopEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ShopEvent.cpp(273,22): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ShopEvent.cpp(286,22): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ShopEvent.cpp(347,24): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ShopEvent.cpp(353,57): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ShopEvent.cpp(468,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ShopEvent.cpp(546,24): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ShopEvent.cpp(604,23): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ShopEvent.cpp(619,23): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ShopEvent.cpp(635,23): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+  StatuesEvent.cpp
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(10,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
+  (소스 파일 'StatuesEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(15,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
+  (소스 파일 'StatuesEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(50,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'StatuesEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(120,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::Map' 왼쪽은 무시됩니다.
+  (소스 파일 'StatuesEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(124,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::DungeonFloor' 왼쪽은 무시됩니다.
+  (소스 파일 'StatuesEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(132,20): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::EventEnum' 왼쪽은 무시됩니다.
+  (소스 파일 'StatuesEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(354,14): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::MonsterNum' 왼쪽은 무시됩니다.
+  (소스 파일 'StatuesEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StatuesEvent.cpp(29,24): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StatuesEvent.cpp(32,24): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StatuesEvent.cpp(35,22): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StatuesEvent.cpp(38,22): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StatuesEvent.cpp(41,32): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StatuesEvent.cpp(44,31): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  StructureHelper.cpp
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(10,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
+  (소스 파일 'StructureHelper.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(15,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
+  (소스 파일 'StructureHelper.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(50,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'StructureHelper.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(120,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::Map' 왼쪽은 무시됩니다.
+  (소스 파일 'StructureHelper.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(124,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::DungeonFloor' 왼쪽은 무시됩니다.
+  (소스 파일 'StructureHelper.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(132,20): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::EventEnum' 왼쪽은 무시됩니다.
+  (소스 파일 'StructureHelper.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(354,14): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::MonsterNum' 왼쪽은 무시됩니다.
+  (소스 파일 'StructureHelper.cpp'을(를) 컴파일하는 중)
+  
+  ViewInventory.cpp
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(10,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
+  (소스 파일 'ViewInventory.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(15,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
+  (소스 파일 'ViewInventory.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(50,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'ViewInventory.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(120,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::Map' 왼쪽은 무시됩니다.
+  (소스 파일 'ViewInventory.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(124,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::DungeonFloor' 왼쪽은 무시됩니다.
+  (소스 파일 'ViewInventory.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(132,20): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::EventEnum' 왼쪽은 무시됩니다.
+  (소스 파일 'ViewInventory.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(354,14): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::MonsterNum' 왼쪽은 무시됩니다.
+  (소스 파일 'ViewInventory.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ViewInventory.h(95,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'ViewInventory.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ViewInventory.h(221,25): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'ViewInventory.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ViewInventory.h(287,24): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'ViewInventory.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ViewInventory.h(297,24): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'ViewInventory.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ViewInventory.h(305,24): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'ViewInventory.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\ViewInventory.h(314,23): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'ViewInventory.cpp'을(를) 컴파일하는 중)
+  
+  WellEvent.cpp
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(10,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::Orientation' 왼쪽은 무시됩니다.
+  (소스 파일 'WellEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(15,20): warning C4091: 'static ': 변수를 선언하지 않으면 'StructureHelper::RelativePosition' 왼쪽은 무시됩니다.
+  (소스 파일 'WellEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(50,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  (소스 파일 'WellEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(120,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::Map' 왼쪽은 무시됩니다.
+  (소스 파일 'WellEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(124,16): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::DungeonFloor' 왼쪽은 무시됩니다.
+  (소스 파일 'WellEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(132,20): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::EventEnum' 왼쪽은 무시됩니다.
+  (소스 파일 'WellEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\StructureHelper.h(354,14): warning C4091: 'static ': 변수를 선언하지 않으면 'playHelper::MonsterNum' 왼쪽은 무시됩니다.
+  (소스 파일 'WellEvent.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\WellEvent.cpp(87,66): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\WellEvent.cpp(89,19): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\WellEvent.cpp(92,66): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\BSP\WellEvent.cpp(94,19): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  코드를 생성하고 있습니다.
+  Previous IPDB not found, fall back to full compilation.
+  All 1675 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  코드를 생성했습니다.
+  BSP.vcxproj -> C:\Users\MH\Desktop\UnrealLearn\K_learn\ConProject\BSP\Release\BSP.exe

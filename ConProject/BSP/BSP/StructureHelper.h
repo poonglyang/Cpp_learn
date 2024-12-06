@@ -7,8 +7,6 @@
 
 namespace StructureHelper {
 
-	
-
 	static enum class Orientation {
 		Horiszontal,
 		Vertical
@@ -71,9 +69,9 @@ namespace StructureHelper {
 	/// <param name="pointModifire">생성 범위( 0에 가까우면 minX와 minY에 1에 가까우면 maxX와 maxY에 가깝게 생성)</param>
 	/// <param name="offset">복도 넓이</param>
 	/// <returns>좌하단 코너</returns>
-	static Vector2Int GenerateBottomLeftCornerBetween(
-		Vector2Int boundrayLeftPoint,
-		Vector2Int boundrayRightPoint,
+	static myMath::Vector2Int GenerateBottomLeftCornerBetween(
+		myMath::Vector2Int boundrayLeftPoint,
+		myMath::Vector2Int boundrayRightPoint,
 		double pointModifire, int offset) 
 	{
 		int minX = boundrayLeftPoint.x + offset;
@@ -82,16 +80,16 @@ namespace StructureHelper {
 		int minY = boundrayLeftPoint.y + offset;
 		int maxY = boundrayRightPoint.y - offset;
 
-		return Vector2Int(
-			Mathf::Random::Range(minX, (int)(minX + (maxX - minX) * pointModifire)),
-			Mathf::Random::Range(minY, (int)(minY + (maxY - minY) * pointModifire))
+		return myMath::Vector2Int(
+			myMath::Mathf::Random::Range(minX, (int)(minX + (maxX - minX) * pointModifire)),
+			myMath::Mathf::Random::Range(minY, (int)(minY + (maxY - minY) * pointModifire))
 		);
 	}
 
 
-	static Vector2Int GenerateTopRightCornerBetween(
-		Vector2Int boundrayLeftPoint, 
-		Vector2Int boundrayRightPoint, 
+	static myMath::Vector2Int GenerateTopRightCornerBetween(
+		myMath::Vector2Int boundrayLeftPoint,
+		myMath::Vector2Int boundrayRightPoint,
 		float pointModifire, int offset) 
 	{
 		int minX = boundrayLeftPoint.x + offset;
@@ -100,18 +98,18 @@ namespace StructureHelper {
 		int minY = boundrayLeftPoint.y + offset;
 		int maxY = boundrayRightPoint.y - offset;
 
-		return Vector2Int(
-			Mathf::Random::Range((int)(minX + (maxX - minX) * pointModifire), maxX),
-			Mathf::Random::Range((int)(minY + (maxY - minY) * pointModifire), maxY)
+		return myMath::Vector2Int(
+			myMath::Mathf::Random::Range((int)(minX + (maxX - minX) * pointModifire), maxX),
+			myMath::Mathf::Random::Range((int)(minY + (maxY - minY) * pointModifire), maxY)
 		);
 	}
 
 
-	static Vector2Int CalculateMiddlePoint(
-		Vector2Int v1, Vector2Int v2) {
-		Vector2 sum = Vector2(v1.x, v1.y) + Vector2(v2.x, v2.y);             // 두 백터 더하고~
-		Vector2 tempVector = sum * 0.5;   // 두 백터 나누고~
-		return Vector2Int((int)tempVector.x, (int)tempVector.y);    // 그 값 반환 하기~
+	static myMath::Vector2Int CalculateMiddlePoint(
+		myMath::Vector2Int v1, myMath::Vector2Int v2) {
+		myMath::Vector2 sum = myMath::Vector2(v1.x, v1.y) + myMath::Vector2(v2.x, v2.y);             // 두 백터 더하고~
+		myMath::Vector2 tempVector = sum * 0.5;   // 두 백터 나누고~
+		return myMath::Vector2Int((int)tempVector.x, (int)tempVector.y);    // 그 값 반환 하기~
 	}
 
 	
@@ -314,7 +312,7 @@ namespace playHelper {
 		(room->GetBottomRightCorner().x - room->GetBottomLeftCorner().x)
 		* (room->GetTopLeftCorner().y - room->GetBottomLeftCorner().y);
 
-		return Mathf::Random::Range(roomArea / 20 - 1, roomArea / 15 - 1);
+		return myMath::Mathf::Random::Range(roomArea / 20 - 1, roomArea / 15 - 1);
 	}
 	
 
@@ -323,14 +321,14 @@ namespace playHelper {
 	/// </summary>
 	/// <param name="room">랜덤 좌표 뽑을 방</param>
 	/// <returns>방내의 랜덤 좌표</returns>
-	static Vector2Int PlaceStructuresInRoom(Node* room) {
+	static myMath::Vector2Int PlaceStructuresInRoom(Node* room) {
 		
-		return Vector2Int(
-			Mathf::Random::Range(
+		return myMath::Vector2Int(
+			myMath::Mathf::Random::Range(
 				room->GetBottomLeftCorner().y + 1,
 				room->GetTopLeftCorner().y
 			),
-			Mathf::Random::Range(
+			myMath::Mathf::Random::Range(
 				room->GetBottomLeftCorner().x + 1,
 				room->GetBottomRightCorner().x
 			)
@@ -352,5 +350,14 @@ namespace playHelper {
 		}
 		return -1;
 	}
+
+	static enum MonsterNum {
+		Slime,
+		Goblin,
+		Ork,
+		Skeleton,
+		Troll,
+		mimic
+	};
 }
 

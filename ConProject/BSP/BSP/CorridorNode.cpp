@@ -25,12 +25,12 @@ void CorridorNode::GenerateCorridor()
 
 StructureHelper::RelativePosition CorridorNode::CheckPositionStructure2AgainstStructure1()
 {
-    Vector2 middlePointStructure1Temp = (
-        (Vector2(structure1->GetTopRightCorner().x, structure1->GetTopRightCorner().y)
-        + Vector2(structure1->GetBottomLeftCorner().x, structure1->GetBottomLeftCorner().y)) / 2);      // structure1의 중앙 좌표
-    Vector2 middlePointStructure2Temp = (
-        Vector2(structure2->GetTopRightCorner().x, structure2->GetTopRightCorner().y)
-        + Vector2(structure2->GetBottomLeftCorner().x, structure2->GetBottomLeftCorner().y)) / 2;      // structure2의 중앙 좌표
+    myMath::Vector2 middlePointStructure1Temp = (
+        (myMath::Vector2(structure1->GetTopRightCorner().x, structure1->GetTopRightCorner().y)
+        + myMath::Vector2(structure1->GetBottomLeftCorner().x, structure1->GetBottomLeftCorner().y)) / 2);      // structure1의 중앙 좌표
+    myMath::Vector2 middlePointStructure2Temp = (
+        myMath::Vector2(structure2->GetTopRightCorner().x, structure2->GetTopRightCorner().y)
+        + myMath::Vector2(structure2->GetBottomLeftCorner().x, structure2->GetBottomLeftCorner().y)) / 2;      // structure2의 중앙 좌표
 
     double angle = CalcuateAngle(middlePointStructure1Temp, middlePointStructure2Temp);          // 두 좌표 사이의 각도 계산
 
@@ -55,12 +55,12 @@ StructureHelper::RelativePosition CorridorNode::CheckPositionStructure2AgainstSt
     }
 }
 
-double CorridorNode::CalcuateAngle(Vector2 middlePointStructure1Temp, Vector2 middlePointStructure2Temp)
+double CorridorNode::CalcuateAngle(myMath::Vector2 middlePointStructure1Temp, myMath::Vector2 middlePointStructure2Temp)
 {
     double deltaY = middlePointStructure2Temp.y - middlePointStructure1Temp.y;
     double deltaX = middlePointStructure2Temp.x - middlePointStructure1Temp.x;
 
-    return atan2(deltaY, deltaX) * Mathf::Rad2Deg;
+    return atan2(deltaY, deltaX) * myMath::Mathf::Rad2Deg;
 }
 
 bool CorridorNode::CompareByTopRightCornerX(const Node* node1, const Node* node2)
@@ -107,12 +107,12 @@ void CorridorNode::ProcessRoomInRelationRightOrLeft(Node* structure1, Node* stru
 
         for (auto node : leftStructureChildren) {   // leftStructureChildren에 있는 것들 중 
             if (abs(maxX - node->GetTopRightCorner().x) < 10) {
-                // Mathf.Abs(maxX - children.TopRightAreaCorner.x) < 10 인 것만 필터링해 
+                // myMath::myMath::Mathf.Abs(maxX - children.TopRightAreaCorner.x) < 10 인 것만 필터링해 
                 sortedLeftStructure.push_back(node); // sortedLeftStructure에 넣음
             }
         }
 
-        int index = Mathf::Random::Range(0, sortedLeftStructure.size());     // sortedLeftStructure에 있는 것들중 하나 랜덤으로 골라
+        int index = myMath::Mathf::Random::Range(0, sortedLeftStructure.size());     // sortedLeftStructure에 있는 것들중 하나 랜덤으로 골라
         leftStructure = sortedLeftStructure[index];                 // 왼쪽 방 구조에 넣음
     }
 
@@ -172,47 +172,47 @@ void CorridorNode::ProcessRoomInRelationRightOrLeft(Node* structure1, Node* stru
         copy(temp.begin(), temp.end(), back_inserter(sortedLeftStructure));
     }
 
-    bottomLeftCorner = Vector2Int(leftStructure->GetBottomRightCorner().x, y);                            // 이 길의 좌하단 코너 좌표
-    topRightCorner = Vector2Int(rightStructure->GetTopLeftCorner().x, y + corridorWidth);                 // 이 길의 우상단 코너 좌표
-    bottomRightCorner = Vector2Int(topRightCorner.x, bottomLeftCorner.y);
-    topLeftCorner = Vector2Int(bottomLeftCorner.x, topRightCorner.y);
+    bottomLeftCorner = myMath::Vector2Int(leftStructure->GetBottomRightCorner().x, y);                            // 이 길의 좌하단 코너 좌표
+    topRightCorner = myMath::Vector2Int(rightStructure->GetTopLeftCorner().x, y + corridorWidth);                 // 이 길의 우상단 코너 좌표
+    bottomRightCorner = myMath::Vector2Int(topRightCorner.x, bottomLeftCorner.y);
+    topLeftCorner = myMath::Vector2Int(bottomLeftCorner.x, topRightCorner.y);
 
 }
 
 
 
-int CorridorNode::GetValidYForNeighourLeftRight(Vector2Int leftNodeUp, Vector2Int leftNodeDown, Vector2Int rightNodeUp, Vector2Int rightNodeDown)
+int CorridorNode::GetValidYForNeighourLeftRight(myMath::Vector2Int leftNodeUp, myMath::Vector2Int leftNodeDown, myMath::Vector2Int rightNodeUp, myMath::Vector2Int rightNodeDown)
 {
     if (rightNodeUp.y >= leftNodeUp.y && leftNodeDown.y >= rightNodeDown.y)
     {
         // 오른쪽 노드의 y가 왼쪽 노드의 y보다 크고 왼쪽 노드의 y가 오른쪽 노드의 y보다 클 때
         return StructureHelper::CalculateMiddlePoint(
-            leftNodeDown + Vector2Int(0, modifierDistanceFromWall),                 // 왼쪽 방 밑 좌표 + 벽과의 거리
-            leftNodeUp - Vector2Int(0, modifierDistanceFromWall + corridorWidth)    // 왼쪽 방 위 좌표 - (벽과의 거리 + 길 넓이)
+            leftNodeDown + myMath::Vector2Int(0, modifierDistanceFromWall),                 // 왼쪽 방 밑 좌표 + 벽과의 거리
+            leftNodeUp - myMath::Vector2Int(0, modifierDistanceFromWall + corridorWidth)    // 왼쪽 방 위 좌표 - (벽과의 거리 + 길 넓이)
         ).y;                                                                        // 의 중간 값의 y를 넘긴다
     }
     if (rightNodeUp.y <= leftNodeUp.y && leftNodeDown.y <= rightNodeDown.y)
     {
         // 오른쪽 노드(방)의 윗변 y값이 왼쪽 방의 윗변 y값보다 작고 왼쪽 방의 밑변 y 값이 오른쪽 방의 밑변 y 값보다 작거나 같을 때
         return StructureHelper::CalculateMiddlePoint(
-            rightNodeDown + Vector2Int(0, modifierDistanceFromWall),                // 오른쪽 밑 좌표 + 벽과의 거리
-            rightNodeUp - Vector2Int(0, modifierDistanceFromWall + corridorWidth)   // 오른쪽 위 좌표 - (벽과의 거리 + 길의 넓이)
+            rightNodeDown + myMath::Vector2Int(0, modifierDistanceFromWall),                // 오른쪽 밑 좌표 + 벽과의 거리
+            rightNodeUp - myMath::Vector2Int(0, modifierDistanceFromWall + corridorWidth)   // 오른쪽 위 좌표 - (벽과의 거리 + 길의 넓이)
         ).y;                                                                        // 의 중간 값 y를 넘김
     }
     if (leftNodeUp.y >= rightNodeDown.y && leftNodeUp.y <= rightNodeUp.y)
     {
         // 왼쪽 윗변이 오른쪽 밑변보다 높고 왼쪽 윗변이 오른쪽 윗변보다 낮을 때
         return StructureHelper::CalculateMiddlePoint(
-            rightNodeDown + Vector2Int(0, modifierDistanceFromWall),                // 오른쪽 밑변 + 벽과의 거리
-            leftNodeUp - Vector2Int(0, modifierDistanceFromWall)                    // 왼쪽 윗변 - 벽과의 거리
+            rightNodeDown + myMath::Vector2Int(0, modifierDistanceFromWall),                // 오른쪽 밑변 + 벽과의 거리
+            leftNodeUp - myMath::Vector2Int(0, modifierDistanceFromWall)                    // 왼쪽 윗변 - 벽과의 거리
         ).y;                                                                        // 의 중간 값 y를 넘김
     }
     if (leftNodeDown.y >= rightNodeDown.y && leftNodeDown.y <= rightNodeUp.y)
     {
         // 왼쪽 밑변이 오른쪽 밑변보다 높고 왼쪽 밑변이 오른쪽 윗변보다 낮을 때
         return StructureHelper::CalculateMiddlePoint(
-            leftNodeDown + Vector2Int(0, modifierDistanceFromWall),                 // 왼쪽 밑변 + 벽과의 거리
-            rightNodeUp - Vector2Int(0, modifierDistanceFromWall + corridorWidth)   // 오른쪽 윗변 - (벽과의 거리 + 복도 넓이)
+            leftNodeDown + myMath::Vector2Int(0, modifierDistanceFromWall),                 // 왼쪽 밑변 + 벽과의 거리
+            rightNodeUp - myMath::Vector2Int(0, modifierDistanceFromWall + corridorWidth)   // 오른쪽 윗변 - (벽과의 거리 + 복도 넓이)
         ).y;                                                                        // 의 중간 값 y를 넘김
     }
 
@@ -257,12 +257,12 @@ void CorridorNode::ProcessRoomInRelationUpOrDown(Node* structure1, Node* structu
 
         for (auto node : leftStructureChildren) {   // leftStructureChildren에 있는 것들 중 
             if (abs(maxY - node->GetTopRightCorner().y) < 10) {
-                // Mathf.Abs(maxX - children.TopRightAreaCorner.x) < 10 인 것만 필터링해 
+                // myMath::myMath::Mathf.Abs(maxX - children.TopRightAreaCorner.x) < 10 인 것만 필터링해 
                 sortedBottomStructure.push_back(node); // sortedLeftStructure에 넣음
             }
         }
 
-        int index = Mathf::Random::Range(0, sortedBottomStructure.size());     // sortedLeftStructure에 있는 것들중 하나 랜덤으로 골라
+        int index = myMath::Mathf::Random::Range(0, sortedBottomStructure.size());     // sortedLeftStructure에 있는 것들중 하나 랜덤으로 골라
         bottomStructure = sortedBottomStructure[index];                 // 왼쪽 방 구조에 넣음
     }
 
@@ -322,40 +322,40 @@ void CorridorNode::ProcessRoomInRelationUpOrDown(Node* structure1, Node* structu
         sortedBottomStructure.clear();
         copy(temp.begin(), temp.end(), back_inserter(sortedBottomStructure));
     }
-    bottomLeftCorner = Vector2Int(x, bottomStructure->GetTopLeftCorner().y);
-    topRightCorner = Vector2Int(x + corridorWidth, topStructure->GetBottomRightCorner().y);
-    bottomRightCorner = Vector2Int(topRightCorner.x, bottomLeftCorner.y);
-    topLeftCorner = Vector2Int(bottomLeftCorner.x, topRightCorner.y);
+    bottomLeftCorner = myMath::Vector2Int(x, bottomStructure->GetTopLeftCorner().y);
+    topRightCorner = myMath::Vector2Int(x + corridorWidth, topStructure->GetBottomRightCorner().y);
+    bottomRightCorner = myMath::Vector2Int(topRightCorner.x, bottomLeftCorner.y);
+    topLeftCorner = myMath::Vector2Int(bottomLeftCorner.x, topRightCorner.y);
 }
 
-int CorridorNode::GetValidYForNeighourUpDown(Vector2Int bottomNodeLeft, Vector2Int bottomNodeRight, Vector2Int topNodeLeft, Vector2Int topNodeRight)
+int CorridorNode::GetValidYForNeighourUpDown(myMath::Vector2Int bottomNodeLeft, myMath::Vector2Int bottomNodeRight, myMath::Vector2Int topNodeLeft, myMath::Vector2Int topNodeRight)
 {
     if (topNodeLeft.x < bottomNodeLeft.x && bottomNodeRight.x < topNodeRight.x)       // 오른쪽 노드의 y가 왼쪽 노드의 y보다 크고 왼쪽 노드의 y가 오른쪽 노드의 y보다 클 때
     {
         return StructureHelper::CalculateMiddlePoint(
-            bottomNodeLeft + Vector2Int(modifierDistanceFromWall, 0),
-            bottomNodeRight - Vector2Int(corridorWidth + modifierDistanceFromWall, 0)
+            bottomNodeLeft + myMath::Vector2Int(modifierDistanceFromWall, 0),
+            bottomNodeRight - myMath::Vector2Int(corridorWidth + modifierDistanceFromWall, 0)
         ).x;
     }
     if (topNodeLeft.x >= bottomNodeLeft.x && bottomNodeRight.x >= topNodeRight.x)
     {
         return StructureHelper::CalculateMiddlePoint(
-            topNodeLeft +  Vector2Int(modifierDistanceFromWall, 0),
-            topNodeRight -  Vector2Int(corridorWidth + modifierDistanceFromWall, 0)
+            topNodeLeft +  myMath::Vector2Int(modifierDistanceFromWall, 0),
+            topNodeRight -  myMath::Vector2Int(corridorWidth + modifierDistanceFromWall, 0)
         ).x;
     }
     if (bottomNodeLeft.x >= topNodeLeft.x && bottomNodeLeft.x <= topNodeRight.x)
     {
         return StructureHelper::CalculateMiddlePoint(
-            bottomNodeLeft +  Vector2Int(modifierDistanceFromWall, 0),
-            topNodeRight -  Vector2Int(corridorWidth + modifierDistanceFromWall, 0)
+            bottomNodeLeft +  myMath::Vector2Int(modifierDistanceFromWall, 0),
+            topNodeRight -  myMath::Vector2Int(corridorWidth + modifierDistanceFromWall, 0)
         ).x;
     }
     if (bottomNodeRight.x <= topNodeRight.x && bottomNodeRight.x >= topNodeLeft.x)
     {
         return StructureHelper::CalculateMiddlePoint(
-            topNodeLeft +  Vector2Int(modifierDistanceFromWall, 0),
-            bottomNodeRight -  Vector2Int(corridorWidth + modifierDistanceFromWall, 0)
+            topNodeLeft +  myMath::Vector2Int(modifierDistanceFromWall, 0),
+            bottomNodeRight -  myMath::Vector2Int(corridorWidth + modifierDistanceFromWall, 0)
         ).x;
     }
 

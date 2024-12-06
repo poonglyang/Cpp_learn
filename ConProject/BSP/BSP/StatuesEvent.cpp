@@ -7,6 +7,7 @@ StatuesEvent::StatuesEvent()
 
 void StatuesEvent::EventStart(Player* player)
 {
+	system("mode con: cols=150 lines=130");
 	system("cls");
 
 	if (isPray) {
@@ -15,12 +16,38 @@ void StatuesEvent::EventStart(Player* player)
 		return;
 	}
 
-	EventUpdate();
+	EventUpdate(player);
 }
 
-void StatuesEvent::EventUpdate()
+void StatuesEvent::EventUpdate(Player* player)
 {
 	RenderEvent();
+	if (isPray) {
+		switch (rand()  % 6)
+		{
+		case 0:
+			player->SetMaxHp(10 + rand() % 30, true);
+			break;
+		case 1:
+			player->SetMaxMp(10 + rand() % 30, true);
+			break;
+		case 2:
+			player->SetAtk(10 + rand() % 30, true);
+			break;
+		case 3:
+			player->SetDef(10 + rand() % 30, true);
+			break;
+		case 4:
+			player->SetCritialDamage(10 + rand() % 30, true);
+			break;
+		case 5:
+			player->SetBehaviorSpeed(1 + rand() % 4, true);
+			break;
+		default:
+			break;
+		}
+		//player.set
+	}
 }
 
 void StatuesEvent::EventEnd()
@@ -137,6 +164,7 @@ void StatuesEvent::RenderEvent()
 					break;
 				case 9:
 					std::cout << "\t[천사 조각상에 기도하였습니다]\t\t\t\t■";
+					
 					isPray = true;
 					break;
 				case 10:

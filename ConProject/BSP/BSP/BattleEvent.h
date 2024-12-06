@@ -7,7 +7,7 @@ class BattleEvent : public Event
 private:
 	Monster* monster;
 
-	std::vector<std::string> monsterNames = { "슬라임" };
+	std::vector<std::string> monsterNames = { "슬라임", "고블린", "오크", "스켈레톤", "트롤", "미믹"};
 
 	std::vector<std::string> monsterName = {
 		"슬라임  ",
@@ -17,6 +17,8 @@ private:
 		"트롤    ",
 		"미믹    "
 	};
+
+	int monsterIndex;
 
 	std::vector<std::string> hpBar = {
 		"                    ",
@@ -76,10 +78,22 @@ private:
 		{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}
 	};
 
+	int inventoryAction[7][31] = {
+		{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
+		{1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
+		{1,0,0,4},
+		{1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
+		{1,0,0,7},
+		{1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
+		{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}
+	};
+
 	// Event을(를) 통해 상속됨
-	void EventUpdate() override;
+	void EventUpdate(Player* player) override;
 	void EventEnd() override;
 	void RenderEvent() override;
+
+	bool UseItem(Player* player);
 
 	void BattleAction(Player* player);
 
@@ -89,6 +103,8 @@ private:
 
 public:
 	BattleEvent();
+
+	BattleEvent(int index);
 
 	~BattleEvent();
 

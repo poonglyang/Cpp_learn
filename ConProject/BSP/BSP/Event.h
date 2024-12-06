@@ -3,6 +3,8 @@
 #include <conio.h>
 #include "StructureHelper.h"
 #include "Player.h"
+#include "namespace.cpp"
+
 
 #pragma once
 /// <summary>
@@ -17,7 +19,7 @@ protected:
 public:
 	virtual void EventStart(Player* player) = 0;
 
-	virtual void EventUpdate() = 0;
+	virtual void EventUpdate(Player* player) = 0;
 
 	virtual void EventEnd() = 0;
 

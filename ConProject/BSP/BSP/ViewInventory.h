@@ -19,7 +19,7 @@ namespace InventoryView {
 		int inventoryAction[7][31] = {
 		{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
 		{1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-		{1,0,0,6},
+		{1,0,0,2},
 		{1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
 		{1,0,0,7},
 		{1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
@@ -91,16 +91,22 @@ namespace InventoryView {
 			std::cout << std::endl;
 
 			// 인벤토리의 아이템 이름 출력
-			for (int i = 0; i < currentInventory->size(); i++) {	
-				if (choiceIndex == i) {
-					std::cout << "\t▶\t";
+			if (!currentInventory->empty()) {
+				for (int i = 0; i < currentInventory->size(); i++) {
+					if (choiceIndex == i) {
+						std::cout << "\t▶\t";
+					}
+					else {
+						std::cout << "\t\t";
+					}
+					ItemBase* item = (*currentInventory)[i];
+					std::cout << item->GetItemName() << std::endl;
 				}
-				else {
-					std::cout << "\t\t";
-				}
-				ItemBase* item = (*currentInventory)[i];
-				std::cout << item->GetItemName() << std::endl;
 			}
+			else {
+				std::cout << "\t\t아이템이 없습니다";
+			}
+			
 
 			std::cout << std::endl;
 			std::cout << "■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■" << std::endl;
@@ -224,6 +230,7 @@ namespace InventoryView {
 					currentShowInventory = itemDatas::InventoryNum::Material;
 					changeShowArr[2][3] = 4;
 					inventoryAction[2][3] = 6;
+					
 					break;
 				case itemDatas::InventoryNum::Consumable:
 					currentInventory = &player->inventory->equipable;
@@ -271,6 +278,7 @@ namespace InventoryView {
 					case itemDatas::InventoryNum::Equip: {
 						if (inventoryAction[2][3] == 2) {
 							player->EquipSelect(choiceIndex);
+							choiceIndex = 0;
 						}
 						else {
 							ItemBase* popItem = player->inventory->PopItem(choiceIndex);
@@ -286,6 +294,9 @@ namespace InventoryView {
 						ItemBase* item = (*currentInventory)[choiceIndex];
 						if (inventoryAction[2][3] == 4) {
 							player->UseItem(choiceIndex);
+							if (choiceIndex >= player->inventory->consumables.size()) {
+								choiceIndex = 0;
+							}
 							//std::cout << "사용 구현해야함 시발" << std::endl;
 						}
 						else {
@@ -295,9 +306,8 @@ namespace InventoryView {
 								choiceIndex = 0;
 							}
 						}
-					}
-						
 						break;
+					}
 					case itemDatas::InventoryNum::Material: {
 						ItemBase* item = (*currentInventory)[choiceIndex];
 						player->inventory->PopItem(item->GetItemId(), 1);
@@ -324,6 +334,7 @@ namespace InventoryView {
 	}
 
 	static void ViewState(Player* player) {
+		system("mode con: cols=50 lines=70");
 		system("cls");
 		player->PrintPlayerInfo();
 		player->PrintEquip();

@@ -487,7 +487,7 @@ ItemManager::ItemManager()
 #pragma region 소형 hp 포션
 	Item_Consumables consumable = Item_Consumables (
 		100001, "소형 hp 포션", 1, 10, 30, (int)itemDatas::ItemType::Consumables, 
-		"hp 50을 즉시 채워줍니다", 50, 0,0,0,0,0);
+		"hp 50을 즉시 채워줍니다", 50, 0,0,0,0,0,0,0,0,0,0,0,0);
 
 	consumables_Items.push_back(consumable);
 #pragma endregion 소형 hp 포션
@@ -495,7 +495,7 @@ ItemManager::ItemManager()
 #pragma region 소형 mp 포션
 	consumable = Item_Consumables(
 		100002, "소형 mp 포션", 1, 10, 30, (int)itemDatas::ItemType::Consumables,
-		"mp 50을 즉시 채워줍니다",0,0,50,0,0,0);
+		"mp 50을 즉시 채워줍니다",0,0,50,0,0,0, 0, 0, 0, 0, 0, 0, 0);
 
 	consumables_Items.push_back(consumable);
 #pragma endregion 소형 mp 포션
@@ -503,15 +503,15 @@ ItemManager::ItemManager()
 #pragma region 최대 채력 증가 포션
 	consumable = Item_Consumables(
 		100003, "최대 채력 증가 포션", 1, 10, 30, (int)itemDatas::ItemType::Consumables,
-		"최대hp 30 올립니다", 0, 30, 0, 0, 0, 0);
+		"최대hp 30 올립니다", 0, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 
 	consumables_Items.push_back(consumable);
 #pragma endregion 최대 채력 증가 포션
 
 #pragma region 최대 마나 증가 포션
 	consumable = Item_Consumables(
-		100004, "최대 채력 증가 포션", 1, 10, 30, (int)itemDatas::ItemType::Consumables,
-		"최대mp 30 올립니다", 0, 0, 0, 30, 0, 0);
+		100004, "최대 마나 증가 포션", 1, 10, 30, (int)itemDatas::ItemType::Consumables,
+		"최대mp 30 올립니다", 0, 0, 0, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 
 	consumables_Items.push_back(consumable);
 #pragma endregion 최대 마나 증가 포션
@@ -519,7 +519,7 @@ ItemManager::ItemManager()
 #pragma region 공격력 증가 포션
 	consumable = Item_Consumables(
 		100005, "공격력 증가 포션", 1, 10, 30, (int)itemDatas::ItemType::Consumables,
-		"공격력을 10 올립니다", 0, 0, 0, 0, 10, 0);
+		"공격력을 10 올립니다", 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0);
 
 	consumables_Items.push_back(consumable);
 #pragma endregion 공격력 증가 포션
@@ -527,17 +527,73 @@ ItemManager::ItemManager()
 #pragma region 방어력 증가 포션
 	consumable = Item_Consumables(
 		100006, "방어력 증가 포션", 1, 10, 30, (int)itemDatas::ItemType::Consumables,
-		"방어력을 10 올립니다", 0, 0, 0, 0, 0, 10);
+		"방어력을 10 올립니다", 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0);
 
 	consumables_Items.push_back(consumable);
 #pragma endregion 방어력 증가 포션
+
+#pragma region 방어력 무시 증가 포션
+	consumable = Item_Consumables(
+		100007, "방어력 무시 증가 포션", 1, 10, 30, (int)itemDatas::ItemType::Consumables,
+		"방어력을 5% 더 무시합니다", 0, 0, 0, 0, 0, 0, 0, 0, 0.05f, 0, 0, 0, 0);
+
+	consumables_Items.push_back(consumable);
+#pragma endregion 방어력 무시 증가 포션
+
+#pragma region 명중률 증가 포션
+	consumable = Item_Consumables(
+		100008, "명중률 증가 포션", 1, 10, 30, (int)itemDatas::ItemType::Consumables,
+		"명중률이 7% 더 상승합니다", 0,0,0,0,0,0,0,0,0,0.07f,0,0,0);
+
+	consumables_Items.push_back(consumable);
+#pragma endregion 명중률 증가 포션
+
+#pragma region 크리티컬 확률 증가 포션
+	consumable = Item_Consumables(
+		100009, "크리티컬 확률 증가 포션", 1, 10, 30, (int)itemDatas::ItemType::Consumables,
+		"크리티컬 확률이 7% 더 상승합니다", 0, 0, 0, 0, 0, 0, 0.07f, 0, 0, 0, 0, 0, 0);
+
+	consumables_Items.push_back(consumable);
+#pragma endregion 크리티컬 확률 증가 포션
+
+#pragma region 크리티컬 데미지 증가 포션
+	consumable = Item_Consumables(
+		100010, "크리티컬 데미지 증가 포션", 1, 10, 30, (int)itemDatas::ItemType::Consumables,
+		"크리티컬 데미지가 10% 더 상승합니다", 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0);
+
+	consumables_Items.push_back(consumable);
+#pragma endregion 크리티컬 데미지 증가 포션
+
+#pragma region 회피 확률 증가 포션
+	consumable = Item_Consumables(
+		100011, "회피 확률 증가 포션", 1, 10, 30, (int)itemDatas::ItemType::Consumables,
+		"회피 확률이 5% 더 상승합니다", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.05f, 0, 0);
+
+	consumables_Items.push_back(consumable);
+#pragma endregion 회피 확률 증가 포션
+
+#pragma region 방어 확률 증가 포션
+	consumable = Item_Consumables(
+		100012, "방어 확률 증가 포션", 1, 10, 30, (int)itemDatas::ItemType::Consumables,
+		"방어 확률이 5% 더 상승합니다", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.05f, 0);
+
+	consumables_Items.push_back(consumable);
+#pragma endregion 방어 확률 증가 포션
+
+#pragma region 행동력 증가 포션
+	consumable = Item_Consumables(
+		100013, "행동력 증가 포션", 1, 10, 30, (int)itemDatas::ItemType::Consumables,
+		"행동력이 1% 증가합니다", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1);
+
+	consumables_Items.push_back(consumable);
+#pragma endregion 행동력 확률 증가 포션
 
 #pragma endregion
 
 #pragma region 재료 아이템 추가 부분
 #pragma region 깃털
 	Item_Material misc = Item_Material(
-		300001, "깃털", 1, 30, 1, (int)itemDatas::ItemType::Materials, 
+		200001, "깃털", 1, 30, 1, (int)itemDatas::ItemType::Materials, 
 		"새가 있다는 증명");
 
 	material_Items.push_back(misc);
@@ -545,7 +601,7 @@ ItemManager::ItemManager()
 
 #pragma region 돌맹이
 	misc = Item_Material(
-		300002, "돌맹이", 1, 30, 1, (int)itemDatas::ItemType::Materials, 
+		200002, "돌맹이", 1, 30, 2, (int)itemDatas::ItemType::Materials, 
 		"어디에나 굴러다니는 돌맹이");
 
 	material_Items.push_back(misc);
@@ -553,11 +609,59 @@ ItemManager::ItemManager()
 
 #pragma region 나무
 	misc = Item_Material(
-		300003, "나무", 1, 30, 1, (int)itemDatas::ItemType::Materials, 
+		200003, "나무", 1, 30, 5, (int)itemDatas::ItemType::Materials, 
 		"우주적 관점으로 가장 희귀한 재료");
 
 	material_Items.push_back(misc);
 #pragma endregion 나무
+
+#pragma region 잡철
+	misc = Item_Material(
+		200004, "잡철", 1, 30, 3, (int)itemDatas::ItemType::Materials,
+		"불순물이 많이 섞인 철");
+
+	material_Items.push_back(misc);
+#pragma endregion 잡철
+
+#pragma region 철괴
+	misc = Item_Material(
+		200005, "철괴", 1, 30, 15, (int)itemDatas::ItemType::Materials,
+		"철로 된 괴");
+
+	material_Items.push_back(misc);
+#pragma endregion 철괴
+
+#pragma region 허브
+	misc = Item_Material(
+		200006, "허브", 1, 30, 8, (int)itemDatas::ItemType::Materials,
+		"연금술에 쓰이는 약초");
+
+	material_Items.push_back(misc);
+#pragma endregion 허브
+
+#pragma region 가죽
+	misc = Item_Material(
+		200007, "가죽", 1, 30, 7, (int)itemDatas::ItemType::Materials,
+		"정체 모를 것의 가죽");
+
+	material_Items.push_back(misc);
+#pragma endregion 가죽
+
+#pragma region 마석
+	misc = Item_Material(
+		200008, "마석", 1, 30, 30, (int)itemDatas::ItemType::Materials,
+		"마나가 많이 모인 돌");
+
+	material_Items.push_back(misc);
+#pragma endregion 마석
+
+#pragma region 유령 실크
+	misc = Item_Material(
+		200009, "유령 실크", 1, 30, 22, (int)itemDatas::ItemType::Materials,
+		"안이 흐릿하게 보이는 실크");
+
+	material_Items.push_back(misc);
+#pragma endregion 유령 실크
 
 #pragma endregion
 
@@ -624,6 +728,23 @@ Item_Material* ItemManager::GetMaterialItem(int id, int count)
 	Item_Material* deepCopyItem = new Item_Material(material_Items[index]);
 	deepCopyItem->SetItemCount(count, false);
 	return deepCopyItem;
+}
+
+int ItemManager::GetRandomItemId()
+{
+	std::vector<int> tempV;
+
+	for (Item_Consumables item : consumables_Items) {
+		tempV.push_back(item.GetItemId());
+	}
+
+	for (Item_Material item : material_Items) {
+		tempV.push_back(item.GetItemId());
+	}
+
+	
+
+	return tempV[myMath::Mathf::Random::Range(0, tempV.size())];
 }
 
 int ItemManager::GetEquipVectorSize()

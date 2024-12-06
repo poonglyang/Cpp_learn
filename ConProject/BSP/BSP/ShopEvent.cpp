@@ -2,6 +2,7 @@
 
 void ShopEvent::EventStart(Player* player)
 {
+	system("mode con: cols=150 lines=130");
 	ShowSignboard(player);
 }
 
@@ -10,16 +11,16 @@ ShopEvent::ShopEvent()
 	itemManager = ItemManager();
 	shopInventory = Inventory(10, 10, 1, itemManager);
 
-	int equipmentSaleCount = Mathf::Random::Range(0, 4);
-	int consumableSaleCount = Mathf::Random::Range(0, 4);
+	int equipmentSaleCount = myMath::Mathf::Random::Range(0, 4);
+	int consumableSaleCount = myMath::Mathf::Random::Range(0, 4);
 
 	for (int i = 0; i < equipmentSaleCount; i++) {
-		ItemBase* tempItem = itemManager.GetEquipableItemByIndex(Mathf::Random::Range(0, itemManager.GetEquipVectorSize()));
+		ItemBase* tempItem = itemManager.GetEquipableItemByIndex(myMath::Mathf::Random::Range(0, itemManager.GetEquipVectorSize()));
 		shopInventory.equipable.push_back(tempItem);
 	}
 
 	for (int i = 0; i < consumableSaleCount; i++) {
-		ItemBase* tempItem = itemManager.GetConsumableItemByIndex(Mathf::Random::Range(0, itemManager.GetConsumableVectorSize()), 1+rand() % 5);
+		ItemBase* tempItem = itemManager.GetConsumableItemByIndex(myMath::Mathf::Random::Range(0, itemManager.GetConsumableVectorSize()), 1+rand() % 5);
 		shopInventory.consumables.push_back(tempItem);
 	}
 }
@@ -659,7 +660,7 @@ void ShopEvent::SellItem(Player* player)
 	}
 }
 
-void ShopEvent::EventUpdate()
+void ShopEvent::EventUpdate(Player* player)
 {
 	
 }

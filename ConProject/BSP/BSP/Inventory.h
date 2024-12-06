@@ -49,13 +49,15 @@ protected:
 	/// </summary>
 	int money;
 
+	
+
+	int GetItemTypeById(int id);
+public:
 	/// <summary>
 	/// 아이템 메니저
 	/// </summary>
 	ItemManager itemManager;
 
-	int GetItemTypeById(int id);
-public:
 	/// <summary>
 	/// 장비류가 들어가는 인벤토리 백터
 	/// </summary>

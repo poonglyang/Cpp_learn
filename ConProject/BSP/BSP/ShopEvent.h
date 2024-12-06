@@ -147,7 +147,7 @@ private:
 
 	Inventory shopInventory;
 
-	void EventUpdate() override;
+	void EventUpdate(Player* player) override;
 	void EventEnd() override;
 	void RenderEvent() override;
 public:

@@ -1,14 +1,16 @@
+#define NOMINMAX
 #pragma once
 #include <iostream>
 #include <windows.h>
 #include <conio.h>
+#include <algorithm>
 #include "DungeonGenerator.h"
 #include "EventManager.h"
 #include "ItemManager.h"
 #include "Player.h"
 #include "ViewInventory.h"
 
-
+using namespace myMath;
 using namespace playHelper;
 
 class Game
@@ -45,37 +47,41 @@ private:
 	/// <summary>
 	/// 층별 플레이어 위치
 	/// </summary>
-	std::vector<Vector2Int> playerLocation;
+	std::vector<myMath::Vector2Int> playerLocation;
 
 	/// <summary>
 	/// 플레이어 이전 위치
 	/// </summary>
-	Vector2Int oldPlayerLoc;
+	myMath::Vector2Int oldPlayerLoc;
 
 	/// <summary>
 	/// 층별 올라가는 계단 위치
 	/// </summary>
-	std::vector<Vector2Int> upStairs;
+	std::vector<myMath::Vector2Int> upStairs;
 	
 	std::vector<int> upStairsRoomIndex;
 
 	/// <summary>
 	/// 층별 내려가는 계단 위치
 	/// </summary>
-	std::vector<std::pair<Vector2Int, Vector2Int>> downStairs;
+	std::vector<std::pair<myMath::Vector2Int, myMath::Vector2Int>> downStairs;
 
 	/// <summary>
 	/// 상점의 중앙 위치 (상점 생성 x일 경우 0,0)
 	/// </summary>
-	std::vector<Vector2Int> shopPos;
+	std::vector<myMath::Vector2Int> shopPos;
 	
 	std::vector<int> shopPosRoomIndex;
 
 	std::vector<int> wellPosRoomIndex;
 
-	std::vector<Vector2Int> statusPoint;
+	std::vector<myMath::Vector2Int> statusPoint;
 
 	std::vector<int> statusPosRoomIndex;
+
+	std::vector<std::vector<myMath::Vector2Int>> enemyPos;
+
+	
 
 	void deleteConsolCursor();
 
@@ -104,7 +110,7 @@ private:
 	bool CheckPlayerGoWell();
 
 	bool CheckPlayerGoShop();
-
+	
 	void EventCheck();
 
 	void RenderScene();
@@ -129,6 +135,8 @@ private:
 
 	void GoMonster();
 public:
+	Game() {};
+
 	Game(int dungeonFloor);
 
 	void GameStart();

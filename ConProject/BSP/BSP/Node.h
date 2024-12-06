@@ -6,7 +6,6 @@
 
 using namespace myMath;
 
-
 class Node
 {
 protected:
@@ -14,17 +13,17 @@ protected:
 
 	bool isVisited;
 	
-	Vector2Int bottomLeftCorner;
+	myMath::Vector2Int bottomLeftCorner;
 
-	Vector2Int bottomRightCorner;
+	myMath::Vector2Int bottomRightCorner;
 
-	Vector2Int topRightCorner;
+	myMath::Vector2Int topRightCorner;
 
-	Vector2Int topLeftCorner;
+	myMath::Vector2Int topLeftCorner;
 	
 	int treeIndex;
 
-	Vector2Int GetMiddlePoint();
+	myMath::Vector2Int GetMiddlePoint();
 public:
 	std::vector<Node*> childrenNode;
 
@@ -50,27 +49,27 @@ public:
 
 	void SetIsVisited(bool set);
 
-	Vector2Int GetBottomLeftCorner() const;
+	myMath::Vector2Int GetBottomLeftCorner() const;
 
-	void SetBottomLeftCorner(Vector2Int vector2);
+	void SetBottomLeftCorner(myMath::Vector2Int vector2);
 
 	void SetBottomLeftCorner(int x, int y);
 
-	Vector2Int GetBottomRightCorner() const;
+	myMath::Vector2Int GetBottomRightCorner() const;
 
-	void SetBottomRightCorner(Vector2Int vector2);
+	void SetBottomRightCorner(myMath::Vector2Int vector2);
 
 	void SetBottomRightCorner(int x, int y);
 
-	Vector2Int GetTopRightCorner() const;
+	myMath::Vector2Int GetTopRightCorner() const;
 
-	void SetTopRightCorner(Vector2Int vector2);
+	void SetTopRightCorner(myMath::Vector2Int vector2);
 
 	void SetTopRightCorner(int x, int y);
 
-	Vector2Int GetTopLeftCorner() const;
+	myMath::Vector2Int GetTopLeftCorner() const;
 
-	void SetTopLeftCorner(Vector2Int vector2);
+	void SetTopLeftCorner(myMath::Vector2Int vector2);
 
 	void SetTopLeftCorner(int x, int y);
 
@@ -78,6 +77,6 @@ public:
 
 	void SetTreeIndex(int index);
 
-	Vector2Int GetNodeMiddlePoint();
+	myMath::Vector2Int GetNodeMiddlePoint();
 };
 
