@@ -23,29 +23,58 @@ void DevilStatuesEvent::EventUpdate(Player* player)
 {
 	RenderEvent();
 	if (isPray) {
-		switch (rand() % 6)
-		{
-		case 0:
-			player->SetMaxHp(-rand() % 30, true);
-			break;
-		case 1:
-			player->SetMaxMp(-rand() % 30, true);
-			break;
-		case 2:
-			player->SetAtk(-rand() % 5, true);
-			break;
-		case 3:
-			player->SetDef(-rand() % 10, true);
-			break;
-		case 4:
-			player->SetCritialDamage(-rand() % 20, true);
-			break;
-		case 5:
-			player->SetBehaviorSpeed(-rand() % 3, true);
-			break;
-		default:
-			break;
+		if (myMath::Mathf::Random::Value() < 0.1f) {
+			switch (rand() % 6)
+			{
+			case 0:
+				player->SetMaxHp(30 + rand() % 30, true);
+				break;
+			case 1:
+				player->SetMaxMp(30 + rand() % 30, true);
+				break;
+			case 2:
+				player->SetAtk(30 + rand() % 50, true);
+				break;
+			case 3:
+				player->SetDef(30 + rand() % 20, true);
+				break;
+			case 4:
+				player->SetCritialDamage(30 + rand() % 20, true);
+				break;
+			case 5:
+				player->SetBehaviorSpeed(3 + rand() % 6, true);
+				break;
+			default:
+				break;
+			}
 		}
+		else {
+			switch (rand() % 6)
+			{
+			case 0:
+				player->SetMaxHp(-rand() % 30, true);
+				break;
+			case 1:
+				player->SetMaxMp(-rand() % 30, true);
+				break;
+			case 2:
+				player->SetAtk(-rand() % 5, true);
+				break;
+			case 3:
+				player->SetDef(-rand() % 10, true);
+				break;
+			case 4:
+				player->SetCritialDamage(-rand() % 20, true);
+				break;
+			case 5:
+				player->SetBehaviorSpeed(-rand() % 3, true);
+				break;
+			default:
+				break;
+			}
+		}
+
+		
 		//player.set
 	}
 }

@@ -120,7 +120,7 @@ void ChestEvent::EventUpdate(Player* player)
 			else {
 				ItemBase* temp;
 
-				if (true) {
+				if (rand() % 10 > 7) {
 					temp = player->inventory->itemManager.GetEquipableItemByIndex(rand() % player->inventory->itemManager.GetEquipVectorSize());
 					player->inventory->PushItem(temp);
 					std::cout<<std::endl << std::endl<< "\t\t" << temp->GetItemName() << "을 얻었습니다" << std::endl;

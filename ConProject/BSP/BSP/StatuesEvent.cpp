@@ -26,22 +26,22 @@ void StatuesEvent::EventUpdate(Player* player)
 		switch (rand()  % 6)
 		{
 		case 0:
-			player->SetMaxHp(10 + rand() % 30, true);
+			player->SetMaxHp(5 + rand() % 10, true);
 			break;
 		case 1:
-			player->SetMaxMp(10 + rand() % 30, true);
+			player->SetMaxMp(5 + rand() % 10, true);
 			break;
 		case 2:
-			player->SetAtk(10 + rand() % 30, true);
+			player->SetAtk(2 + rand() % 3, true);
 			break;
 		case 3:
-			player->SetDef(10 + rand() % 30, true);
+			player->SetDef(3 + rand() % 3, true);
 			break;
 		case 4:
 			player->SetCritialDamage(10 + rand() % 30, true);
 			break;
 		case 5:
-			player->SetBehaviorSpeed(1 + rand() % 4, true);
+			player->SetBehaviorSpeed(1 + rand() % 2, true);
 			break;
 		default:
 			break;
